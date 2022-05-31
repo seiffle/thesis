@@ -1,0 +1,53 @@
+Name:         scale-test-w6cdf-3714505651
+Namespace:    argo
+Labels:       workflows.argoproj.io/workflow=scale-test-w6cdf
+Annotations:  <none>
+API Version:  argoproj.io/v1alpha1
+Kind:         WorkflowTaskResult
+Metadata:
+  Creation Timestamp:  2022-05-05T08:40:35Z
+  Generation:          1
+  Managed Fields:
+    API Version:  argoproj.io/v1alpha1
+    Fields Type:  FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .:
+          f:workflows.argoproj.io/workflow:
+        f:ownerReferences:
+          .:
+          k:{"uid":"19148ce3-e329-44c7-9409-264e27ab0949"}:
+            .:
+            f:apiVersion:
+            f:kind:
+            f:name:
+            f:uid:
+      f:outputs:
+        .:
+        f:artifacts:
+    Manager:    argoexec
+    Operation:  Update
+    Time:       2022-05-05T08:40:35Z
+  Owner References:
+    API Version:     v1
+    Kind:            pods
+    Name:            scale-test-w6cdf-3714505651
+    UID:             19148ce3-e329-44c7-9409-264e27ab0949
+  Resource Version:  191700634
+  Self Link:         /apis/argoproj.io/v1alpha1/namespaces/argo/workflowtaskresults/scale-test-w6cdf-3714505651
+  UID:               2ef6eee4-1515-418c-b7f1-b0ff4f242260
+Outputs:
+  Artifacts:
+    Name:  part1
+    Path:  /workspace/chunk_aa
+    s3:
+      Key:  scale-test-w6cdf/part_aa
+    Name:   part2
+    Path:   /workspace/chunk_ab
+    s3:
+      Key:  scale-test-w6cdf/part_ab
+    Name:   main-logs
+    s3:
+      Key:  scale-test-w6cdf/scale-test-w6cdf-3714505651/main.log
+Events:     <none>

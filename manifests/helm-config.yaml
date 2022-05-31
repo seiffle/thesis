@@ -1,0 +1,34 @@
+airflow:
+
+  executor: CeleryExecutor
+  extraVolumeMounts:
+  - name: dags
+    mountPath: /opt/airflow/dags
+
+  extraVolumes:
+  - name: dags
+    persistentVolumeClaim:
+      claimName: dags
+
+scheduler:
+
+  extraVolumeMounts:
+  - name: dags
+    mountPath: /opt/airflow/dags
+
+  extraVolumes:
+  - name: dags
+    persistentVolumeClaim:
+      claimName: dags
+
+
+workers:
+
+  extraVolumeMounts:
+  - name: dags
+    mountPath: /opt/airflow/dags
+
+  extraVolumes:
+  - name: dags
+    persistentVolumeClaim:
+      claimName: dags

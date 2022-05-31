@@ -1,0 +1,3 @@
+time="2022-05-05T08:40:59.136Z" level=info msg="capturing logs" argo=true
+time="2022-05-05T08:40:59.153Z" level=info msg="/mnt/out/result -> /var/run/argo/outputs/artifacts/mnt/out/result.tgz" argo=true
+time="2022-05-05T08:40:59.153Z" level=info msg="Taring /mnt/out/result"

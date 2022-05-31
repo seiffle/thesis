@@ -1,0 +1,3415 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cloud nodes: 50
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+calc         1              1              1
+chunk        2              1              1
+count      106              1              1
+merge        2              1              1
+sort       106              1              1
+split        1              1              1
+total      219              1              1
+
+Select jobs to execute...
+
+[Thu Apr 21 02:24:53 2022]
+rule split:
+    input: snakemake/data/input.txt
+    output: snakemake/results/chunk_aa, snakemake/results/chunk_ab
+    jobid: 6
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-0d3bd0a5-f3c1-59a9-94e2-51e16ce9c7f5
+kubectl logs snakejob-0d3bd0a5-f3c1-59a9-94e2-51e16ce9c7f5
+[Thu Apr 21 02:36:16 2022]
+Finished job 6.
+1 of 219 steps (0.5%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:36:16 2022]
+rule chunk:
+    input: snakemake/results/chunk_ab
+    output: snakemake/results/input_ab_1-of-53, snakemake/results/input_ab_2-of-53, snakemake/results/input_ab_3-of-53, snakemake/results/input_ab_4-of-53, snakemake/results/input_ab_5-of-53, snakemake/results/input_ab_6-of-53, snakemake/results/input_ab_7-of-53, snakemake/results/input_ab_8-of-53, snakemake/results/input_ab_9-of-53, snakemake/results/input_ab_10-of-53, snakemake/results/input_ab_11-of-53, snakemake/results/input_ab_12-of-53, snakemake/results/input_ab_13-of-53, snakemake/results/input_ab_14-of-53, snakemake/results/input_ab_15-of-53, snakemake/results/input_ab_16-of-53, snakemake/results/input_ab_17-of-53, snakemake/results/input_ab_18-of-53, snakemake/results/input_ab_19-of-53, snakemake/results/input_ab_20-of-53, snakemake/results/input_ab_21-of-53, snakemake/results/input_ab_22-of-53, snakemake/results/input_ab_23-of-53, snakemake/results/input_ab_24-of-53, snakemake/results/input_ab_25-of-53, snakemake/results/input_ab_26-of-53, snakemake/results/input_ab_27-of-53, snakemake/results/input_ab_28-of-53, snakemake/results/input_ab_29-of-53, snakemake/results/input_ab_30-of-53, snakemake/results/input_ab_31-of-53, snakemake/results/input_ab_32-of-53, snakemake/results/input_ab_33-of-53, snakemake/results/input_ab_34-of-53, snakemake/results/input_ab_35-of-53, snakemake/results/input_ab_36-of-53, snakemake/results/input_ab_37-of-53, snakemake/results/input_ab_38-of-53, snakemake/results/input_ab_39-of-53, snakemake/results/input_ab_40-of-53, snakemake/results/input_ab_41-of-53, snakemake/results/input_ab_42-of-53, snakemake/results/input_ab_43-of-53, snakemake/results/input_ab_44-of-53, snakemake/results/input_ab_45-of-53, snakemake/results/input_ab_46-of-53, snakemake/results/input_ab_47-of-53, snakemake/results/input_ab_48-of-53, snakemake/results/input_ab_49-of-53, snakemake/results/input_ab_50-of-53, snakemake/results/input_ab_51-of-53, snakemake/results/input_ab_52-of-53, snakemake/results/input_ab_53-of-53
+    jobid: 114
+    wildcards: part_id=ab
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-3e40cf08-d8a8-5e5f-9cae-a563fc69f1c9
+kubectl logs snakejob-3e40cf08-d8a8-5e5f-9cae-a563fc69f1c9
+
+[Thu Apr 21 02:36:16 2022]
+rule chunk:
+    input: snakemake/results/chunk_aa
+    output: snakemake/results/input_aa_1-of-53, snakemake/results/input_aa_2-of-53, snakemake/results/input_aa_3-of-53, snakemake/results/input_aa_4-of-53, snakemake/results/input_aa_5-of-53, snakemake/results/input_aa_6-of-53, snakemake/results/input_aa_7-of-53, snakemake/results/input_aa_8-of-53, snakemake/results/input_aa_9-of-53, snakemake/results/input_aa_10-of-53, snakemake/results/input_aa_11-of-53, snakemake/results/input_aa_12-of-53, snakemake/results/input_aa_13-of-53, snakemake/results/input_aa_14-of-53, snakemake/results/input_aa_15-of-53, snakemake/results/input_aa_16-of-53, snakemake/results/input_aa_17-of-53, snakemake/results/input_aa_18-of-53, snakemake/results/input_aa_19-of-53, snakemake/results/input_aa_20-of-53, snakemake/results/input_aa_21-of-53, snakemake/results/input_aa_22-of-53, snakemake/results/input_aa_23-of-53, snakemake/results/input_aa_24-of-53, snakemake/results/input_aa_25-of-53, snakemake/results/input_aa_26-of-53, snakemake/results/input_aa_27-of-53, snakemake/results/input_aa_28-of-53, snakemake/results/input_aa_29-of-53, snakemake/results/input_aa_30-of-53, snakemake/results/input_aa_31-of-53, snakemake/results/input_aa_32-of-53, snakemake/results/input_aa_33-of-53, snakemake/results/input_aa_34-of-53, snakemake/results/input_aa_35-of-53, snakemake/results/input_aa_36-of-53, snakemake/results/input_aa_37-of-53, snakemake/results/input_aa_38-of-53, snakemake/results/input_aa_39-of-53, snakemake/results/input_aa_40-of-53, snakemake/results/input_aa_41-of-53, snakemake/results/input_aa_42-of-53, snakemake/results/input_aa_43-of-53, snakemake/results/input_aa_44-of-53, snakemake/results/input_aa_45-of-53, snakemake/results/input_aa_46-of-53, snakemake/results/input_aa_47-of-53, snakemake/results/input_aa_48-of-53, snakemake/results/input_aa_49-of-53, snakemake/results/input_aa_50-of-53, snakemake/results/input_aa_51-of-53, snakemake/results/input_aa_52-of-53, snakemake/results/input_aa_53-of-53
+    jobid: 5
+    wildcards: part_id=aa
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-632b4dd8-eab9-5cd9-8fe3-9213ea02c1d6
+kubectl logs snakejob-632b4dd8-eab9-5cd9-8fe3-9213ea02c1d6
+[Thu Apr 21 02:43:27 2022]
+Finished job 5.
+2 of 219 steps (1%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_53-of-53
+    output: snakemake/results/counted_aa_53-of-53
+    jobid: 110
+    wildcards: part_id=aa, scatteritem=53-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-710a4d05-1d2b-5e9d-82e7-ee93eea0cfba
+kubectl logs snakejob-710a4d05-1d2b-5e9d-82e7-ee93eea0cfba
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_45-of-53
+    output: snakemake/results/counted_aa_45-of-53
+    jobid: 94
+    wildcards: part_id=aa, scatteritem=45-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-56a452cd-ba43-5de9-b16c-a6be09b53036
+kubectl logs snakejob-56a452cd-ba43-5de9-b16c-a6be09b53036
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_6-of-53
+    output: snakemake/results/counted_aa_6-of-53
+    jobid: 16
+    wildcards: part_id=aa, scatteritem=6-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-32a64fe6-ddca-524f-9394-59073b0b20a6
+kubectl logs snakejob-32a64fe6-ddca-524f-9394-59073b0b20a6
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_49-of-53
+    output: snakemake/results/counted_aa_49-of-53
+    jobid: 102
+    wildcards: part_id=aa, scatteritem=49-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c060d300-411f-5c66-86f3-a7a26da3e601
+kubectl logs snakejob-c060d300-411f-5c66-86f3-a7a26da3e601
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_18-of-53
+    output: snakemake/results/counted_aa_18-of-53
+    jobid: 40
+    wildcards: part_id=aa, scatteritem=18-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c481a147-e0d3-5e6d-83bd-fae111dd6521
+kubectl logs snakejob-c481a147-e0d3-5e6d-83bd-fae111dd6521
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_3-of-53
+    output: snakemake/results/counted_aa_3-of-53
+    jobid: 10
+    wildcards: part_id=aa, scatteritem=3-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-05c6f4ff-ddd7-512f-8973-58af5148c607
+kubectl logs snakejob-05c6f4ff-ddd7-512f-8973-58af5148c607
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_10-of-53
+    output: snakemake/results/counted_aa_10-of-53
+    jobid: 24
+    wildcards: part_id=aa, scatteritem=10-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-340d6dcd-5196-5bd2-8eb1-d4821a736cf7
+kubectl logs snakejob-340d6dcd-5196-5bd2-8eb1-d4821a736cf7
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_14-of-53
+    output: snakemake/results/counted_aa_14-of-53
+    jobid: 32
+    wildcards: part_id=aa, scatteritem=14-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-aa2e7d49-540c-52de-aa8a-41d16fc751cc
+kubectl logs snakejob-aa2e7d49-540c-52de-aa8a-41d16fc751cc
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_22-of-53
+    output: snakemake/results/counted_aa_22-of-53
+    jobid: 48
+    wildcards: part_id=aa, scatteritem=22-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-17fdd0b1-d3ab-5069-8151-532dbdfa0935
+kubectl logs snakejob-17fdd0b1-d3ab-5069-8151-532dbdfa0935
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_26-of-53
+    output: snakemake/results/counted_aa_26-of-53
+    jobid: 56
+    wildcards: part_id=aa, scatteritem=26-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-aabbaa0c-1236-5ebe-af5a-d42565818c0e
+kubectl logs snakejob-aabbaa0c-1236-5ebe-af5a-d42565818c0e
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_30-of-53
+    output: snakemake/results/counted_aa_30-of-53
+    jobid: 64
+    wildcards: part_id=aa, scatteritem=30-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-84875e9e-7223-54f2-b309-0aa4f23e449a
+kubectl logs snakejob-84875e9e-7223-54f2-b309-0aa4f23e449a
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_34-of-53
+    output: snakemake/results/counted_aa_34-of-53
+    jobid: 72
+    wildcards: part_id=aa, scatteritem=34-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b3bc1f3d-a432-5f01-a215-63b671432257
+kubectl logs snakejob-b3bc1f3d-a432-5f01-a215-63b671432257
+
+[Thu Apr 21 02:43:27 2022]
+rule count:
+    input: snakemake/results/input_aa_38-of-53
+    output: snakemake/results/counted_aa_38-of-53
+    jobid: 80
+    wildcards: part_id=aa, scatteritem=38-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-399952e5-bef4-5a44-8a47-ed1671d6c172
+kubectl logs snakejob-399952e5-bef4-5a44-8a47-ed1671d6c172
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_7-of-53
+    output: snakemake/results/counted_aa_7-of-53
+    jobid: 18
+    wildcards: part_id=aa, scatteritem=7-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-9dc3112c-a351-59d1-8827-0be6e17a3410
+kubectl logs snakejob-9dc3112c-a351-59d1-8827-0be6e17a3410
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_42-of-53
+    output: snakemake/results/counted_aa_42-of-53
+    jobid: 88
+    wildcards: part_id=aa, scatteritem=42-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-7f2f4deb-e514-5308-bab0-285c6d35c437
+kubectl logs snakejob-7f2f4deb-e514-5308-bab0-285c6d35c437
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_46-of-53
+    output: snakemake/results/counted_aa_46-of-53
+    jobid: 96
+    wildcards: part_id=aa, scatteritem=46-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-3a7ad182-f223-5c6b-bc75-baafd847d1c8
+kubectl logs snakejob-3a7ad182-f223-5c6b-bc75-baafd847d1c8
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_50-of-53
+    output: snakemake/results/counted_aa_50-of-53
+    jobid: 104
+    wildcards: part_id=aa, scatteritem=50-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8fbace5e-82b6-59e2-af1e-577dec07312e
+kubectl logs snakejob-8fbace5e-82b6-59e2-af1e-577dec07312e
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_11-of-53
+    output: snakemake/results/counted_aa_11-of-53
+    jobid: 26
+    wildcards: part_id=aa, scatteritem=11-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5ebc1987-1faf-5018-9461-7082cdfbd3da
+kubectl logs snakejob-5ebc1987-1faf-5018-9461-7082cdfbd3da
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_19-of-53
+    output: snakemake/results/counted_aa_19-of-53
+    jobid: 42
+    wildcards: part_id=aa, scatteritem=19-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-f0b2386d-e614-531c-ac78-f692ea3cd16a
+kubectl logs snakejob-f0b2386d-e614-531c-ac78-f692ea3cd16a
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_15-of-53
+    output: snakemake/results/counted_aa_15-of-53
+    jobid: 34
+    wildcards: part_id=aa, scatteritem=15-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-29c5a592-b22a-5cf7-916e-6bada651a72c
+kubectl logs snakejob-29c5a592-b22a-5cf7-916e-6bada651a72c
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_23-of-53
+    output: snakemake/results/counted_aa_23-of-53
+    jobid: 50
+    wildcards: part_id=aa, scatteritem=23-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-30f5a85d-ea48-5e70-868d-ebabebb26578
+kubectl logs snakejob-30f5a85d-ea48-5e70-868d-ebabebb26578
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_27-of-53
+    output: snakemake/results/counted_aa_27-of-53
+    jobid: 58
+    wildcards: part_id=aa, scatteritem=27-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b576579d-40a7-523e-857b-88f0ac7613cd
+kubectl logs snakejob-b576579d-40a7-523e-857b-88f0ac7613cd
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_31-of-53
+    output: snakemake/results/counted_aa_31-of-53
+    jobid: 66
+    wildcards: part_id=aa, scatteritem=31-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-da2df9cb-75f3-58d1-a6ba-73e564617cd0
+kubectl logs snakejob-da2df9cb-75f3-58d1-a6ba-73e564617cd0
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_35-of-53
+    output: snakemake/results/counted_aa_35-of-53
+    jobid: 74
+    wildcards: part_id=aa, scatteritem=35-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-6c4e3430-c460-5924-ac14-f4f1ac405068
+kubectl logs snakejob-6c4e3430-c460-5924-ac14-f4f1ac405068
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_39-of-53
+    output: snakemake/results/counted_aa_39-of-53
+    jobid: 82
+    wildcards: part_id=aa, scatteritem=39-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-fe2fbba9-2276-5f3e-8289-0ffe36f3ed9c
+kubectl logs snakejob-fe2fbba9-2276-5f3e-8289-0ffe36f3ed9c
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_4-of-53
+    output: snakemake/results/counted_aa_4-of-53
+    jobid: 12
+    wildcards: part_id=aa, scatteritem=4-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-7f92a930-6663-50a5-a260-5d59f4141672
+kubectl logs snakejob-7f92a930-6663-50a5-a260-5d59f4141672
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_8-of-53
+    output: snakemake/results/counted_aa_8-of-53
+    jobid: 20
+    wildcards: part_id=aa, scatteritem=8-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a6e3b52b-61cf-5ff4-a85c-e569a092a88e
+kubectl logs snakejob-a6e3b52b-61cf-5ff4-a85c-e569a092a88e
+
+[Thu Apr 21 02:43:28 2022]
+rule count:
+    input: snakemake/results/input_aa_43-of-53
+    output: snakemake/results/counted_aa_43-of-53
+    jobid: 90
+    wildcards: part_id=aa, scatteritem=43-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-64845c8b-78f7-5bc6-b1d7-ab48ab5fc1b0
+kubectl logs snakejob-64845c8b-78f7-5bc6-b1d7-ab48ab5fc1b0
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_12-of-53
+    output: snakemake/results/counted_aa_12-of-53
+    jobid: 28
+    wildcards: part_id=aa, scatteritem=12-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ac1217f8-207b-5a89-9728-0508dd92f0b5
+kubectl logs snakejob-ac1217f8-207b-5a89-9728-0508dd92f0b5
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_16-of-53
+    output: snakemake/results/counted_aa_16-of-53
+    jobid: 36
+    wildcards: part_id=aa, scatteritem=16-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b8e88b42-78ac-5fe4-81b8-203282c0d4cb
+kubectl logs snakejob-b8e88b42-78ac-5fe4-81b8-203282c0d4cb
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_20-of-53
+    output: snakemake/results/counted_aa_20-of-53
+    jobid: 44
+    wildcards: part_id=aa, scatteritem=20-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8af4a02f-961e-5478-a302-4f45eafd330b
+kubectl logs snakejob-8af4a02f-961e-5478-a302-4f45eafd330b
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_24-of-53
+    output: snakemake/results/counted_aa_24-of-53
+    jobid: 52
+    wildcards: part_id=aa, scatteritem=24-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-15ca4d17-5cd6-582a-aba8-9b070d8e7c63
+kubectl logs snakejob-15ca4d17-5cd6-582a-aba8-9b070d8e7c63
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_28-of-53
+    output: snakemake/results/counted_aa_28-of-53
+    jobid: 60
+    wildcards: part_id=aa, scatteritem=28-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-73c90fcb-7d58-590a-a1c4-86d36f4cdfb5
+kubectl logs snakejob-73c90fcb-7d58-590a-a1c4-86d36f4cdfb5
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_32-of-53
+    output: snakemake/results/counted_aa_32-of-53
+    jobid: 68
+    wildcards: part_id=aa, scatteritem=32-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-812fecb3-7267-5e37-a99a-7a468009bbf8
+kubectl logs snakejob-812fecb3-7267-5e37-a99a-7a468009bbf8
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_36-of-53
+    output: snakemake/results/counted_aa_36-of-53
+    jobid: 76
+    wildcards: part_id=aa, scatteritem=36-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5473d8ce-85b0-555e-90cc-e326a2da4a03
+kubectl logs snakejob-5473d8ce-85b0-555e-90cc-e326a2da4a03
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_40-of-53
+    output: snakemake/results/counted_aa_40-of-53
+    jobid: 84
+    wildcards: part_id=aa, scatteritem=40-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-756db489-9d9c-5847-ac5f-74b1382ae879
+kubectl logs snakejob-756db489-9d9c-5847-ac5f-74b1382ae879
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_2-of-53
+    output: snakemake/results/counted_aa_2-of-53
+    jobid: 8
+    wildcards: part_id=aa, scatteritem=2-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-60ad6427-c763-55de-80a2-fe3357251360
+kubectl logs snakejob-60ad6427-c763-55de-80a2-fe3357251360
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_5-of-53
+    output: snakemake/results/counted_aa_5-of-53
+    jobid: 14
+    wildcards: part_id=aa, scatteritem=5-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c3fa276b-1e8f-5270-86d3-f0ff474ade74
+kubectl logs snakejob-c3fa276b-1e8f-5270-86d3-f0ff474ade74
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_9-of-53
+    output: snakemake/results/counted_aa_9-of-53
+    jobid: 22
+    wildcards: part_id=aa, scatteritem=9-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-6bc0b2c6-dd90-5cc6-9288-0b8aa82f0ab5
+kubectl logs snakejob-6bc0b2c6-dd90-5cc6-9288-0b8aa82f0ab5
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_44-of-53
+    output: snakemake/results/counted_aa_44-of-53
+    jobid: 92
+    wildcards: part_id=aa, scatteritem=44-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b4f485a0-9cce-5715-b02e-0b63c9573734
+kubectl logs snakejob-b4f485a0-9cce-5715-b02e-0b63c9573734
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_48-of-53
+    output: snakemake/results/counted_aa_48-of-53
+    jobid: 100
+    wildcards: part_id=aa, scatteritem=48-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5cbf60bb-3448-5977-a173-7ca5402498a0
+kubectl logs snakejob-5cbf60bb-3448-5977-a173-7ca5402498a0
+
+[Thu Apr 21 02:43:29 2022]
+rule count:
+    input: snakemake/results/input_aa_52-of-53
+    output: snakemake/results/counted_aa_52-of-53
+    jobid: 108
+    wildcards: part_id=aa, scatteritem=52-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-000478d6-5cf6-5ae3-8f43-af09660f9964
+kubectl logs snakejob-000478d6-5cf6-5ae3-8f43-af09660f9964
+
+[Thu Apr 21 02:43:30 2022]
+rule count:
+    input: snakemake/results/input_aa_13-of-53
+    output: snakemake/results/counted_aa_13-of-53
+    jobid: 30
+    wildcards: part_id=aa, scatteritem=13-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-e7d76c8f-6c88-5cf4-b86c-17e196336641
+kubectl logs snakejob-e7d76c8f-6c88-5cf4-b86c-17e196336641
+
+[Thu Apr 21 02:43:30 2022]
+rule count:
+    input: snakemake/results/input_aa_17-of-53
+    output: snakemake/results/counted_aa_17-of-53
+    jobid: 38
+    wildcards: part_id=aa, scatteritem=17-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-42f90656-b267-58fe-ac35-5fdea1596a34
+kubectl logs snakejob-42f90656-b267-58fe-ac35-5fdea1596a34
+
+[Thu Apr 21 02:43:30 2022]
+rule count:
+    input: snakemake/results/input_aa_21-of-53
+    output: snakemake/results/counted_aa_21-of-53
+    jobid: 46
+    wildcards: part_id=aa, scatteritem=21-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-99cd98b0-3a44-5c5c-a634-cc2f40f9c80d
+kubectl logs snakejob-99cd98b0-3a44-5c5c-a634-cc2f40f9c80d
+
+[Thu Apr 21 02:43:30 2022]
+rule count:
+    input: snakemake/results/input_aa_25-of-53
+    output: snakemake/results/counted_aa_25-of-53
+    jobid: 54
+    wildcards: part_id=aa, scatteritem=25-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-927e3b19-1f8c-50b7-af73-ae8a0fe2126d
+kubectl logs snakejob-927e3b19-1f8c-50b7-af73-ae8a0fe2126d
+
+[Thu Apr 21 02:43:30 2022]
+rule count:
+    input: snakemake/results/input_aa_29-of-53
+    output: snakemake/results/counted_aa_29-of-53
+    jobid: 62
+    wildcards: part_id=aa, scatteritem=29-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5a8c1575-3052-5865-9bb3-2f7e85eb4cf1
+kubectl logs snakejob-5a8c1575-3052-5865-9bb3-2f7e85eb4cf1
+
+[Thu Apr 21 02:43:30 2022]
+rule count:
+    input: snakemake/results/input_aa_33-of-53
+    output: snakemake/results/counted_aa_33-of-53
+    jobid: 70
+    wildcards: part_id=aa, scatteritem=33-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a921cac2-376b-5418-82aa-9312bcba3dba
+kubectl logs snakejob-a921cac2-376b-5418-82aa-9312bcba3dba
+
+[Thu Apr 21 02:43:30 2022]
+rule count:
+    input: snakemake/results/input_aa_37-of-53
+    output: snakemake/results/counted_aa_37-of-53
+    jobid: 78
+    wildcards: part_id=aa, scatteritem=37-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-217f0a50-7e1e-56d8-871d-29d633b6180b
+kubectl logs snakejob-217f0a50-7e1e-56d8-871d-29d633b6180b
+[Thu Apr 21 02:43:46 2022]
+Finished job 102.
+3 of 219 steps (1%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:46 2022]
+rule count:
+    input: snakemake/results/input_aa_1-of-53
+    output: snakemake/results/counted_aa_1-of-53
+    jobid: 4
+    wildcards: part_id=aa, scatteritem=1-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-d0947307-039c-580a-bf7f-25352dd94983
+kubectl logs snakejob-d0947307-039c-580a-bf7f-25352dd94983
+[Thu Apr 21 02:43:46 2022]
+Finished job 48.
+4 of 219 steps (2%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:47 2022]
+rule sort:
+    input: snakemake/results/counted_aa_49-of-53
+    output: snakemake/results/sorted_aa_49-of-53
+    jobid: 101
+    wildcards: part_id=aa, scatteritem=49-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-2f8b94e9-d51c-5aa4-bade-a94fd20318c3
+kubectl logs snakejob-2f8b94e9-d51c-5aa4-bade-a94fd20318c3
+[Thu Apr 21 02:43:47 2022]
+Finished job 88.
+5 of 219 steps (2%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:47 2022]
+rule sort:
+    input: snakemake/results/counted_aa_42-of-53
+    output: snakemake/results/sorted_aa_42-of-53
+    jobid: 87
+    wildcards: part_id=aa, scatteritem=42-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-4616990f-537c-57d0-84fc-82629748ef61
+kubectl logs snakejob-4616990f-537c-57d0-84fc-82629748ef61
+[Thu Apr 21 02:43:48 2022]
+Finished job 104.
+6 of 219 steps (3%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:48 2022]
+rule sort:
+    input: snakemake/results/counted_aa_50-of-53
+    output: snakemake/results/sorted_aa_50-of-53
+    jobid: 103
+    wildcards: part_id=aa, scatteritem=50-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-70ce99a9-e74c-5dc2-b1a6-ceba8e7feca9
+kubectl logs snakejob-70ce99a9-e74c-5dc2-b1a6-ceba8e7feca9
+[Thu Apr 21 02:43:48 2022]
+Finished job 42.
+7 of 219 steps (3%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:48 2022]
+rule count:
+    input: snakemake/results/input_aa_51-of-53
+    output: snakemake/results/counted_aa_51-of-53
+    jobid: 106
+    wildcards: part_id=aa, scatteritem=51-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-cbc313c7-e957-5551-9c53-deef465cbe52
+kubectl logs snakejob-cbc313c7-e957-5551-9c53-deef465cbe52
+[Thu Apr 21 02:43:48 2022]
+Finished job 50.
+8 of 219 steps (4%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:48 2022]
+rule sort:
+    input: snakemake/results/counted_aa_19-of-53
+    output: snakemake/results/sorted_aa_19-of-53
+    jobid: 41
+    wildcards: part_id=aa, scatteritem=19-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a45c9d27-1292-5431-807e-51daaec168b9
+kubectl logs snakejob-a45c9d27-1292-5431-807e-51daaec168b9
+[Thu Apr 21 02:43:49 2022]
+Finished job 82.
+9 of 219 steps (4%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:49 2022]
+rule count:
+    input: snakemake/results/input_aa_41-of-53
+    output: snakemake/results/counted_aa_41-of-53
+    jobid: 86
+    wildcards: part_id=aa, scatteritem=41-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ded62997-c390-56e0-84a4-c00b16eba0c1
+kubectl logs snakejob-ded62997-c390-56e0-84a4-c00b16eba0c1
+[Thu Apr 21 02:43:49 2022]
+Finished job 28.
+10 of 219 steps (5%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:49 2022]
+rule sort:
+    input: snakemake/results/counted_aa_12-of-53
+    output: snakemake/results/sorted_aa_12-of-53
+    jobid: 27
+    wildcards: part_id=aa, scatteritem=12-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-6039a7bb-525d-5dbd-90b4-26f50242f710
+kubectl logs snakejob-6039a7bb-525d-5dbd-90b4-26f50242f710
+[Thu Apr 21 02:43:49 2022]
+Finished job 36.
+11 of 219 steps (5%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:43:49 2022]
+rule sort:
+    input: snakemake/results/counted_aa_16-of-53
+    output: snakemake/results/sorted_aa_16-of-53
+    jobid: 35
+    wildcards: part_id=aa, scatteritem=16-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ac0267f3-b54a-5a9d-a34c-cd864eecf4fb
+kubectl logs snakejob-ac0267f3-b54a-5a9d-a34c-cd864eecf4fb
+[Thu Apr 21 02:44:01 2022]
+Finished job 101.
+12 of 219 steps (5%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:01 2022]
+rule count:
+    input: snakemake/results/input_aa_47-of-53
+    output: snakemake/results/counted_aa_47-of-53
+    jobid: 98
+    wildcards: part_id=aa, scatteritem=47-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ce163b08-ac54-5f6b-9c9f-d3cc2ba3e73e
+kubectl logs snakejob-ce163b08-ac54-5f6b-9c9f-d3cc2ba3e73e
+[Thu Apr 21 02:44:02 2022]
+Finished job 41.
+13 of 219 steps (6%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:02 2022]
+rule sort:
+    input: snakemake/results/counted_aa_23-of-53
+    output: snakemake/results/sorted_aa_23-of-53
+    jobid: 49
+    wildcards: part_id=aa, scatteritem=23-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ec519faf-b5ec-5fd2-a25e-2905b9c14091
+kubectl logs snakejob-ec519faf-b5ec-5fd2-a25e-2905b9c14091
+[Thu Apr 21 02:44:05 2022]
+Finished job 44.
+14 of 219 steps (6%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:05 2022]
+rule sort:
+    input: snakemake/results/counted_aa_20-of-53
+    output: snakemake/results/sorted_aa_20-of-53
+    jobid: 43
+    wildcards: part_id=aa, scatteritem=20-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-4c52fe97-9470-5243-abc2-3a0f364d62d3
+kubectl logs snakejob-4c52fe97-9470-5243-abc2-3a0f364d62d3
+[Thu Apr 21 02:44:05 2022]
+Finished job 52.
+15 of 219 steps (7%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:05 2022]
+rule sort:
+    input: snakemake/results/counted_aa_24-of-53
+    output: snakemake/results/sorted_aa_24-of-53
+    jobid: 51
+    wildcards: part_id=aa, scatteritem=24-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-aecf1e55-a642-5871-a914-a6d7a9f2f54c
+kubectl logs snakejob-aecf1e55-a642-5871-a914-a6d7a9f2f54c
+[Thu Apr 21 02:44:05 2022]
+Finished job 60.
+16 of 219 steps (7%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:05 2022]
+rule sort:
+    input: snakemake/results/counted_aa_28-of-53
+    output: snakemake/results/sorted_aa_28-of-53
+    jobid: 59
+    wildcards: part_id=aa, scatteritem=28-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-cfc103f3-6293-5afd-92d9-4a41b6336ccb
+kubectl logs snakejob-cfc103f3-6293-5afd-92d9-4a41b6336ccb
+[Thu Apr 21 02:44:05 2022]
+Finished job 68.
+17 of 219 steps (8%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:06 2022]
+rule sort:
+    input: snakemake/results/counted_aa_32-of-53
+    output: snakemake/results/sorted_aa_32-of-53
+    jobid: 67
+    wildcards: part_id=aa, scatteritem=32-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ccd3d3d3-3934-56f3-a451-7cd1b753057a
+kubectl logs snakejob-ccd3d3d3-3934-56f3-a451-7cd1b753057a
+[Thu Apr 21 02:44:06 2022]
+Finished job 76.
+18 of 219 steps (8%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:06 2022]
+rule sort:
+    input: snakemake/results/counted_aa_36-of-53
+    output: snakemake/results/sorted_aa_36-of-53
+    jobid: 75
+    wildcards: part_id=aa, scatteritem=36-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-033893bd-e72b-5aca-bf76-4be86fdc1b16
+kubectl logs snakejob-033893bd-e72b-5aca-bf76-4be86fdc1b16
+[Thu Apr 21 02:44:06 2022]
+Finished job 84.
+19 of 219 steps (9%) done
+[Thu Apr 21 02:44:06 2022]
+Finished job 8.
+20 of 219 steps (9%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:06 2022]
+rule sort:
+    input: snakemake/results/counted_aa_39-of-53
+    output: snakemake/results/sorted_aa_39-of-53
+    jobid: 81
+    wildcards: part_id=aa, scatteritem=39-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-94932014-5109-59f2-bca3-3ab28e4e6415
+kubectl logs snakejob-94932014-5109-59f2-bca3-3ab28e4e6415
+
+[Thu Apr 21 02:44:06 2022]
+rule sort:
+    input: snakemake/results/counted_aa_22-of-53
+    output: snakemake/results/sorted_aa_22-of-53
+    jobid: 47
+    wildcards: part_id=aa, scatteritem=22-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-9556c03d-4093-5a38-bfc5-7400e7728e40
+kubectl logs snakejob-9556c03d-4093-5a38-bfc5-7400e7728e40
+Select jobs to execute...
+[Thu Apr 21 02:44:17 2022]
+Finished job 98.
+21 of 219 steps (10%) done
+
+[Thu Apr 21 02:44:18 2022]
+rule sort:
+    input: snakemake/results/counted_aa_2-of-53
+    output: snakemake/results/sorted_aa_2-of-53
+    jobid: 7
+    wildcards: part_id=aa, scatteritem=2-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-e3803b2e-d328-544f-85d7-46f90bb086dc
+kubectl logs snakejob-e3803b2e-d328-544f-85d7-46f90bb086dc
+[Thu Apr 21 02:44:18 2022]
+Finished job 49.
+22 of 219 steps (10%) done
+[Thu Apr 21 02:44:18 2022]
+Finished job 43.
+23 of 219 steps (11%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:18 2022]
+rule sort:
+    input: snakemake/results/counted_aa_40-of-53
+    output: snakemake/results/sorted_aa_40-of-53
+    jobid: 83
+    wildcards: part_id=aa, scatteritem=40-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-db10e8d6-0ff1-5b85-b50a-5e33d8447919
+kubectl logs snakejob-db10e8d6-0ff1-5b85-b50a-5e33d8447919
+
+[Thu Apr 21 02:44:18 2022]
+rule sort:
+    input: snakemake/results/counted_aa_47-of-53
+    output: snakemake/results/sorted_aa_47-of-53
+    jobid: 97
+    wildcards: part_id=aa, scatteritem=47-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8bbfa32f-0048-549a-9934-2ed9c07df5eb
+kubectl logs snakejob-8bbfa32f-0048-549a-9934-2ed9c07df5eb
+[Thu Apr 21 02:44:18 2022]
+Finished job 51.
+24 of 219 steps (11%) done
+[Thu Apr 21 02:44:18 2022]
+Finished job 59.
+25 of 219 steps (11%) done
+[Thu Apr 21 02:44:19 2022]
+Finished job 87.
+26 of 219 steps (12%) done
+[Thu Apr 21 02:44:19 2022]
+Finished job 103.
+27 of 219 steps (12%) done
+[Thu Apr 21 02:44:19 2022]
+Finished job 106.
+28 of 219 steps (13%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:19 2022]
+rule sort:
+    input: snakemake/results/counted_aa_51-of-53
+    output: snakemake/results/sorted_aa_51-of-53
+    jobid: 105
+    wildcards: part_id=aa, scatteritem=51-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-62501a16-987f-5853-83e1-31bf7d851861
+kubectl logs snakejob-62501a16-987f-5853-83e1-31bf7d851861
+[Thu Apr 21 02:44:19 2022]
+Finished job 86.
+29 of 219 steps (13%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:19 2022]
+rule sort:
+    input: snakemake/results/counted_aa_41-of-53
+    output: snakemake/results/sorted_aa_41-of-53
+    jobid: 85
+    wildcards: part_id=aa, scatteritem=41-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-1fa76285-ad13-59a2-a2de-644efedbfacf
+kubectl logs snakejob-1fa76285-ad13-59a2-a2de-644efedbfacf
+[Thu Apr 21 02:44:20 2022]
+Finished job 27.
+30 of 219 steps (14%) done
+[Thu Apr 21 02:44:20 2022]
+Finished job 35.
+31 of 219 steps (14%) done
+[Thu Apr 21 02:44:27 2022]
+Finished job 114.
+32 of 219 steps (15%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:27 2022]
+rule count:
+    input: snakemake/results/input_ab_49-of-53
+    output: snakemake/results/counted_ab_49-of-53
+    jobid: 210
+    wildcards: part_id=ab, scatteritem=49-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c77cc65b-c9b0-529f-8e52-6e47ba9e84e4
+kubectl logs snakejob-c77cc65b-c9b0-529f-8e52-6e47ba9e84e4
+
+[Thu Apr 21 02:44:27 2022]
+rule count:
+    input: snakemake/results/input_ab_41-of-53
+    output: snakemake/results/counted_ab_41-of-53
+    jobid: 194
+    wildcards: part_id=ab, scatteritem=41-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-d450bc1c-c5ba-5a28-bec0-495d833bce52
+kubectl logs snakejob-d450bc1c-c5ba-5a28-bec0-495d833bce52
+
+[Thu Apr 21 02:44:27 2022]
+rule count:
+    input: snakemake/results/input_ab_26-of-53
+    output: snakemake/results/counted_ab_26-of-53
+    jobid: 164
+    wildcards: part_id=ab, scatteritem=26-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-fd5d4943-0ec9-5de3-a917-6d5f34a1add9
+kubectl logs snakejob-fd5d4943-0ec9-5de3-a917-6d5f34a1add9
+
+[Thu Apr 21 02:44:27 2022]
+rule count:
+    input: snakemake/results/input_ab_14-of-53
+    output: snakemake/results/counted_ab_14-of-53
+    jobid: 140
+    wildcards: part_id=ab, scatteritem=14-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-021fb7f9-f72e-53a9-bba1-4c9cf55ecd9b
+kubectl logs snakejob-021fb7f9-f72e-53a9-bba1-4c9cf55ecd9b
+
+[Thu Apr 21 02:44:27 2022]
+rule count:
+    input: snakemake/results/input_ab_53-of-53
+    output: snakemake/results/counted_ab_53-of-53
+    jobid: 218
+    wildcards: part_id=ab, scatteritem=53-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-3406b6d7-6c68-5fd9-b7ae-1e1e81e3fd8a
+kubectl logs snakejob-3406b6d7-6c68-5fd9-b7ae-1e1e81e3fd8a
+
+[Thu Apr 21 02:44:28 2022]
+rule count:
+    input: snakemake/results/input_ab_6-of-53
+    output: snakemake/results/counted_ab_6-of-53
+    jobid: 124
+    wildcards: part_id=ab, scatteritem=6-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-e4f10857-856a-501b-affb-e066b0810c95
+kubectl logs snakejob-e4f10857-856a-501b-affb-e066b0810c95
+
+[Thu Apr 21 02:44:28 2022]
+rule count:
+    input: snakemake/results/input_ab_2-of-53
+    output: snakemake/results/counted_ab_2-of-53
+    jobid: 116
+    wildcards: part_id=ab, scatteritem=2-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-04f0557f-b3e3-5a31-882b-76701319ff31
+kubectl logs snakejob-04f0557f-b3e3-5a31-882b-76701319ff31
+[Thu Apr 21 02:44:28 2022]
+Finished job 14.
+33 of 219 steps (15%) done
+[Thu Apr 21 02:44:28 2022]
+Finished job 22.
+34 of 219 steps (16%) done
+[Thu Apr 21 02:44:28 2022]
+Finished job 92.
+35 of 219 steps (16%) done
+[Thu Apr 21 02:44:28 2022]
+Finished job 100.
+36 of 219 steps (16%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:28 2022]
+rule sort:
+    input: snakemake/results/counted_aa_5-of-53
+    output: snakemake/results/sorted_aa_5-of-53
+    jobid: 13
+    wildcards: part_id=aa, scatteritem=5-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-e608f676-bccc-5f4a-8168-ffd38b009acd
+kubectl logs snakejob-e608f676-bccc-5f4a-8168-ffd38b009acd
+
+[Thu Apr 21 02:44:29 2022]
+rule count:
+    input: snakemake/results/input_ab_33-of-53
+    output: snakemake/results/counted_ab_33-of-53
+    jobid: 178
+    wildcards: part_id=ab, scatteritem=33-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a4504406-95ef-53f1-8e56-dddf12415ca8
+kubectl logs snakejob-a4504406-95ef-53f1-8e56-dddf12415ca8
+
+[Thu Apr 21 02:44:29 2022]
+rule count:
+    input: snakemake/results/input_ab_34-of-53
+    output: snakemake/results/counted_ab_34-of-53
+    jobid: 180
+    wildcards: part_id=ab, scatteritem=34-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-244f950c-11a9-5f8d-b647-5bc08a5ed95d
+kubectl logs snakejob-244f950c-11a9-5f8d-b647-5bc08a5ed95d
+
+[Thu Apr 21 02:44:29 2022]
+rule sort:
+    input: snakemake/results/counted_aa_44-of-53
+    output: snakemake/results/sorted_aa_44-of-53
+    jobid: 91
+    wildcards: part_id=aa, scatteritem=44-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-f3ffba9f-979c-5ac4-aad0-e56adcf00ee5
+kubectl logs snakejob-f3ffba9f-979c-5ac4-aad0-e56adcf00ee5
+[Thu Apr 21 02:44:29 2022]
+Finished job 78.
+37 of 219 steps (17%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:29 2022]
+rule count:
+    input: snakemake/results/input_ab_43-of-53
+    output: snakemake/results/counted_ab_43-of-53
+    jobid: 198
+    wildcards: part_id=ab, scatteritem=43-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-dfd11950-6c2a-5837-882c-8a9453764aaa
+kubectl logs snakejob-dfd11950-6c2a-5837-882c-8a9453764aaa
+Select jobs to execute...
+[Thu Apr 21 02:44:39 2022]
+Finished job 7.
+38 of 219 steps (17%) done
+
+[Thu Apr 21 02:44:39 2022]
+rule count:
+    input: snakemake/results/input_ab_45-of-53
+    output: snakemake/results/counted_ab_45-of-53
+    jobid: 202
+    wildcards: part_id=ab, scatteritem=45-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8fd39a95-dfb4-5397-a71f-f84af66f68d0
+kubectl logs snakejob-8fd39a95-dfb4-5397-a71f-f84af66f68d0
+[Thu Apr 21 02:44:39 2022]
+Finished job 83.
+39 of 219 steps (18%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:39 2022]
+rule count:
+    input: snakemake/results/input_ab_25-of-53
+    output: snakemake/results/counted_ab_25-of-53
+    jobid: 162
+    wildcards: part_id=ab, scatteritem=25-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-24fbf798-a898-5f30-8f8e-ada3263fcc00
+kubectl logs snakejob-24fbf798-a898-5f30-8f8e-ada3263fcc00
+[Thu Apr 21 02:44:39 2022]
+Finished job 97.
+40 of 219 steps (18%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:39 2022]
+rule count:
+    input: snakemake/results/input_ab_37-of-53
+    output: snakemake/results/counted_ab_37-of-53
+    jobid: 186
+    wildcards: part_id=ab, scatteritem=37-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-63bc6ace-3332-5539-bf28-9e2b128210fc
+kubectl logs snakejob-63bc6ace-3332-5539-bf28-9e2b128210fc
+[Thu Apr 21 02:44:40 2022]
+Finished job 105.
+41 of 219 steps (19%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:40 2022]
+rule sort:
+    input: snakemake/results/counted_aa_9-of-53
+    output: snakemake/results/sorted_aa_9-of-53
+    jobid: 21
+    wildcards: part_id=aa, scatteritem=9-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-dd14070e-0afe-5c1b-b4ea-5788dc491e87
+kubectl logs snakejob-dd14070e-0afe-5c1b-b4ea-5788dc491e87
+[Thu Apr 21 02:44:40 2022]
+Finished job 85.
+42 of 219 steps (19%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:40 2022]
+rule count:
+    input: snakemake/results/input_ab_29-of-53
+    output: snakemake/results/counted_ab_29-of-53
+    jobid: 170
+    wildcards: part_id=ab, scatteritem=29-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-f045646f-4ba2-5ecb-85f5-9299dea1cfe2
+kubectl logs snakejob-f045646f-4ba2-5ecb-85f5-9299dea1cfe2
+[Thu Apr 21 02:44:40 2022]
+Finished job 210.
+43 of 219 steps (20%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:40 2022]
+rule count:
+    input: snakemake/results/input_ab_21-of-53
+    output: snakemake/results/counted_ab_21-of-53
+    jobid: 154
+    wildcards: part_id=ab, scatteritem=21-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-56728a6c-436a-5989-a6f6-77a1adf7fda7
+kubectl logs snakejob-56728a6c-436a-5989-a6f6-77a1adf7fda7
+[Thu Apr 21 02:44:40 2022]
+Finished job 194.
+44 of 219 steps (20%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:40 2022]
+rule sort:
+    input: snakemake/results/counted_ab_41-of-53
+    output: snakemake/results/sorted_ab_41-of-53
+    jobid: 193
+    wildcards: part_id=ab, scatteritem=41-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-dd1d3c5b-f496-5872-b0cc-ce63b39b9eae
+kubectl logs snakejob-dd1d3c5b-f496-5872-b0cc-ce63b39b9eae
+[Thu Apr 21 02:44:41 2022]
+Finished job 164.
+45 of 219 steps (21%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:41 2022]
+rule sort:
+    input: snakemake/results/counted_ab_26-of-53
+    output: snakemake/results/sorted_ab_26-of-53
+    jobid: 163
+    wildcards: part_id=ab, scatteritem=26-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-07fdbda3-71c4-564a-86cc-447c1d38f11c
+kubectl logs snakejob-07fdbda3-71c4-564a-86cc-447c1d38f11c
+[Thu Apr 21 02:44:41 2022]
+Finished job 67.
+46 of 219 steps (21%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:41 2022]
+rule count:
+    input: snakemake/results/input_ab_10-of-53
+    output: snakemake/results/counted_ab_10-of-53
+    jobid: 132
+    wildcards: part_id=ab, scatteritem=10-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-2c306066-a6b2-5451-b897-e08f2261bffe
+kubectl logs snakejob-2c306066-a6b2-5451-b897-e08f2261bffe
+[Thu Apr 21 02:44:41 2022]
+Finished job 75.
+47 of 219 steps (21%) done
+[Thu Apr 21 02:44:42 2022]
+Finished job 81.
+48 of 219 steps (22%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:42 2022]
+rule count:
+    input: snakemake/results/input_ab_7-of-53
+    output: snakemake/results/counted_ab_7-of-53
+    jobid: 126
+    wildcards: part_id=ab, scatteritem=7-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-e965c095-a046-51cd-a9af-27b5c01178a9
+kubectl logs snakejob-e965c095-a046-51cd-a9af-27b5c01178a9
+
+[Thu Apr 21 02:44:42 2022]
+rule sort:
+    input: snakemake/results/counted_aa_48-of-53
+    output: snakemake/results/sorted_aa_48-of-53
+    jobid: 99
+    wildcards: part_id=aa, scatteritem=48-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c8152dd0-233c-52e7-b0ce-2de97b286310
+kubectl logs snakejob-c8152dd0-233c-52e7-b0ce-2de97b286310
+[Thu Apr 21 02:44:42 2022]
+Finished job 47.
+49 of 219 steps (22%) done
+[Thu Apr 21 02:44:42 2022]
+Finished job 4.
+50 of 219 steps (23%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:42 2022]
+rule count:
+    input: snakemake/results/input_ab_18-of-53
+    output: snakemake/results/counted_ab_18-of-53
+    jobid: 148
+    wildcards: part_id=ab, scatteritem=18-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-2fe64a83-b0ea-5e10-b86a-c7d6fe42bf2f
+kubectl logs snakejob-2fe64a83-b0ea-5e10-b86a-c7d6fe42bf2f
+
+[Thu Apr 21 02:44:42 2022]
+rule count:
+    input: snakemake/results/input_ab_50-of-53
+    output: snakemake/results/counted_ab_50-of-53
+    jobid: 212
+    wildcards: part_id=ab, scatteritem=50-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-4e4fee55-f0c0-583e-b9f7-dfdcdaa1e6cb
+kubectl logs snakejob-4e4fee55-f0c0-583e-b9f7-dfdcdaa1e6cb
+[Thu Apr 21 02:44:43 2022]
+Finished job 110.
+51 of 219 steps (23%) done
+[Thu Apr 21 02:44:43 2022]
+Finished job 94.
+52 of 219 steps (24%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:43 2022]
+rule count:
+    input: snakemake/results/input_ab_15-of-53
+    output: snakemake/results/counted_ab_15-of-53
+    jobid: 142
+    wildcards: part_id=ab, scatteritem=15-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-1268811e-1858-57c0-a161-183e545cc628
+kubectl logs snakejob-1268811e-1858-57c0-a161-183e545cc628
+
+[Thu Apr 21 02:44:43 2022]
+rule count:
+    input: snakemake/results/input_ab_22-of-53
+    output: snakemake/results/counted_ab_22-of-53
+    jobid: 156
+    wildcards: part_id=ab, scatteritem=22-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-fbf9da20-331f-5dda-b44b-df6e48a37960
+kubectl logs snakejob-fbf9da20-331f-5dda-b44b-df6e48a37960
+[Thu Apr 21 02:44:43 2022]
+Finished job 16.
+53 of 219 steps (24%) done
+[Thu Apr 21 02:44:43 2022]
+Finished job 40.
+54 of 219 steps (25%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:43 2022]
+rule sort:
+    input: snakemake/results/counted_aa_6-of-53
+    output: snakemake/results/sorted_aa_6-of-53
+    jobid: 15
+    wildcards: part_id=aa, scatteritem=6-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ec18b334-335c-5d00-9ca6-d81840d8c2b7
+kubectl logs snakejob-ec18b334-335c-5d00-9ca6-d81840d8c2b7
+
+[Thu Apr 21 02:44:44 2022]
+rule sort:
+    input: snakemake/results/counted_ab_49-of-53
+    output: snakemake/results/sorted_ab_49-of-53
+    jobid: 209
+    wildcards: part_id=ab, scatteritem=49-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-0cfe664d-621e-53ae-9a26-581444563aa3
+kubectl logs snakejob-0cfe664d-621e-53ae-9a26-581444563aa3
+[Thu Apr 21 02:44:44 2022]
+Finished job 10.
+55 of 219 steps (25%) done
+[Thu Apr 21 02:44:44 2022]
+Finished job 24.
+56 of 219 steps (26%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:44 2022]
+rule sort:
+    input: snakemake/results/counted_aa_53-of-53
+    output: snakemake/results/sorted_aa_53-of-53
+    jobid: 109
+    wildcards: part_id=aa, scatteritem=53-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-49b02b47-7d60-5063-ba63-e6be88e7689c
+kubectl logs snakejob-49b02b47-7d60-5063-ba63-e6be88e7689c
+
+[Thu Apr 21 02:44:44 2022]
+rule count:
+    input: snakemake/results/input_ab_9-of-53
+    output: snakemake/results/counted_ab_9-of-53
+    jobid: 130
+    wildcards: part_id=ab, scatteritem=9-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-88ad0384-cb43-584f-8dd8-d774651c8be5
+kubectl logs snakejob-88ad0384-cb43-584f-8dd8-d774651c8be5
+[Thu Apr 21 02:44:44 2022]
+Finished job 32.
+57 of 219 steps (26%) done
+[Thu Apr 21 02:44:44 2022]
+Finished job 56.
+58 of 219 steps (26%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:44 2022]
+rule count:
+    input: snakemake/results/input_ab_1-of-53
+    output: snakemake/results/counted_ab_1-of-53
+    jobid: 113
+    wildcards: part_id=ab, scatteritem=1-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-bab6b18f-9748-5cd9-aa9a-bc951f1d6ad4
+kubectl logs snakejob-bab6b18f-9748-5cd9-aa9a-bc951f1d6ad4
+
+[Thu Apr 21 02:44:45 2022]
+rule count:
+    input: snakemake/results/input_ab_42-of-53
+    output: snakemake/results/counted_ab_42-of-53
+    jobid: 196
+    wildcards: part_id=ab, scatteritem=42-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8021376d-8973-57da-b47f-f594d96ac334
+kubectl logs snakejob-8021376d-8973-57da-b47f-f594d96ac334
+[Thu Apr 21 02:44:45 2022]
+Finished job 64.
+59 of 219 steps (27%) done
+[Thu Apr 21 02:44:45 2022]
+Finished job 72.
+60 of 219 steps (27%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:45 2022]
+rule sort:
+    input: snakemake/results/counted_aa_1-of-53
+    output: snakemake/results/sorted_aa_1-of-53
+    jobid: 3
+    wildcards: part_id=aa, scatteritem=1-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-7efa7896-dbf1-574e-b2e8-9ea7895331e7
+kubectl logs snakejob-7efa7896-dbf1-574e-b2e8-9ea7895331e7
+
+[Thu Apr 21 02:44:45 2022]
+rule count:
+    input: snakemake/results/input_ab_52-of-53
+    output: snakemake/results/counted_ab_52-of-53
+    jobid: 216
+    wildcards: part_id=ab, scatteritem=52-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-75598d72-1a59-5af3-b187-0e528fa58aa9
+kubectl logs snakejob-75598d72-1a59-5af3-b187-0e528fa58aa9
+[Thu Apr 21 02:44:45 2022]
+Finished job 80.
+61 of 219 steps (28%) done
+[Thu Apr 21 02:44:45 2022]
+Finished job 18.
+62 of 219 steps (28%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:45 2022]
+rule sort:
+    input: snakemake/results/counted_aa_37-of-53
+    output: snakemake/results/sorted_aa_37-of-53
+    jobid: 77
+    wildcards: part_id=aa, scatteritem=37-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-723dc5d5-128b-5c37-ba4e-8725d0b4ea18
+kubectl logs snakejob-723dc5d5-128b-5c37-ba4e-8725d0b4ea18
+
+[Thu Apr 21 02:44:46 2022]
+rule count:
+    input: snakemake/results/input_ab_13-of-53
+    output: snakemake/results/counted_ab_13-of-53
+    jobid: 138
+    wildcards: part_id=ab, scatteritem=13-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-533bb97c-c2cf-5a80-b6ff-de49748b8df7
+kubectl logs snakejob-533bb97c-c2cf-5a80-b6ff-de49748b8df7
+[Thu Apr 21 02:44:46 2022]
+Finished job 96.
+63 of 219 steps (29%) done
+[Thu Apr 21 02:44:46 2022]
+Finished job 26.
+64 of 219 steps (29%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:46 2022]
+rule count:
+    input: snakemake/results/input_ab_46-of-53
+    output: snakemake/results/counted_ab_46-of-53
+    jobid: 204
+    wildcards: part_id=ab, scatteritem=46-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-fe9992db-9576-548f-b3cc-015b7539159a
+kubectl logs snakejob-fe9992db-9576-548f-b3cc-015b7539159a
+
+[Thu Apr 21 02:44:46 2022]
+rule count:
+    input: snakemake/results/input_ab_48-of-53
+    output: snakemake/results/counted_ab_48-of-53
+    jobid: 208
+    wildcards: part_id=ab, scatteritem=48-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a0d5fb93-2c4a-5f3a-95e1-5bdfb1c026e5
+kubectl logs snakejob-a0d5fb93-2c4a-5f3a-95e1-5bdfb1c026e5
+[Thu Apr 21 02:44:46 2022]
+Finished job 34.
+65 of 219 steps (30%) done
+[Thu Apr 21 02:44:47 2022]
+Finished job 58.
+66 of 219 steps (30%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:47 2022]
+rule count:
+    input: snakemake/results/input_ab_38-of-53
+    output: snakemake/results/counted_ab_38-of-53
+    jobid: 188
+    wildcards: part_id=ab, scatteritem=38-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a50aacdf-e50e-55ed-bf16-ca419fae0722
+kubectl logs snakejob-a50aacdf-e50e-55ed-bf16-ca419fae0722
+
+[Thu Apr 21 02:44:47 2022]
+rule count:
+    input: snakemake/results/input_ab_40-of-53
+    output: snakemake/results/counted_ab_40-of-53
+    jobid: 192
+    wildcards: part_id=ab, scatteritem=40-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-58c5ce57-8c31-5d69-9469-b69a42f5fb3b
+kubectl logs snakejob-58c5ce57-8c31-5d69-9469-b69a42f5fb3b
+[Thu Apr 21 02:44:47 2022]
+Finished job 66.
+67 of 219 steps (31%) done
+[Thu Apr 21 02:44:47 2022]
+Finished job 74.
+68 of 219 steps (31%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:47 2022]
+rule count:
+    input: snakemake/results/input_ab_30-of-53
+    output: snakemake/results/counted_ab_30-of-53
+    jobid: 172
+    wildcards: part_id=ab, scatteritem=30-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-402e5f3b-a84f-56f8-bf0b-48bdcdd75b79
+kubectl logs snakejob-402e5f3b-a84f-56f8-bf0b-48bdcdd75b79
+
+[Thu Apr 21 02:44:47 2022]
+rule count:
+    input: snakemake/results/input_ab_32-of-53
+    output: snakemake/results/counted_ab_32-of-53
+    jobid: 176
+    wildcards: part_id=ab, scatteritem=32-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5cdfc01a-08a9-56f7-a737-8bfe28710ce7
+kubectl logs snakejob-5cdfc01a-08a9-56f7-a737-8bfe28710ce7
+[Thu Apr 21 02:44:48 2022]
+Finished job 12.
+69 of 219 steps (32%) done
+[Thu Apr 21 02:44:48 2022]
+Finished job 20.
+70 of 219 steps (32%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:48 2022]
+rule count:
+    input: snakemake/results/input_ab_47-of-53
+    output: snakemake/results/counted_ab_47-of-53
+    jobid: 206
+    wildcards: part_id=ab, scatteritem=47-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-13223194-dade-5ec6-8453-5466d77710ae
+kubectl logs snakejob-13223194-dade-5ec6-8453-5466d77710ae
+
+[Thu Apr 21 02:44:48 2022]
+rule sort:
+    input: snakemake/results/counted_aa_31-of-53
+    output: snakemake/results/sorted_aa_31-of-53
+    jobid: 65
+    wildcards: part_id=aa, scatteritem=31-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-254d174b-d5d8-58fe-8e15-2c1e020d28de
+kubectl logs snakejob-254d174b-d5d8-58fe-8e15-2c1e020d28de
+[Thu Apr 21 02:44:48 2022]
+Finished job 90.
+71 of 219 steps (32%) done
+[Thu Apr 21 02:44:48 2022]
+Finished job 108.
+72 of 219 steps (33%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:49 2022]
+rule sort:
+    input: snakemake/results/counted_aa_15-of-53
+    output: snakemake/results/sorted_aa_15-of-53
+    jobid: 33
+    wildcards: part_id=aa, scatteritem=15-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-713dfd2e-818c-5594-89ed-39934cb9c042
+kubectl logs snakejob-713dfd2e-818c-5594-89ed-39934cb9c042
+
+[Thu Apr 21 02:44:49 2022]
+rule sort:
+    input: snakemake/results/counted_aa_52-of-53
+    output: snakemake/results/sorted_aa_52-of-53
+    jobid: 107
+    wildcards: part_id=aa, scatteritem=52-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b4eacaa7-6e6b-547c-9c0e-1c933e7f3fe1
+kubectl logs snakejob-b4eacaa7-6e6b-547c-9c0e-1c933e7f3fe1
+[Thu Apr 21 02:44:49 2022]
+Finished job 30.
+73 of 219 steps (33%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:49 2022]
+rule sort:
+    input: snakemake/results/counted_aa_30-of-53
+    output: snakemake/results/sorted_aa_30-of-53
+    jobid: 63
+    wildcards: part_id=aa, scatteritem=30-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a28e3b74-e261-5399-8dd0-1f90368f8ece
+kubectl logs snakejob-a28e3b74-e261-5399-8dd0-1f90368f8ece
+[Thu Apr 21 02:44:49 2022]
+Finished job 13.
+74 of 219 steps (34%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:49 2022]
+rule count:
+    input: snakemake/results/input_ab_24-of-53
+    output: snakemake/results/counted_ab_24-of-53
+    jobid: 160
+    wildcards: part_id=ab, scatteritem=24-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c01c0fd6-7393-535b-8574-f2c1c62cffda
+kubectl logs snakejob-c01c0fd6-7393-535b-8574-f2c1c62cffda
+[Thu Apr 21 02:44:49 2022]
+Finished job 178.
+75 of 219 steps (34%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:49 2022]
+rule sort:
+    input: snakemake/results/counted_aa_38-of-53
+    output: snakemake/results/sorted_aa_38-of-53
+    jobid: 79
+    wildcards: part_id=aa, scatteritem=38-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-1044d94e-1f65-59df-9914-4e74c19509ed
+kubectl logs snakejob-1044d94e-1f65-59df-9914-4e74c19509ed
+[Thu Apr 21 02:44:50 2022]
+Finished job 180.
+76 of 219 steps (35%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:50 2022]
+rule sort:
+    input: snakemake/results/counted_aa_43-of-53
+    output: snakemake/results/sorted_aa_43-of-53
+    jobid: 89
+    wildcards: part_id=aa, scatteritem=43-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a18b1e71-d3a5-5ee1-a4fc-6340e71d7863
+kubectl logs snakejob-a18b1e71-d3a5-5ee1-a4fc-6340e71d7863
+[Thu Apr 21 02:44:50 2022]
+Finished job 91.
+77 of 219 steps (35%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:50 2022]
+rule sort:
+    input: snakemake/results/counted_aa_11-of-53
+    output: snakemake/results/sorted_aa_11-of-53
+    jobid: 25
+    wildcards: part_id=aa, scatteritem=11-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-d31f5da2-bbf6-5e11-9cf4-6ea8002f2d02
+kubectl logs snakejob-d31f5da2-bbf6-5e11-9cf4-6ea8002f2d02
+[Thu Apr 21 02:44:50 2022]
+Finished job 198.
+78 of 219 steps (36%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:44:50 2022]
+rule count:
+    input: snakemake/results/input_ab_5-of-53
+    output: snakemake/results/counted_ab_5-of-53
+    jobid: 122
+    wildcards: part_id=ab, scatteritem=5-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-13e48f36-3d27-5aaa-b07b-618c06bafa71
+kubectl logs snakejob-13e48f36-3d27-5aaa-b07b-618c06bafa71
+Select jobs to execute...
+[Thu Apr 21 02:45:00 2022]
+Finished job 202.
+79 of 219 steps (36%) done
+
+[Thu Apr 21 02:45:00 2022]
+rule sort:
+    input: snakemake/results/counted_ab_45-of-53
+    output: snakemake/results/sorted_ab_45-of-53
+    jobid: 201
+    wildcards: part_id=ab, scatteritem=45-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ec650898-3c62-5e59-a6c9-83ad66d3b0cc
+kubectl logs snakejob-ec650898-3c62-5e59-a6c9-83ad66d3b0cc
+[Thu Apr 21 02:45:01 2022]
+Finished job 162.
+80 of 219 steps (37%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:01 2022]
+rule sort:
+    input: snakemake/results/counted_aa_4-of-53
+    output: snakemake/results/sorted_aa_4-of-53
+    jobid: 11
+    wildcards: part_id=aa, scatteritem=4-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-99186fef-98a6-5a33-9cef-e4c776fe88ce
+kubectl logs snakejob-99186fef-98a6-5a33-9cef-e4c776fe88ce
+[Thu Apr 21 02:45:01 2022]
+Finished job 186.
+81 of 219 steps (37%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:01 2022]
+rule sort:
+    input: snakemake/results/counted_ab_37-of-53
+    output: snakemake/results/sorted_ab_37-of-53
+    jobid: 185
+    wildcards: part_id=ab, scatteritem=37-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-12630c78-9ff5-5191-b423-9d9abeacc8f6
+kubectl logs snakejob-12630c78-9ff5-5191-b423-9d9abeacc8f6
+[Thu Apr 21 02:45:01 2022]
+Finished job 21.
+82 of 219 steps (37%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:01 2022]
+rule sort:
+    input: snakemake/results/counted_ab_25-of-53
+    output: snakemake/results/sorted_ab_25-of-53
+    jobid: 161
+    wildcards: part_id=ab, scatteritem=25-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-38b363fd-6274-5df5-8cc0-d69691d100b1
+kubectl logs snakejob-38b363fd-6274-5df5-8cc0-d69691d100b1
+[Thu Apr 21 02:45:02 2022]
+Finished job 170.
+83 of 219 steps (38%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:02 2022]
+rule sort:
+    input: snakemake/results/counted_ab_29-of-53
+    output: snakemake/results/sorted_ab_29-of-53
+    jobid: 169
+    wildcards: part_id=ab, scatteritem=29-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-6d94b1fe-ebbe-5b4c-b0a1-70f135683726
+kubectl logs snakejob-6d94b1fe-ebbe-5b4c-b0a1-70f135683726
+[Thu Apr 21 02:45:02 2022]
+Finished job 154.
+84 of 219 steps (38%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:02 2022]
+rule sort:
+    input: snakemake/results/counted_ab_21-of-53
+    output: snakemake/results/sorted_ab_21-of-53
+    jobid: 153
+    wildcards: part_id=ab, scatteritem=21-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-667761d9-fef9-518a-9559-395ac0b5f1e8
+kubectl logs snakejob-667761d9-fef9-518a-9559-395ac0b5f1e8
+[Thu Apr 21 02:45:02 2022]
+Finished job 193.
+85 of 219 steps (39%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:02 2022]
+rule sort:
+    input: snakemake/results/counted_aa_35-of-53
+    output: snakemake/results/sorted_aa_35-of-53
+    jobid: 73
+    wildcards: part_id=aa, scatteritem=35-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-7e29a6c4-1e0d-573b-97e2-41884a480dbc
+kubectl logs snakejob-7e29a6c4-1e0d-573b-97e2-41884a480dbc
+[Thu Apr 21 02:45:03 2022]
+Finished job 163.
+86 of 219 steps (39%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:03 2022]
+rule count:
+    input: snakemake/results/input_ab_17-of-53
+    output: snakemake/results/counted_ab_17-of-53
+    jobid: 146
+    wildcards: part_id=ab, scatteritem=17-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-858279af-ace2-5ba8-ada1-93e8206fb020
+kubectl logs snakejob-858279af-ace2-5ba8-ada1-93e8206fb020
+[Thu Apr 21 02:45:03 2022]
+Finished job 132.
+87 of 219 steps (40%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:03 2022]
+rule sort:
+    input: snakemake/results/counted_ab_33-of-53
+    output: snakemake/results/sorted_ab_33-of-53
+    jobid: 177
+    wildcards: part_id=ab, scatteritem=33-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-d84d4cc7-4f46-59bf-972c-ea3fa981cafd
+kubectl logs snakejob-d84d4cc7-4f46-59bf-972c-ea3fa981cafd
+[Thu Apr 21 02:45:03 2022]
+Finished job 126.
+88 of 219 steps (40%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:03 2022]
+rule sort:
+    input: snakemake/results/counted_aa_8-of-53
+    output: snakemake/results/sorted_aa_8-of-53
+    jobid: 19
+    wildcards: part_id=aa, scatteritem=8-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5b0deef7-972e-5f54-a71f-994ba0d57bca
+kubectl logs snakejob-5b0deef7-972e-5f54-a71f-994ba0d57bca
+[Thu Apr 21 02:45:04 2022]
+Finished job 99.
+89 of 219 steps (41%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:04 2022]
+rule sort:
+    input: snakemake/results/counted_aa_18-of-53
+    output: snakemake/results/sorted_aa_18-of-53
+    jobid: 39
+    wildcards: part_id=aa, scatteritem=18-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-bdad648a-1933-5a30-97d7-f7c0dada6a39
+kubectl logs snakejob-bdad648a-1933-5a30-97d7-f7c0dada6a39
+[Thu Apr 21 02:45:04 2022]
+Finished job 148.
+90 of 219 steps (41%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:04 2022]
+rule sort:
+    input: snakemake/results/counted_aa_10-of-53
+    output: snakemake/results/sorted_aa_10-of-53
+    jobid: 23
+    wildcards: part_id=aa, scatteritem=10-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-47aa4827-0850-5c45-9f88-ec9760979a0a
+kubectl logs snakejob-47aa4827-0850-5c45-9f88-ec9760979a0a
+[Thu Apr 21 02:45:04 2022]
+Finished job 212.
+91 of 219 steps (42%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:04 2022]
+rule sort:
+    input: snakemake/results/counted_aa_3-of-53
+    output: snakemake/results/sorted_aa_3-of-53
+    jobid: 9
+    wildcards: part_id=aa, scatteritem=3-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ca59b44a-b6a0-5310-8395-c229746ec2cf
+kubectl logs snakejob-ca59b44a-b6a0-5310-8395-c229746ec2cf
+[Thu Apr 21 02:45:05 2022]
+Finished job 142.
+92 of 219 steps (42%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:05 2022]
+rule sort:
+    input: snakemake/results/counted_aa_34-of-53
+    output: snakemake/results/sorted_aa_34-of-53
+    jobid: 71
+    wildcards: part_id=aa, scatteritem=34-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-fa45d1e4-1d42-5ef6-9299-7751402f6f01
+kubectl logs snakejob-fa45d1e4-1d42-5ef6-9299-7751402f6f01
+[Thu Apr 21 02:45:05 2022]
+Finished job 156.
+93 of 219 steps (42%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:05 2022]
+rule sort:
+    input: snakemake/results/counted_aa_26-of-53
+    output: snakemake/results/sorted_aa_26-of-53
+    jobid: 55
+    wildcards: part_id=aa, scatteritem=26-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-0e6a5c0d-99bf-58b3-8740-644af244e8e8
+kubectl logs snakejob-0e6a5c0d-99bf-58b3-8740-644af244e8e8
+[Thu Apr 21 02:45:05 2022]
+Finished job 15.
+94 of 219 steps (43%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:05 2022]
+rule count:
+    input: snakemake/results/input_ab_35-of-53
+    output: snakemake/results/counted_ab_35-of-53
+    jobid: 182
+    wildcards: part_id=ab, scatteritem=35-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-e00690e1-d6aa-5f2a-a4dd-d008034f7cbf
+kubectl logs snakejob-e00690e1-d6aa-5f2a-a4dd-d008034f7cbf
+[Thu Apr 21 02:45:06 2022]
+Finished job 209.
+95 of 219 steps (43%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:06 2022]
+rule count:
+    input: snakemake/results/input_ab_19-of-53
+    output: snakemake/results/counted_ab_19-of-53
+    jobid: 150
+    wildcards: part_id=ab, scatteritem=19-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-4321f9fb-e5f0-52a8-b695-44504276df58
+kubectl logs snakejob-4321f9fb-e5f0-52a8-b695-44504276df58
+[Thu Apr 21 02:45:06 2022]
+Finished job 109.
+96 of 219 steps (44%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:06 2022]
+rule count:
+    input: snakemake/results/input_ab_27-of-53
+    output: snakemake/results/counted_ab_27-of-53
+    jobid: 166
+    wildcards: part_id=ab, scatteritem=27-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-31496568-5150-5a67-abda-2118419142e3
+kubectl logs snakejob-31496568-5150-5a67-abda-2118419142e3
+[Thu Apr 21 02:45:06 2022]
+Finished job 130.
+97 of 219 steps (44%) done
+[Thu Apr 21 02:45:06 2022]
+Finished job 113.
+98 of 219 steps (45%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:06 2022]
+rule sort:
+    input: snakemake/results/counted_ab_34-of-53
+    output: snakemake/results/sorted_ab_34-of-53
+    jobid: 179
+    wildcards: part_id=ab, scatteritem=34-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-6229c2ba-3bf0-5c8e-b800-a243384e520f
+kubectl logs snakejob-6229c2ba-3bf0-5c8e-b800-a243384e520f
+
+[Thu Apr 21 02:45:06 2022]
+rule sort:
+    input: snakemake/results/counted_aa_7-of-53
+    output: snakemake/results/sorted_aa_7-of-53
+    jobid: 17
+    wildcards: part_id=aa, scatteritem=7-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b748fbb8-857c-5ec8-abb3-e14d31a2651f
+kubectl logs snakejob-b748fbb8-857c-5ec8-abb3-e14d31a2651f
+[Thu Apr 21 02:45:07 2022]
+Finished job 196.
+99 of 219 steps (45%) done
+[Thu Apr 21 02:45:07 2022]
+Finished job 3.
+100 of 219 steps (46%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:07 2022]
+rule sort:
+    input: snakemake/results/counted_ab_42-of-53
+    output: snakemake/results/sorted_ab_42-of-53
+    jobid: 195
+    wildcards: part_id=ab, scatteritem=42-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-99025521-1af2-53a7-9aa1-54bf526b9261
+kubectl logs snakejob-99025521-1af2-53a7-9aa1-54bf526b9261
+
+[Thu Apr 21 02:45:07 2022]
+rule sort:
+    input: snakemake/results/counted_aa_46-of-53
+    output: snakemake/results/sorted_aa_46-of-53
+    jobid: 95
+    wildcards: part_id=aa, scatteritem=46-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-254fbdbb-1429-5171-9735-3a32377a750a
+kubectl logs snakejob-254fbdbb-1429-5171-9735-3a32377a750a
+[Thu Apr 21 02:45:07 2022]
+Finished job 216.
+101 of 219 steps (46%) done
+[Thu Apr 21 02:45:07 2022]
+Finished job 77.
+102 of 219 steps (47%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:07 2022]
+rule sort:
+    input: snakemake/results/counted_ab_15-of-53
+    output: snakemake/results/sorted_ab_15-of-53
+    jobid: 141
+    wildcards: part_id=ab, scatteritem=15-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-edd645a5-f5d0-59e6-995a-ca1abb51e928
+kubectl logs snakejob-edd645a5-f5d0-59e6-995a-ca1abb51e928
+
+[Thu Apr 21 02:45:08 2022]
+rule count:
+    input: snakemake/results/input_ab_28-of-53
+    output: snakemake/results/counted_ab_28-of-53
+    jobid: 168
+    wildcards: part_id=ab, scatteritem=28-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8111a1c7-b203-5596-8366-470b635c5b7a
+kubectl logs snakejob-8111a1c7-b203-5596-8366-470b635c5b7a
+[Thu Apr 21 02:45:08 2022]
+Finished job 138.
+103 of 219 steps (47%) done
+[Thu Apr 21 02:45:08 2022]
+Finished job 204.
+104 of 219 steps (47%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:08 2022]
+rule sort:
+    input: snakemake/results/counted_ab_50-of-53
+    output: snakemake/results/sorted_ab_50-of-53
+    jobid: 211
+    wildcards: part_id=ab, scatteritem=50-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b358dc6b-8cd1-52ef-962c-600c56594883
+kubectl logs snakejob-b358dc6b-8cd1-52ef-962c-600c56594883
+
+[Thu Apr 21 02:45:08 2022]
+rule count:
+    input: snakemake/results/input_ab_36-of-53
+    output: snakemake/results/counted_ab_36-of-53
+    jobid: 184
+    wildcards: part_id=ab, scatteritem=36-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-595261d9-3568-5fdc-903f-930de6f8d882
+kubectl logs snakejob-595261d9-3568-5fdc-903f-930de6f8d882
+[Thu Apr 21 02:45:09 2022]
+Finished job 208.
+105 of 219 steps (48%) done
+[Thu Apr 21 02:45:09 2022]
+Finished job 188.
+106 of 219 steps (48%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:09 2022]
+rule sort:
+    input: snakemake/results/counted_ab_48-of-53
+    output: snakemake/results/sorted_ab_48-of-53
+    jobid: 207
+    wildcards: part_id=ab, scatteritem=48-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-473f5046-7be3-5731-b102-ae46cd2e5e29
+kubectl logs snakejob-473f5046-7be3-5731-b102-ae46cd2e5e29
+
+[Thu Apr 21 02:45:09 2022]
+rule sort:
+    input: snakemake/results/counted_ab_22-of-53
+    output: snakemake/results/sorted_ab_22-of-53
+    jobid: 155
+    wildcards: part_id=ab, scatteritem=22-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-4720b94a-f969-5b52-9667-1cae88e36bee
+kubectl logs snakejob-4720b94a-f969-5b52-9667-1cae88e36bee
+[Thu Apr 21 02:45:09 2022]
+Finished job 192.
+107 of 219 steps (49%) done
+[Thu Apr 21 02:45:09 2022]
+Finished job 172.
+108 of 219 steps (49%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:09 2022]
+rule sort:
+    input: snakemake/results/counted_ab_40-of-53
+    output: snakemake/results/sorted_ab_40-of-53
+    jobid: 191
+    wildcards: part_id=ab, scatteritem=40-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-68a14a65-3618-50c0-a56c-a023bd1a7434
+kubectl logs snakejob-68a14a65-3618-50c0-a56c-a023bd1a7434
+
+[Thu Apr 21 02:45:09 2022]
+rule sort:
+    input: snakemake/results/counted_ab_30-of-53
+    output: snakemake/results/sorted_ab_30-of-53
+    jobid: 171
+    wildcards: part_id=ab, scatteritem=30-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c7bc4723-8465-59e6-9bb5-8ffcf6c04f25
+kubectl logs snakejob-c7bc4723-8465-59e6-9bb5-8ffcf6c04f25
+[Thu Apr 21 02:45:10 2022]
+Finished job 176.
+109 of 219 steps (50%) done
+[Thu Apr 21 02:45:10 2022]
+Finished job 206.
+110 of 219 steps (50%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:10 2022]
+rule sort:
+    input: snakemake/results/counted_ab_7-of-53
+    output: snakemake/results/sorted_ab_7-of-53
+    jobid: 125
+    wildcards: part_id=ab, scatteritem=7-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-26ea712d-b540-57c3-89a0-779f82708eec
+kubectl logs snakejob-26ea712d-b540-57c3-89a0-779f82708eec
+
+[Thu Apr 21 02:45:10 2022]
+rule sort:
+    input: snakemake/results/counted_ab_32-of-53
+    output: snakemake/results/sorted_ab_32-of-53
+    jobid: 175
+    wildcards: part_id=ab, scatteritem=32-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-806569f2-aaca-5888-b85c-d6bbb7785dbf
+kubectl logs snakejob-806569f2-aaca-5888-b85c-d6bbb7785dbf
+[Thu Apr 21 02:45:10 2022]
+Finished job 65.
+111 of 219 steps (51%) done
+[Thu Apr 21 02:45:10 2022]
+Finished job 33.
+112 of 219 steps (51%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:11 2022]
+rule sort:
+    input: snakemake/results/counted_aa_13-of-53
+    output: snakemake/results/sorted_aa_13-of-53
+    jobid: 29
+    wildcards: part_id=aa, scatteritem=13-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-95e1a134-f441-51e6-abde-91470c5aaa60
+kubectl logs snakejob-95e1a134-f441-51e6-abde-91470c5aaa60
+
+[Thu Apr 21 02:45:11 2022]
+rule count:
+    input: snakemake/results/input_ab_44-of-53
+    output: snakemake/results/counted_ab_44-of-53
+    jobid: 200
+    wildcards: part_id=ab, scatteritem=44-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-9716e5a1-e83e-5796-a3d2-640f3f637e77
+kubectl logs snakejob-9716e5a1-e83e-5796-a3d2-640f3f637e77
+[Thu Apr 21 02:45:11 2022]
+Finished job 107.
+113 of 219 steps (52%) done
+[Thu Apr 21 02:45:11 2022]
+Finished job 63.
+114 of 219 steps (52%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:11 2022]
+rule count:
+    input: snakemake/results/input_ab_39-of-53
+    output: snakemake/results/counted_ab_39-of-53
+    jobid: 190
+    wildcards: part_id=ab, scatteritem=39-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-672e4b05-105c-5b85-8065-7b1a22b64cae
+kubectl logs snakejob-672e4b05-105c-5b85-8065-7b1a22b64cae
+
+[Thu Apr 21 02:45:11 2022]
+rule sort:
+    input: snakemake/results/counted_ab_13-of-53
+    output: snakemake/results/sorted_ab_13-of-53
+    jobid: 137
+    wildcards: part_id=ab, scatteritem=13-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b430b75f-4f68-541f-943c-0c79202e205d
+kubectl logs snakejob-b430b75f-4f68-541f-943c-0c79202e205d
+[Thu Apr 21 02:45:11 2022]
+Finished job 160.
+115 of 219 steps (53%) done
+[Thu Apr 21 02:45:12 2022]
+Finished job 79.
+116 of 219 steps (53%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:12 2022]
+rule sort:
+    input: snakemake/results/counted_aa_45-of-53
+    output: snakemake/results/sorted_aa_45-of-53
+    jobid: 93
+    wildcards: part_id=aa, scatteritem=45-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-7391bfdc-77ed-5971-bd61-7106ad09a671
+kubectl logs snakejob-7391bfdc-77ed-5971-bd61-7106ad09a671
+
+[Thu Apr 21 02:45:12 2022]
+rule sort:
+    input: snakemake/results/counted_aa_27-of-53
+    output: snakemake/results/sorted_aa_27-of-53
+    jobid: 57
+    wildcards: part_id=aa, scatteritem=27-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-3c05fdb4-8a37-558b-8645-8e06a5a81ab1
+kubectl logs snakejob-3c05fdb4-8a37-558b-8645-8e06a5a81ab1
+[Thu Apr 21 02:45:12 2022]
+Finished job 89.
+117 of 219 steps (53%) done
+[Thu Apr 21 02:45:12 2022]
+Finished job 25.
+118 of 219 steps (54%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:12 2022]
+rule count:
+    input: snakemake/results/input_ab_11-of-53
+    output: snakemake/results/counted_ab_11-of-53
+    jobid: 134
+    wildcards: part_id=ab, scatteritem=11-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-0c812991-3d63-5f64-82c0-3788e463aadd
+kubectl logs snakejob-0c812991-3d63-5f64-82c0-3788e463aadd
+
+[Thu Apr 21 02:45:12 2022]
+rule sort:
+    input: snakemake/results/counted_ab_52-of-53
+    output: snakemake/results/sorted_ab_52-of-53
+    jobid: 215
+    wildcards: part_id=ab, scatteritem=52-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-6f419498-aef2-574a-a9e2-d4c30d52d0a1
+kubectl logs snakejob-6f419498-aef2-574a-a9e2-d4c30d52d0a1
+[Thu Apr 21 02:45:13 2022]
+Finished job 140.
+119 of 219 steps (54%) done
+[Thu Apr 21 02:45:13 2022]
+Finished job 218.
+120 of 219 steps (55%) done
+[Thu Apr 21 02:45:13 2022]
+Finished job 124.
+121 of 219 steps (55%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:13 2022]
+rule sort:
+    input: snakemake/results/counted_ab_47-of-53
+    output: snakemake/results/sorted_ab_47-of-53
+    jobid: 205
+    wildcards: part_id=ab, scatteritem=47-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-1936d4b6-6cfa-5574-a13a-1ed50a19304e
+kubectl logs snakejob-1936d4b6-6cfa-5574-a13a-1ed50a19304e
+
+[Thu Apr 21 02:45:13 2022]
+rule sort:
+    input: snakemake/results/counted_ab_24-of-53
+    output: snakemake/results/sorted_ab_24-of-53
+    jobid: 159
+    wildcards: part_id=ab, scatteritem=24-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5369f69d-d88c-50f3-813d-545e19ee562f
+kubectl logs snakejob-5369f69d-d88c-50f3-813d-545e19ee562f
+
+[Thu Apr 21 02:45:13 2022]
+rule count:
+    input: snakemake/results/input_ab_20-of-53
+    output: snakemake/results/counted_ab_20-of-53
+    jobid: 152
+    wildcards: part_id=ab, scatteritem=20-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5dddeb2b-6b9e-53a7-ab1a-4a04e71f32b7
+kubectl logs snakejob-5dddeb2b-6b9e-53a7-ab1a-4a04e71f32b7
+[Thu Apr 21 02:45:14 2022]
+Finished job 116.
+122 of 219 steps (56%) done
+[Thu Apr 21 02:45:14 2022]
+Finished job 38.
+123 of 219 steps (56%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:14 2022]
+rule sort:
+    input: snakemake/results/counted_ab_2-of-53
+    output: snakemake/results/sorted_ab_2-of-53
+    jobid: 115
+    wildcards: part_id=ab, scatteritem=2-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-bfd6a9ce-b17e-56df-b0ad-1e9066372934
+kubectl logs snakejob-bfd6a9ce-b17e-56df-b0ad-1e9066372934
+
+[Thu Apr 21 02:45:14 2022]
+rule sort:
+    input: snakemake/results/counted_ab_9-of-53
+    output: snakemake/results/sorted_ab_9-of-53
+    jobid: 129
+    wildcards: part_id=ab, scatteritem=9-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-e8082048-ab36-5727-9985-f8112de69d68
+kubectl logs snakejob-e8082048-ab36-5727-9985-f8112de69d68
+[Thu Apr 21 02:45:14 2022]
+Finished job 46.
+124 of 219 steps (57%) done
+[Thu Apr 21 02:45:14 2022]
+Finished job 54.
+125 of 219 steps (57%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:14 2022]
+rule sort:
+    input: snakemake/results/counted_ab_6-of-53
+    output: snakemake/results/sorted_ab_6-of-53
+    jobid: 123
+    wildcards: part_id=ab, scatteritem=6-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ad13ab4f-0849-5e60-b644-e8dabe8958a1
+kubectl logs snakejob-ad13ab4f-0849-5e60-b644-e8dabe8958a1
+
+[Thu Apr 21 02:45:14 2022]
+rule sort:
+    input: snakemake/results/counted_aa_25-of-53
+    output: snakemake/results/sorted_aa_25-of-53
+    jobid: 53
+    wildcards: part_id=aa, scatteritem=25-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-136d62fc-07c6-59db-b01b-c938c92e6824
+kubectl logs snakejob-136d62fc-07c6-59db-b01b-c938c92e6824
+[Thu Apr 21 02:45:15 2022]
+Finished job 62.
+126 of 219 steps (58%) done
+[Thu Apr 21 02:45:15 2022]
+Finished job 70.
+127 of 219 steps (58%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:15 2022]
+rule sort:
+    input: snakemake/results/counted_ab_14-of-53
+    output: snakemake/results/sorted_ab_14-of-53
+    jobid: 139
+    wildcards: part_id=ab, scatteritem=14-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-fce7993c-fe46-50cd-9de5-4c6fdf55ba40
+kubectl logs snakejob-fce7993c-fe46-50cd-9de5-4c6fdf55ba40
+
+[Thu Apr 21 02:45:15 2022]
+rule sort:
+    input: snakemake/results/counted_aa_17-of-53
+    output: snakemake/results/sorted_aa_17-of-53
+    jobid: 37
+    wildcards: part_id=aa, scatteritem=17-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-6c3467c6-7684-5a1e-9c35-0bee9d520069
+kubectl logs snakejob-6c3467c6-7684-5a1e-9c35-0bee9d520069
+[Thu Apr 21 02:45:15 2022]
+Finished job 122.
+128 of 219 steps (58%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:15 2022]
+rule count:
+    input: snakemake/results/input_ab_31-of-53
+    output: snakemake/results/counted_ab_31-of-53
+    jobid: 174
+    wildcards: part_id=ab, scatteritem=31-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-f7744578-2cc6-502a-848c-29cc8c662eea
+kubectl logs snakejob-f7744578-2cc6-502a-848c-29cc8c662eea
+Select jobs to execute...
+[Thu Apr 21 02:45:25 2022]
+Finished job 201.
+129 of 219 steps (59%) done
+
+[Thu Apr 21 02:45:25 2022]
+rule sort:
+    input: snakemake/results/counted_aa_14-of-53
+    output: snakemake/results/sorted_aa_14-of-53
+    jobid: 31
+    wildcards: part_id=aa, scatteritem=14-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ea091ba9-fd66-5cc8-afbc-e53b37437bda
+kubectl logs snakejob-ea091ba9-fd66-5cc8-afbc-e53b37437bda
+[Thu Apr 21 02:45:26 2022]
+Finished job 11.
+130 of 219 steps (59%) done
+[Thu Apr 21 02:45:26 2022]
+Finished job 185.
+131 of 219 steps (60%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:26 2022]
+rule count:
+    input: snakemake/results/input_ab_4-of-53
+    output: snakemake/results/counted_ab_4-of-53
+    jobid: 120
+    wildcards: part_id=ab, scatteritem=4-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-31558782-5add-5174-9197-50276ea4953b
+kubectl logs snakejob-31558782-5add-5174-9197-50276ea4953b
+
+[Thu Apr 21 02:45:26 2022]
+rule sort:
+    input: snakemake/results/counted_ab_43-of-53
+    output: snakemake/results/sorted_ab_43-of-53
+    jobid: 197
+    wildcards: part_id=ab, scatteritem=43-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5aa12559-30d4-5ecd-97f4-0b6cf6d3821a
+kubectl logs snakejob-5aa12559-30d4-5ecd-97f4-0b6cf6d3821a
+[Thu Apr 21 02:45:26 2022]
+Finished job 161.
+132 of 219 steps (60%) done
+[Thu Apr 21 02:45:26 2022]
+Finished job 169.
+133 of 219 steps (61%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:26 2022]
+rule sort:
+    input: snakemake/results/counted_ab_5-of-53
+    output: snakemake/results/sorted_ab_5-of-53
+    jobid: 121
+    wildcards: part_id=ab, scatteritem=5-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8b644a12-4eee-5986-9a4a-855031a32a43
+kubectl logs snakejob-8b644a12-4eee-5986-9a4a-855031a32a43
+
+[Thu Apr 21 02:45:26 2022]
+rule sort:
+    input: snakemake/results/counted_ab_53-of-53
+    output: snakemake/results/sorted_ab_53-of-53
+    jobid: 217
+    wildcards: part_id=ab, scatteritem=53-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-c7a806f4-4909-531b-9112-b2a426f50941
+kubectl logs snakejob-c7a806f4-4909-531b-9112-b2a426f50941
+[Thu Apr 21 02:45:27 2022]
+Finished job 153.
+134 of 219 steps (61%) done
+[Thu Apr 21 02:45:27 2022]
+Finished job 73.
+135 of 219 steps (62%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:27 2022]
+rule sort:
+    input: snakemake/results/counted_aa_21-of-53
+    output: snakemake/results/sorted_aa_21-of-53
+    jobid: 45
+    wildcards: part_id=aa, scatteritem=21-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-06a4c7a8-b97d-5240-8b7f-198e593e382b
+kubectl logs snakejob-06a4c7a8-b97d-5240-8b7f-198e593e382b
+
+[Thu Apr 21 02:45:27 2022]
+rule sort:
+    input: snakemake/results/counted_aa_29-of-53
+    output: snakemake/results/sorted_aa_29-of-53
+    jobid: 61
+    wildcards: part_id=aa, scatteritem=29-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-d3146ccc-adec-5fbd-9cb4-f6850dc4e912
+kubectl logs snakejob-d3146ccc-adec-5fbd-9cb4-f6850dc4e912
+[Thu Apr 21 02:45:27 2022]
+Finished job 146.
+136 of 219 steps (62%) done
+[Thu Apr 21 02:45:27 2022]
+Finished job 177.
+137 of 219 steps (63%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:27 2022]
+rule sort:
+    input: snakemake/results/counted_ab_1-of-53
+    output: snakemake/results/sorted_ab_1-of-53
+    jobid: 112
+    wildcards: part_id=ab, scatteritem=1-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8dcf2d0b-b744-5c33-917d-a8aab59f320b
+kubectl logs snakejob-8dcf2d0b-b744-5c33-917d-a8aab59f320b
+
+[Thu Apr 21 02:45:27 2022]
+rule count:
+    input: snakemake/results/input_ab_23-of-53
+    output: snakemake/results/counted_ab_23-of-53
+    jobid: 158
+    wildcards: part_id=ab, scatteritem=23-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5b94e2e3-ab2a-56a7-8f8e-2578a9f4de09
+kubectl logs snakejob-5b94e2e3-ab2a-56a7-8f8e-2578a9f4de09
+[Thu Apr 21 02:45:28 2022]
+Finished job 19.
+138 of 219 steps (63%) done
+[Thu Apr 21 02:45:28 2022]
+Finished job 39.
+139 of 219 steps (63%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:28 2022]
+rule sort:
+    input: snakemake/results/counted_ab_18-of-53
+    output: snakemake/results/sorted_ab_18-of-53
+    jobid: 147
+    wildcards: part_id=ab, scatteritem=18-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-dc896f88-e5fa-5827-ad68-fd8d66216a5a
+kubectl logs snakejob-dc896f88-e5fa-5827-ad68-fd8d66216a5a
+
+[Thu Apr 21 02:45:28 2022]
+rule sort:
+    input: snakemake/results/counted_ab_17-of-53
+    output: snakemake/results/sorted_ab_17-of-53
+    jobid: 145
+    wildcards: part_id=ab, scatteritem=17-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ad9e986f-77d8-527c-80a1-ed8f5833b840
+kubectl logs snakejob-ad9e986f-77d8-527c-80a1-ed8f5833b840
+[Thu Apr 21 02:45:28 2022]
+Finished job 23.
+140 of 219 steps (64%) done
+[Thu Apr 21 02:45:28 2022]
+Finished job 9.
+141 of 219 steps (64%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:28 2022]
+rule sort:
+    input: snakemake/results/counted_ab_10-of-53
+    output: snakemake/results/sorted_ab_10-of-53
+    jobid: 131
+    wildcards: part_id=ab, scatteritem=10-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-1a4e2383-dfe1-5538-a941-24453f4d073b
+kubectl logs snakejob-1a4e2383-dfe1-5538-a941-24453f4d073b
+
+[Thu Apr 21 02:45:28 2022]
+rule sort:
+    input: snakemake/results/counted_aa_33-of-53
+    output: snakemake/results/sorted_aa_33-of-53
+    jobid: 69
+    wildcards: part_id=aa, scatteritem=33-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8d2cc68d-0614-5228-9e43-b7282f6403bd
+kubectl logs snakejob-8d2cc68d-0614-5228-9e43-b7282f6403bd
+[Thu Apr 21 02:45:29 2022]
+Finished job 71.
+142 of 219 steps (65%) done
+[Thu Apr 21 02:45:29 2022]
+Finished job 55.
+143 of 219 steps (65%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:29 2022]
+rule count:
+    input: snakemake/results/input_ab_8-of-53
+    output: snakemake/results/counted_ab_8-of-53
+    jobid: 128
+    wildcards: part_id=ab, scatteritem=8-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-1d90ac00-db49-5d35-a00d-4c0f014602ec
+kubectl logs snakejob-1d90ac00-db49-5d35-a00d-4c0f014602ec
+
+[Thu Apr 21 02:45:29 2022]
+rule sort:
+    input: snakemake/results/counted_ab_46-of-53
+    output: snakemake/results/sorted_ab_46-of-53
+    jobid: 203
+    wildcards: part_id=ab, scatteritem=46-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-118e39d7-2193-5aeb-9f2c-48a28297ab64
+kubectl logs snakejob-118e39d7-2193-5aeb-9f2c-48a28297ab64
+[Thu Apr 21 02:45:29 2022]
+Finished job 182.
+144 of 219 steps (66%) done
+[Thu Apr 21 02:45:29 2022]
+Finished job 150.
+145 of 219 steps (66%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:29 2022]
+rule sort:
+    input: snakemake/results/counted_ab_19-of-53
+    output: snakemake/results/sorted_ab_19-of-53
+    jobid: 149
+    wildcards: part_id=ab, scatteritem=19-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-0d900656-897b-54ae-9301-22ec21e0eca3
+kubectl logs snakejob-0d900656-897b-54ae-9301-22ec21e0eca3
+
+[Thu Apr 21 02:45:30 2022]
+rule sort:
+    input: snakemake/results/counted_ab_38-of-53
+    output: snakemake/results/sorted_ab_38-of-53
+    jobid: 187
+    wildcards: part_id=ab, scatteritem=38-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b5e9d889-b869-5460-9fae-e2a4743afa54
+kubectl logs snakejob-b5e9d889-b869-5460-9fae-e2a4743afa54
+[Thu Apr 21 02:45:30 2022]
+Finished job 166.
+146 of 219 steps (67%) done
+[Thu Apr 21 02:45:30 2022]
+Finished job 179.
+147 of 219 steps (67%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:30 2022]
+rule count:
+    input: snakemake/results/input_ab_16-of-53
+    output: snakemake/results/counted_ab_16-of-53
+    jobid: 144
+    wildcards: part_id=ab, scatteritem=16-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8b166e05-4478-5ba3-8216-c3cb125d4a89
+kubectl logs snakejob-8b166e05-4478-5ba3-8216-c3cb125d4a89
+
+[Thu Apr 21 02:45:30 2022]
+rule sort:
+    input: snakemake/results/counted_ab_35-of-53
+    output: snakemake/results/sorted_ab_35-of-53
+    jobid: 181
+    wildcards: part_id=ab, scatteritem=35-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-005b157c-7bd5-5c71-951c-9739fba839b8
+kubectl logs snakejob-005b157c-7bd5-5c71-951c-9739fba839b8
+[Thu Apr 21 02:45:30 2022]
+Finished job 17.
+148 of 219 steps (68%) done
+[Thu Apr 21 02:45:31 2022]
+Finished job 195.
+149 of 219 steps (68%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:31 2022]
+rule count:
+    input: snakemake/results/input_ab_3-of-53
+    output: snakemake/results/counted_ab_3-of-53
+    jobid: 118
+    wildcards: part_id=ab, scatteritem=3-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-ad95504c-350a-5bb8-8665-0522e94f24b4
+kubectl logs snakejob-ad95504c-350a-5bb8-8665-0522e94f24b4
+
+[Thu Apr 21 02:45:31 2022]
+rule count:
+    input: snakemake/results/input_ab_12-of-53
+    output: snakemake/results/counted_ab_12-of-53
+    jobid: 136
+    wildcards: part_id=ab, scatteritem=12-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-9e0734c4-94f6-5e54-b178-6d4f6334471a
+kubectl logs snakejob-9e0734c4-94f6-5e54-b178-6d4f6334471a
+[Thu Apr 21 02:45:31 2022]
+Finished job 95.
+150 of 219 steps (68%) done
+[Thu Apr 21 02:45:31 2022]
+Finished job 141.
+151 of 219 steps (69%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:31 2022]
+rule count:
+    input: snakemake/results/input_ab_51-of-53
+    output: snakemake/results/counted_ab_51-of-53
+    jobid: 214
+    wildcards: part_id=ab, scatteritem=51-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-71d122b9-ce8c-5afa-930f-f9618ff865fe
+kubectl logs snakejob-71d122b9-ce8c-5afa-930f-f9618ff865fe
+
+[Thu Apr 21 02:45:31 2022]
+rule sort:
+    input: snakemake/results/counted_ab_27-of-53
+    output: snakemake/results/sorted_ab_27-of-53
+    jobid: 165
+    wildcards: part_id=ab, scatteritem=27-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-f49a7e2f-587f-558d-bb50-b1b4da854190
+kubectl logs snakejob-f49a7e2f-587f-558d-bb50-b1b4da854190
+[Thu Apr 21 02:45:32 2022]
+Finished job 168.
+152 of 219 steps (69%) done
+[Thu Apr 21 02:45:32 2022]
+Finished job 211.
+153 of 219 steps (70%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:32 2022]
+rule sort:
+    input: snakemake/results/counted_ab_28-of-53
+    output: snakemake/results/sorted_ab_28-of-53
+    jobid: 167
+    wildcards: part_id=ab, scatteritem=28-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-3b885a9f-7a40-54f6-a3fd-f24317096222
+kubectl logs snakejob-3b885a9f-7a40-54f6-a3fd-f24317096222
+[Thu Apr 21 02:45:32 2022]
+Finished job 184.
+154 of 219 steps (70%) done
+[Thu Apr 21 02:45:32 2022]
+Finished job 207.
+155 of 219 steps (71%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:32 2022]
+rule sort:
+    input: snakemake/results/counted_ab_36-of-53
+    output: snakemake/results/sorted_ab_36-of-53
+    jobid: 183
+    wildcards: part_id=ab, scatteritem=36-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b379b899-8291-53de-b553-3fb327b3a42a
+kubectl logs snakejob-b379b899-8291-53de-b553-3fb327b3a42a
+[Thu Apr 21 02:45:33 2022]
+Finished job 155.
+156 of 219 steps (71%) done
+[Thu Apr 21 02:45:33 2022]
+Finished job 191.
+157 of 219 steps (72%) done
+[Thu Apr 21 02:45:33 2022]
+Finished job 171.
+158 of 219 steps (72%) done
+[Thu Apr 21 02:45:33 2022]
+Finished job 125.
+159 of 219 steps (73%) done
+[Thu Apr 21 02:45:33 2022]
+Finished job 175.
+160 of 219 steps (73%) done
+[Thu Apr 21 02:45:33 2022]
+Finished job 29.
+161 of 219 steps (74%) done
+[Thu Apr 21 02:45:34 2022]
+Finished job 200.
+162 of 219 steps (74%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:34 2022]
+rule sort:
+    input: snakemake/results/counted_ab_44-of-53
+    output: snakemake/results/sorted_ab_44-of-53
+    jobid: 199
+    wildcards: part_id=ab, scatteritem=44-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-f96dc304-cfac-55fa-84bf-1fe6008bbe4b
+kubectl logs snakejob-f96dc304-cfac-55fa-84bf-1fe6008bbe4b
+[Thu Apr 21 02:45:34 2022]
+Finished job 190.
+163 of 219 steps (74%) done
+[Thu Apr 21 02:45:34 2022]
+Finished job 137.
+164 of 219 steps (75%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:34 2022]
+rule sort:
+    input: snakemake/results/counted_ab_39-of-53
+    output: snakemake/results/sorted_ab_39-of-53
+    jobid: 189
+    wildcards: part_id=ab, scatteritem=39-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-fbb5f3b9-adab-5a91-9b23-9e9eade020ba
+kubectl logs snakejob-fbb5f3b9-adab-5a91-9b23-9e9eade020ba
+[Thu Apr 21 02:45:35 2022]
+Finished job 93.
+165 of 219 steps (75%) done
+[Thu Apr 21 02:45:35 2022]
+Finished job 57.
+166 of 219 steps (76%) done
+[Thu Apr 21 02:45:35 2022]
+Finished job 134.
+167 of 219 steps (76%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:35 2022]
+rule sort:
+    input: snakemake/results/counted_ab_11-of-53
+    output: snakemake/results/sorted_ab_11-of-53
+    jobid: 133
+    wildcards: part_id=ab, scatteritem=11-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-7151b26c-ffc9-574f-9390-663182d954a4
+kubectl logs snakejob-7151b26c-ffc9-574f-9390-663182d954a4
+[Thu Apr 21 02:45:36 2022]
+Finished job 215.
+168 of 219 steps (77%) done
+[Thu Apr 21 02:45:36 2022]
+Finished job 205.
+169 of 219 steps (77%) done
+[Thu Apr 21 02:45:36 2022]
+Finished job 159.
+170 of 219 steps (78%) done
+[Thu Apr 21 02:45:36 2022]
+Finished job 152.
+171 of 219 steps (78%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:36 2022]
+rule sort:
+    input: snakemake/results/counted_ab_20-of-53
+    output: snakemake/results/sorted_ab_20-of-53
+    jobid: 151
+    wildcards: part_id=ab, scatteritem=20-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-8992558e-7c56-564e-8779-cefb8108a999
+kubectl logs snakejob-8992558e-7c56-564e-8779-cefb8108a999
+[Thu Apr 21 02:45:36 2022]
+Finished job 115.
+172 of 219 steps (79%) done
+[Thu Apr 21 02:45:37 2022]
+Finished job 129.
+173 of 219 steps (79%) done
+[Thu Apr 21 02:45:37 2022]
+Finished job 123.
+174 of 219 steps (79%) done
+[Thu Apr 21 02:45:37 2022]
+Finished job 53.
+175 of 219 steps (80%) done
+[Thu Apr 21 02:45:37 2022]
+Finished job 139.
+176 of 219 steps (80%) done
+[Thu Apr 21 02:45:37 2022]
+Finished job 37.
+177 of 219 steps (81%) done
+[Thu Apr 21 02:45:37 2022]
+Finished job 174.
+178 of 219 steps (81%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:37 2022]
+rule sort:
+    input: snakemake/results/counted_ab_31-of-53
+    output: snakemake/results/sorted_ab_31-of-53
+    jobid: 173
+    wildcards: part_id=ab, scatteritem=31-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-9d5d6b3f-1ef9-555e-b27b-188341047b24
+kubectl logs snakejob-9d5d6b3f-1ef9-555e-b27b-188341047b24
+[Thu Apr 21 02:45:47 2022]
+Finished job 31.
+179 of 219 steps (82%) done
+[Thu Apr 21 02:45:48 2022]
+Finished job 120.
+180 of 219 steps (82%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:48 2022]
+rule sort:
+    input: snakemake/results/counted_ab_4-of-53
+    output: snakemake/results/sorted_ab_4-of-53
+    jobid: 119
+    wildcards: part_id=ab, scatteritem=4-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-4568d073-225a-56ed-9eca-20dc2c030304
+kubectl logs snakejob-4568d073-225a-56ed-9eca-20dc2c030304
+[Thu Apr 21 02:45:48 2022]
+Finished job 197.
+181 of 219 steps (83%) done
+[Thu Apr 21 02:45:48 2022]
+Finished job 121.
+182 of 219 steps (83%) done
+[Thu Apr 21 02:45:48 2022]
+Finished job 217.
+183 of 219 steps (84%) done
+[Thu Apr 21 02:45:48 2022]
+Finished job 45.
+184 of 219 steps (84%) done
+[Thu Apr 21 02:45:49 2022]
+Finished job 61.
+185 of 219 steps (84%) done
+[Thu Apr 21 02:45:49 2022]
+Finished job 112.
+186 of 219 steps (85%) done
+[Thu Apr 21 02:45:49 2022]
+Finished job 158.
+187 of 219 steps (85%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:49 2022]
+rule sort:
+    input: snakemake/results/counted_ab_23-of-53
+    output: snakemake/results/sorted_ab_23-of-53
+    jobid: 157
+    wildcards: part_id=ab, scatteritem=23-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-4361381c-e167-5f47-82cb-1b6c3f91e751
+kubectl logs snakejob-4361381c-e167-5f47-82cb-1b6c3f91e751
+[Thu Apr 21 02:45:49 2022]
+Finished job 147.
+188 of 219 steps (86%) done
+[Thu Apr 21 02:45:49 2022]
+Finished job 145.
+189 of 219 steps (86%) done
+[Thu Apr 21 02:45:50 2022]
+Finished job 131.
+190 of 219 steps (87%) done
+[Thu Apr 21 02:45:50 2022]
+Finished job 69.
+191 of 219 steps (87%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:53 2022]
+rule merge:
+    input: snakemake/results/sorted_aa_1-of-53, snakemake/results/sorted_aa_2-of-53, snakemake/results/sorted_aa_3-of-53, snakemake/results/sorted_aa_4-of-53, snakemake/results/sorted_aa_5-of-53, snakemake/results/sorted_aa_6-of-53, snakemake/results/sorted_aa_7-of-53, snakemake/results/sorted_aa_8-of-53, snakemake/results/sorted_aa_9-of-53, snakemake/results/sorted_aa_10-of-53, snakemake/results/sorted_aa_11-of-53, snakemake/results/sorted_aa_12-of-53, snakemake/results/sorted_aa_13-of-53, snakemake/results/sorted_aa_14-of-53, snakemake/results/sorted_aa_15-of-53, snakemake/results/sorted_aa_16-of-53, snakemake/results/sorted_aa_17-of-53, snakemake/results/sorted_aa_18-of-53, snakemake/results/sorted_aa_19-of-53, snakemake/results/sorted_aa_20-of-53, snakemake/results/sorted_aa_21-of-53, snakemake/results/sorted_aa_22-of-53, snakemake/results/sorted_aa_23-of-53, snakemake/results/sorted_aa_24-of-53, snakemake/results/sorted_aa_25-of-53, snakemake/results/sorted_aa_26-of-53, snakemake/results/sorted_aa_27-of-53, snakemake/results/sorted_aa_28-of-53, snakemake/results/sorted_aa_29-of-53, snakemake/results/sorted_aa_30-of-53, snakemake/results/sorted_aa_31-of-53, snakemake/results/sorted_aa_32-of-53, snakemake/results/sorted_aa_33-of-53, snakemake/results/sorted_aa_34-of-53, snakemake/results/sorted_aa_35-of-53, snakemake/results/sorted_aa_36-of-53, snakemake/results/sorted_aa_37-of-53, snakemake/results/sorted_aa_38-of-53, snakemake/results/sorted_aa_39-of-53, snakemake/results/sorted_aa_40-of-53, snakemake/results/sorted_aa_41-of-53, snakemake/results/sorted_aa_42-of-53, snakemake/results/sorted_aa_43-of-53, snakemake/results/sorted_aa_44-of-53, snakemake/results/sorted_aa_45-of-53, snakemake/results/sorted_aa_46-of-53, snakemake/results/sorted_aa_47-of-53, snakemake/results/sorted_aa_48-of-53, snakemake/results/sorted_aa_49-of-53, snakemake/results/sorted_aa_50-of-53, snakemake/results/sorted_aa_51-of-53, snakemake/results/sorted_aa_52-of-53, snakemake/results/sorted_aa_53-of-53
+    output: snakemake/results/result_aa
+    jobid: 2
+    wildcards: part_id=aa
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-7ad15534-98bc-5f66-ac7d-a5be34370e68
+kubectl logs snakejob-7ad15534-98bc-5f66-ac7d-a5be34370e68
+[Thu Apr 21 02:45:53 2022]
+Finished job 128.
+192 of 219 steps (88%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:53 2022]
+rule sort:
+    input: snakemake/results/counted_ab_8-of-53
+    output: snakemake/results/sorted_ab_8-of-53
+    jobid: 127
+    wildcards: part_id=ab, scatteritem=8-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-92fd1198-63fc-58e6-ab79-8ba06c34d8f3
+kubectl logs snakejob-92fd1198-63fc-58e6-ab79-8ba06c34d8f3
+[Thu Apr 21 02:45:54 2022]
+Finished job 203.
+193 of 219 steps (88%) done
+[Thu Apr 21 02:45:54 2022]
+Finished job 149.
+194 of 219 steps (89%) done
+[Thu Apr 21 02:45:54 2022]
+Finished job 187.
+195 of 219 steps (89%) done
+[Thu Apr 21 02:45:54 2022]
+Finished job 144.
+196 of 219 steps (89%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:54 2022]
+rule sort:
+    input: snakemake/results/counted_ab_16-of-53
+    output: snakemake/results/sorted_ab_16-of-53
+    jobid: 143
+    wildcards: part_id=ab, scatteritem=16-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-5e473676-593a-5877-b727-79f3afdd62aa
+kubectl logs snakejob-5e473676-593a-5877-b727-79f3afdd62aa
+[Thu Apr 21 02:45:54 2022]
+Finished job 181.
+197 of 219 steps (90%) done
+[Thu Apr 21 02:45:55 2022]
+Finished job 118.
+198 of 219 steps (90%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:55 2022]
+rule sort:
+    input: snakemake/results/counted_ab_3-of-53
+    output: snakemake/results/sorted_ab_3-of-53
+    jobid: 117
+    wildcards: part_id=ab, scatteritem=3-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-042a2749-b4c6-54f7-9825-167fe67789c5
+kubectl logs snakejob-042a2749-b4c6-54f7-9825-167fe67789c5
+[Thu Apr 21 02:45:55 2022]
+Finished job 136.
+199 of 219 steps (91%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:55 2022]
+rule sort:
+    input: snakemake/results/counted_ab_12-of-53
+    output: snakemake/results/sorted_ab_12-of-53
+    jobid: 135
+    wildcards: part_id=ab, scatteritem=12-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-b275376f-11c8-560a-ab45-39e381f619e5
+kubectl logs snakejob-b275376f-11c8-560a-ab45-39e381f619e5
+[Thu Apr 21 02:45:55 2022]
+Finished job 214.
+200 of 219 steps (91%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:45:55 2022]
+rule sort:
+    input: snakemake/results/counted_ab_51-of-53
+    output: snakemake/results/sorted_ab_51-of-53
+    jobid: 213
+    wildcards: part_id=ab, scatteritem=51-of-53
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-a7a9e26d-58af-5680-b170-c63e553a2af3
+kubectl logs snakejob-a7a9e26d-58af-5680-b170-c63e553a2af3
+[Thu Apr 21 02:45:56 2022]
+Finished job 165.
+201 of 219 steps (92%) done
+[Thu Apr 21 02:45:56 2022]
+Finished job 167.
+202 of 219 steps (92%) done
+[Thu Apr 21 02:45:56 2022]
+Finished job 183.
+203 of 219 steps (93%) done
+[Thu Apr 21 02:45:56 2022]
+Finished job 199.
+204 of 219 steps (93%) done
+[Thu Apr 21 02:45:56 2022]
+Finished job 189.
+205 of 219 steps (94%) done
+[Thu Apr 21 02:45:56 2022]
+Finished job 133.
+206 of 219 steps (94%) done
+[Thu Apr 21 02:45:57 2022]
+Finished job 151.
+207 of 219 steps (95%) done
+[Thu Apr 21 02:45:57 2022]
+Finished job 173.
+208 of 219 steps (95%) done
+[Thu Apr 21 02:46:07 2022]
+Finished job 119.
+209 of 219 steps (95%) done
+[Thu Apr 21 02:46:07 2022]
+Finished job 157.
+210 of 219 steps (96%) done
+[Thu Apr 21 02:46:07 2022]
+Finished job 127.
+211 of 219 steps (96%) done
+[Thu Apr 21 02:46:07 2022]
+Finished job 143.
+212 of 219 steps (97%) done
+[Thu Apr 21 02:46:07 2022]
+Finished job 117.
+213 of 219 steps (97%) done
+[Thu Apr 21 02:46:08 2022]
+Finished job 135.
+214 of 219 steps (98%) done
+[Thu Apr 21 02:46:08 2022]
+Finished job 213.
+215 of 219 steps (98%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:46:11 2022]
+rule merge:
+    input: snakemake/results/sorted_ab_1-of-53, snakemake/results/sorted_ab_2-of-53, snakemake/results/sorted_ab_3-of-53, snakemake/results/sorted_ab_4-of-53, snakemake/results/sorted_ab_5-of-53, snakemake/results/sorted_ab_6-of-53, snakemake/results/sorted_ab_7-of-53, snakemake/results/sorted_ab_8-of-53, snakemake/results/sorted_ab_9-of-53, snakemake/results/sorted_ab_10-of-53, snakemake/results/sorted_ab_11-of-53, snakemake/results/sorted_ab_12-of-53, snakemake/results/sorted_ab_13-of-53, snakemake/results/sorted_ab_14-of-53, snakemake/results/sorted_ab_15-of-53, snakemake/results/sorted_ab_16-of-53, snakemake/results/sorted_ab_17-of-53, snakemake/results/sorted_ab_18-of-53, snakemake/results/sorted_ab_19-of-53, snakemake/results/sorted_ab_20-of-53, snakemake/results/sorted_ab_21-of-53, snakemake/results/sorted_ab_22-of-53, snakemake/results/sorted_ab_23-of-53, snakemake/results/sorted_ab_24-of-53, snakemake/results/sorted_ab_25-of-53, snakemake/results/sorted_ab_26-of-53, snakemake/results/sorted_ab_27-of-53, snakemake/results/sorted_ab_28-of-53, snakemake/results/sorted_ab_29-of-53, snakemake/results/sorted_ab_30-of-53, snakemake/results/sorted_ab_31-of-53, snakemake/results/sorted_ab_32-of-53, snakemake/results/sorted_ab_33-of-53, snakemake/results/sorted_ab_34-of-53, snakemake/results/sorted_ab_35-of-53, snakemake/results/sorted_ab_36-of-53, snakemake/results/sorted_ab_37-of-53, snakemake/results/sorted_ab_38-of-53, snakemake/results/sorted_ab_39-of-53, snakemake/results/sorted_ab_40-of-53, snakemake/results/sorted_ab_41-of-53, snakemake/results/sorted_ab_42-of-53, snakemake/results/sorted_ab_43-of-53, snakemake/results/sorted_ab_44-of-53, snakemake/results/sorted_ab_45-of-53, snakemake/results/sorted_ab_46-of-53, snakemake/results/sorted_ab_47-of-53, snakemake/results/sorted_ab_48-of-53, snakemake/results/sorted_ab_49-of-53, snakemake/results/sorted_ab_50-of-53, snakemake/results/sorted_ab_51-of-53, snakemake/results/sorted_ab_52-of-53, snakemake/results/sorted_ab_53-of-53
+    output: snakemake/results/result_ab
+    jobid: 111
+    wildcards: part_id=ab
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-222c9919-607e-56ea-acec-bf6f8af9bf5e
+kubectl logs snakejob-222c9919-607e-56ea-acec-bf6f8af9bf5e
+[Thu Apr 21 02:46:28 2022]
+Finished job 2.
+216 of 219 steps (99%) done
+[Thu Apr 21 02:46:48 2022]
+Finished job 111.
+217 of 219 steps (99%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:46:48 2022]
+rule calc:
+    input: snakemake/results/result_aa, snakemake/results/result_ab
+    output: snakemake/results/result.txt
+    jobid: 1
+    resources: tmpdir=/tmp
+
+Get status with:
+kubectl describe pod snakejob-21c2d984-b6a9-5fb1-b3cb-6c969be087ad
+kubectl logs snakejob-21c2d984-b6a9-5fb1-b3cb-6c969be087ad
+[Thu Apr 21 02:46:58 2022]
+Finished job 1.
+218 of 219 steps (99.5%) done
+Select jobs to execute...
+
+[Thu Apr 21 02:46:59 2022]
+localrule all:
+    input: snakemake/results/result.txt
+    jobid: 0
+    resources: tmpdir=/tmp
+
+Downloading from remote: snakemake/results/result.txt
+Finished download.
+[Thu Apr 21 02:46:59 2022]
+Finished job 0.
+219 of 219 steps (100%) done
+Complete log: /home/weislenn/snakemake/.snakemake/log/2022-04-21T022444.029303.snakemake.log

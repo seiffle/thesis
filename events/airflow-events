@@ -1,0 +1,1138 @@
+FirstSeen   Count    From     Type     Reason      Message
+<nil>       <none>   <none>   Normal   Scheduled   Successfully assigned airflow/split.2987d64940e541219175d194afd15c52 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:14:01Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:14:02Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 899.598566ms
+2022-04-22T13:14:02Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:14:02Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:19:09Z   1        kubelet   Normal   Killing     Stopping container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/chunk-aa.e13a8922281448799e577709b6221535 to aks-agentpool-41233087-vmss00000z
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/chunk-ab.42fcb77c010146de8b93f37c6519e684 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:19:11Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:19:11Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:19:12Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 856.169481ms
+2022-04-22T13:19:12Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:19:12Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:19:12Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 847.52249ms
+2022-04-22T13:19:12Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:19:13Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-42.e169580198f04a62a1f00071a224533b to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-41.c34509da1c544d76a84b872351d73c5f to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-34.9317f99fef184f1cb7815809961e7944 to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-43.961a4addc5834a07b96239647f6cf18a to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:20:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-38.74249ea1a4ec40e9ab38203209e64142 to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-40.a032e028ef434cb99798c34be15ce716 to aks-agentpool-41233087-vmss00000z
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-53.31320b75290341e4817a66d7f3253847 to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-37.fee35ccd026648d38a15ee4d6d754dd3 to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-31.bc04f02e634243f381fbb013646f1940 to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-32.56efb32521f947c7abd9631e1d90d538 to aks-agentpool-41233087-vmss00000y
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-35.e0d06fda4b5f465da9ac64d288db36b2 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-52.7bb2ee612817415b8437f8be5975996c to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-36.07df3ad92cf348bd900bed76e2e44a42 to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-39.4946109c4b0d41f08165407f46f4f153 to aks-agentpool-41233087-vmss000010
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-33.eb364807d50a41da86d98dc8daa1d8a6 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:20:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 954.014184ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 967.526755ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 881.930516ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 903.002471ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 923.357444ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 880.707815ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 873.17314ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 894.860806ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 938.638986ms
+2022-04-22T13:20:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 877.594954ms
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.577214307s
+2022-04-22T13:20:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.561327117s
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.561109548s
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.665404329s
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.439678402s
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:47Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-51.835f387c7acc46aea0e15c1dec268d02 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:20:52Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-30.706b3c8633d7490a87ef1cd3947621fd to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:20:52Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 900.048855ms
+2022-04-22T13:20:53Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:53Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:53Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:53Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:20:54Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 891.561117ms
+2022-04-22T13:20:54Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:54Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-50.2d599c0f4ed44e1190080aafaa223ef6 to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-29.14ce9605bfc24ca69530dc174aedc531 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:20:54Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:54Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-28.105b8db236514b518efdc06906950416 to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-49.f93f0a44c4ac4f1c984151f6baac09d8 to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-48.2642719310074a1ab83ccae121381334 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-27.684c96c3c90540318e00c8f3826a1a12 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:20:55Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:55Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:55Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 861.234192ms
+2022-04-22T13:20:55Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 886.696321ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-47.727eab71d5794c4fb021b7d5b55d5bab to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:20:55Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-26.35e7d903920e494cb49287905985677c to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:20:55Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-25.6489934ae4fe468aa4e83b12722169ed to aks-agentpool-41233087-vmss000010
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:56Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:56Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-46.6cbfe16774a844c1822be4d6228a727c to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-24.c2f918ed240b472cb3ef88081d5513e1 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 913.014226ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-45.6854ed21368a451fbba029ac4661172f to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 954.295193ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-44.f181af873a174dd296b0f04dc7c1618e to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:20:56Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:56Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 859.033908ms
+2022-04-22T13:20:56Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:56Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:56Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:57Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:57Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:57Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 902.211849ms
+2022-04-22T13:20:57Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 888.102287ms
+2022-04-22T13:20:57Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 878.110812ms
+2022-04-22T13:20:57Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.249684322s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-23.100d729f694b4d35b5489375d98e1371 to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:20:57Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:57Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 843.261136ms
+2022-04-22T13:20:57Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 856.048851ms
+2022-04-22T13:20:58Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 858.967819ms
+2022-04-22T13:20:58Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.18332934s
+2022-04-22T13:20:58Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:58Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:20:59Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 885.925277ms
+2022-04-22T13:20:59Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:20:59Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:20:59Z   1        kubelet   Normal   Killing     Stopping container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-0.75dad55da7c94e6294499b6e5a7b40f8 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:21:02Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-1.34f9dcefcfe2445e8c6450acb496b61f to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:21:03Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 898.623614ms
+2022-04-22T13:21:03Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:03Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:03Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:03Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:03Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:04Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 851.795517ms
+2022-04-22T13:21:04Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-41.bb645cffe6f248809ed81dde74caa7d5 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:04Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-32.37074bd480eb4faaabe541abba94ef62 to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:21:04Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:04Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:04Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-44.485f18d20c8040cbb09c173fb2c93e11 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:05Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:05Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 874.898122ms
+2022-04-22T13:21:05Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 896.871596ms
+2022-04-22T13:21:05Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:05Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:05Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:06Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:06Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-42.e5c56d1fbdf0494f98822ef856c00017 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-43.6f883df7630943e483686da56d1324fa to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-28.abeda3922f4e4946a01f1c47421b7794 to aks-agentpool-41233087-vmss000010
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-45.7133a87cb97941d1a0d0ab21e81009d8 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:06Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-39.5353b3ecc6c6455d86b48341d2971146 to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-40.d0ba798976e84cbc825c6250b231c2b8 to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-35.79aeffcb127b49148667e224269f47f0 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-34.374a8c6a4e9a4547918f88ce3d308d9c to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:21:06Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 865.168941ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-36.1437594a2252445da3d647a1583f7fea to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-37.78cf7cfd6bd64e9a80013023061099dc to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 856.28291ms
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:07Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 887.176046ms
+2022-04-22T13:21:07Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 922.219141ms
+2022-04-22T13:21:08Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 886.972538ms
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 873.527007ms
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 887.627007ms
+2022-04-22T13:21:08Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 903.703229ms
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 904.958184ms
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.759434802s
+2022-04-22T13:21:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:09Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-38.71d3f174a83c4ff593b44cf0d52a8324 to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:21:09Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.409747882s
+2022-04-22T13:21:09Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:09Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:10Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:10Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:10Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 862.420617ms
+2022-04-22T13:21:11Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:11Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-22.53f5f53c4a37492981620b8f61b58506 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-21.bbbc1ef8c7cc4987a253fc7e67327265 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:21:12Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:12Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:13Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 856.720111ms
+2022-04-22T13:21:13Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:13Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 853.393519ms
+2022-04-22T13:21:13Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:13Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:13Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-18.eff73210700b4e24b58177856d897054 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-21.aae2bb9238d44d729e647168bdb68bbd to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:14Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:14Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-20.d6ce90faaa0a4616996769872ac72a7e to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:21:15Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 906.891496ms
+2022-04-22T13:21:15Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 920.660216ms
+2022-04-22T13:21:15Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-15.1b12cc893d9945149757c0d5f9828e4c to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:15Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:15Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:15Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-12.8532f1666dee4b8a8368b296890a4594 to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:21:15Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-13.8e0febbf772f4496a15503b760f26b40 to aks-agentpool-41233087-vmss000010
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-14.c10f9656c19c4b5d90874953b72aa2ce to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:21:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:16Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 892.187001ms
+2022-04-22T13:21:16Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:16Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:16Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-3.e9789e1653c74123bc75920deafa9158 to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-19.df51caf9813d4599b6cdb9894c6c6f2d to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:21:17Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 944.874625ms
+2022-04-22T13:21:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 914.579851ms
+2022-04-22T13:21:17Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:17Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:17Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-5.3dbaac59430c478f98ed1db7a34c960f to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-4.ee44e0e5e7254fc6801c9aca3fcd1756 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:17Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:17Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-20.c8fc1f0cf21741d19dbe79368fb324e5 to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-17.80c4fc0d00394750813e7a561e87850c to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:21:17Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 915.363166ms
+2022-04-22T13:21:17Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 867.47623ms
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:18Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 852.225521ms
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:18Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 886.469818ms
+2022-04-22T13:21:18Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:18Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 873.053223ms
+2022-04-22T13:21:19Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 927.225782ms
+2022-04-22T13:21:19Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 865.421882ms
+2022-04-22T13:21:19Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:19Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:19Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:19Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:19Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:19Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:19Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.030341109s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-22.f1d5135b1e6a44af8b05544c98dc5193 to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:21:19Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:19Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:20Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:20Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 863.52102ms
+2022-04-22T13:21:21Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:21Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-17.bffbf12f5fcd447aa71d4062772608fa to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-16.618e54fe355243a9a0d88b4bc499a5e1 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:22Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:22Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:22Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 850.652045ms
+2022-04-22T13:21:22Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 909.642901ms
+2022-04-22T13:21:23Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:23Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:23Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:23Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-11.f5bc304b19134576b231fd23f921d31e to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:21:24Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:25Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 905.908883ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-4.7d31a5cf48b4491d9394a34faa51b8d5 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-10.c229d58953784738b03f1d435f9d5b65 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:25Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:25Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:25Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:25Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-9.156566ee75214f7da630afc68b580ac7 to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-0.1139568db91c4794bdea38373a4369aa to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-2.c7a116979d8b42aa90eaac7bb08877ce to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:21:26Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:26Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 864.440624ms
+2022-04-22T13:21:26Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-5.58bf5500c86344dbb0deb8e660857da8 to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:21:26Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 882.553234ms
+2022-04-22T13:21:26Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-3.717a4d885bce42a18c829ab9fb16ae2f to aks-agentpool-41233087-vmss000010
+2022-04-22T13:21:26Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:26Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:26Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:26Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:26Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:27Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:27Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 925.622726ms
+2022-04-22T13:21:27Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:27Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 851.316077ms
+2022-04-22T13:21:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 995.367647ms
+2022-04-22T13:21:27Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:27Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:27Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-6.ca469891a438436190c7d419a23a91ae to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-9.ae49a65a8a7b469caba79abef24674d8 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:21:27Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-7.4ccadc9e14274f73b8b695ef45b07103 to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-6.20ae9391edc5494aac06576137e5ea35 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 889.355611ms
+2022-04-22T13:21:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 888.872735ms
+2022-04-22T13:21:28Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:28Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:28Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:28Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-8.354288917edd456d86f57a63edf8ebf8 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-1.615401c77cf74bd58fe481cd017d7699 to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:21:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:29Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 874.553856ms
+2022-04-22T13:21:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 866.685168ms
+2022-04-22T13:21:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 885.508559ms
+2022-04-22T13:21:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 851.939947ms
+2022-04-22T13:21:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 847.983343ms
+2022-04-22T13:21:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 925.482209ms
+2022-04-22T13:21:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:30Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:30Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:30Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-11.53f330cd7848431c8879be6e408ac852 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-12.8ae3ec2821f646898773fe78793a40de to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:31Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:31Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:32Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 888.55072ms
+2022-04-22T13:21:32Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 900.904408ms
+2022-04-22T13:21:33Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:33Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:33Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:33Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-13.be1eed294e7d44d9a3a35c0494962eea to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:21:34Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-15.3a2bd08516584b2ba56ab95aede86fde to aks-agentpool-41233087-vmss00000y
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-14.12a3aaf6e1a44727920b4295f484fdcc to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:35Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 896.990962ms
+2022-04-22T13:21:35Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:35Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:35Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:35Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-18.5925951818f841faa2460a693750df4a to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-16.92bd6c387205445eaae30b120045019f to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-19.60bf3a78166746988cba8198240a0bdb to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:21:36Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 891.713014ms
+2022-04-22T13:21:36Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:36Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 909.18614ms
+2022-04-22T13:21:36Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:36Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:36Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:36Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:36Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-2.915dd12147ff441b82650a6080fa0f35 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:21:36Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-7.db5ddeb9cc16499fa5bc00cc2cbac381 to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:21:37Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 875.153806ms
+2022-04-22T13:21:37Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:37Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:37Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:37Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-25.08c3d0bd36a14715b02a7d9e86fa1d50 to aks-agentpool-41233087-vmss000010
+2022-04-22T13:21:37Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 934.073091ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-aa-8.41266d457ebd452cb172b9fbe80b53b2 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:37Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:37Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:38Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:38Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.418068166s
+2022-04-22T13:21:38Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 899.769358ms
+2022-04-22T13:21:38Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:38Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:38Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:38Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 902.83358ms
+2022-04-22T13:21:38Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:38Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:38Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:38Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-26.d97bb068d09946818ca1126e84a5a8ea to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-23.2391f89bffb04c9e89e9e4b87c2ec335 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-24.a8d17835d653489c8891857c32bdeb72 to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-27.e13978df743d4e6f9c0ba5487de7c2cd to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:39Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 937.060643ms
+2022-04-22T13:21:39Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:39Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:39Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:39Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:39Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:39Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.179532993s
+2022-04-22T13:21:39Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:39Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:39Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 874.940968ms
+2022-04-22T13:21:40Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 868.324882ms
+2022-04-22T13:21:40Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 873.720242ms
+2022-04-22T13:21:40Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 893.639205ms
+2022-04-22T13:21:40Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:40Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-29.af4d6a59bc0a4453bdf1eda52e7bcda8 to aks-agentpool-41233087-vmss00000z
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-30.bbd3aac1e6c643858df828cf9348951b to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:21:41Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:41Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:42Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 858.780028ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-31.f79c4d5c79214a11bbdde74e87c3d758 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:42Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:42Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 944.874309ms
+2022-04-22T13:21:42Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:43Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:43Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:43Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:44Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 895.31479ms
+2022-04-22T13:21:44Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:44Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-46.6c6bbae5b0f241018496e3df86192dcd to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-33.23b4bbf2eaed496da297b995593949b9 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-47.5d15af7b6ad1449aaf0c368e7103704b to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:21:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:45Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 866.125209ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-49.58db147771d24402a879af970a809857 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-48.d9af1bc7dc354562bee2c282056e604b to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:21:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 848.857882ms
+2022-04-22T13:21:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:46Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 913.475064ms
+2022-04-22T13:21:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:46Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:46Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:46Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 918.549638ms
+2022-04-22T13:21:47Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-51.50b6420faef543c7ae44d662f3d95b71 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:21:47Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-50.720acd7b514b4627a260c4cfa582c884 to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-53.92219ceca0e34ca39d23ce22f61e5c62 to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-52.567184a704f24db88eef957279b12ac4 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:47Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 875.524601ms
+2022-04-22T13:21:47Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:48Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:48Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:48Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:48Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:48Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:48Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 863.384172ms
+2022-04-22T13:21:49Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 855.393651ms
+2022-04-22T13:21:49Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 880.447261ms
+2022-04-22T13:21:49Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:49Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 877.841425ms
+2022-04-22T13:21:49Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:49Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:49Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:49Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:49Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:49Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:49Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-4.23713acaa43d4cbe8e3575de7f8ebd1a to aks-agentpool-41233087-vmss00000z
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-3.edb0e56147784f569f525776ade3b41a to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/word-count-ab-10.fc2a5524dc6f42fe86e6be0725833776 to aks-agentpool-41233087-vmss000010
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-1.93e1fbaef0204001b9e55c60b8103193 to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:21:50Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:50Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:50Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:50Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:51Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 890.909732ms
+2022-04-22T13:21:51Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 868.511398ms
+2022-04-22T13:21:51Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:51Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-5.3f8d5428a7d64a7c86b776a44d57e6b8 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:51Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 887.321836ms
+2022-04-22T13:21:51Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-0.c93997eebb6842348d808aea9f5a834e to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:21:51Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 916.949271ms
+2022-04-22T13:21:51Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:51Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:51Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:51Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:51Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:51Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:52Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:52Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 903.623254ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-11.479d3fee50ea48f39bd6acdf13c28131 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:52Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:52Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 899.292103ms
+2022-04-22T13:21:52Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:52Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:53Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:53Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:53Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-9.2392d11e1063472db31372c721833d9b to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-10.8dd0cf241d4243d68b0c0f9e3703fb7b to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:21:54Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:54Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 911.406019ms
+2022-04-22T13:21:54Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:54Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:54Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:54Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:54Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-18.21fb4607aaff427b8f247a775813fd69 to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-6.098ba0f3ddd4416f8470820738eee72a to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:21:55Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 872.262625ms
+2022-04-22T13:21:55Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-12.4f6b1ec824c74380a9000d5ecf2922cc to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:55Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:55Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-8.8c5934efbf944e148cd9ae83c540ca70 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:21:55Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:55Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:56Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.118615492s
+2022-04-22T13:21:56Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:56Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:56Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:56Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 910.889642ms
+2022-04-22T13:21:56Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:56Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:56Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 868.285793ms
+2022-04-22T13:21:56Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:56Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 920.363532ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-7.eb6cecf17cc64baea4086f2478423252 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:21:56Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-20.98f63a8a88c746d1a1a3f8de4de62009 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:21:56Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:56Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:56Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:57Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 865.004756ms
+2022-04-22T13:21:57Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:57Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:57Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:57Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:57Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-19.42fcacbae8d34ba8927338a8cee84047 to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-15.03c119562e3449d89ae1cb775775c018 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-13.5159e1ca65cb4721b7f61def7d81ca4b to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-14.f126ae5b64264e9b92bf42edc761befb to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-17.cb62f8d464794f88901ba2cb1a407568 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-22.99e24f2ee0744fcd8d8ddd25b802042e to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 856.788336ms
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 913.674965ms
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:58Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:58Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:58Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:58Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:58Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:21:58Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:21:59Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 890.763277ms
+2022-04-22T13:21:59Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 885.978276ms
+2022-04-22T13:21:59Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 871.247288ms
+2022-04-22T13:21:59Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 977.552091ms
+2022-04-22T13:21:59Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 894.888657ms
+2022-04-22T13:21:59Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:21:59Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-16.5f805212319a417c8f73be6f72d0d9b6 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:21:59Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 858.214944ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-23.717340481c6c407ebe5480aa5f3a5330 to aks-agentpool-41233087-vmss000010
+2022-04-22T13:21:59Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:00Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:00Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:22:00Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:00Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:01Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 950.15652ms
+2022-04-22T13:22:01Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:01Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 944.773793ms
+2022-04-22T13:22:01Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:01Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:01Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-26.688a46a160fe45f7b6a0392249c6ed65 to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-24.6dc2538224374acbb5b51a26c69dd8fa to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-27.2f1af537e1b943f785011da780e51235 to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-25.92a5d0b288914142a6f84104602c82d3 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:22:02Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:02Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:02Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-30.7ef76bd59e514a55b99f1a6c15bf0645 to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:02Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:03Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 854.75487ms
+2022-04-22T13:22:03Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:03Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:03Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:03Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 882.124746ms
+2022-04-22T13:22:03Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 924.744296ms
+2022-04-22T13:22:03Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:03Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-29.c0deb98cf9614bd19560e94abb22d120 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:03Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:03Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:03Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 914.315358ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-28.faf03b392d184b4dbb0da1b6b988d72b to aks-agentpool-41233087-vmss00000y
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-31.0dbae349792f47e19e32065f8c7f2b87 to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:03Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:04Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:04Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:04Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 869.945367ms
+2022-04-22T13:22:04Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:04Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:04Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:04Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:04Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 868.982107ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-43.c9afba6f962e4d908beb17dc23335269 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:05Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:05Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 844.95401ms
+2022-04-22T13:22:05Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:05Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 919.459903ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-42.d7ad8ee9d5d043c6b5992ecc676f2572 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:05Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:05Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:05Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:05Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-40.4274ed0b1bd1473897b2e20fed1f05b7 to aks-agentpool-41233087-vmss000010
+2022-04-22T13:22:05Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-35.bcb20c66c6324455a1bbc666a735b83d to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:05Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-38.1ebf44bdd3b44bbb9b356ebe801884e2 to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:22:05Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-41.b49ca28a4ef74b46b90b9e6198d9e91b to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/gate to aks-agentpool-41233087-vmss000010
+2022-04-22T13:22:06Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-39.12d4b505837248aa9b46a54bbbb7d506 to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:22:06Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 870.400673ms
+2022-04-22T13:22:06Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:06Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:06Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-34.f0f221be7f994d809b25153de7b65b34 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:22:06Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:06Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 856.88101ms
+2022-04-22T13:22:06Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:06Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:06Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 896.171354ms
+2022-04-22T13:22:07Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T12:21:06Z   1        kubelet   Normal   Pulling     Pulling image "ubuntu"
+2022-04-22T12:21:10Z   1        kubelet   Normal   Pulled      Successfully pulled image "ubuntu" in 3.48830826s
+2022-04-22T12:21:11Z   1        kubelet   Normal   Created     Created container gate
+2022-04-22T12:21:11Z   1        kubelet   Normal   Started     Started container gate
+2022-04-22T13:22:07Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:07Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:07Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 905.596784ms
+2022-04-22T13:22:07Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 874.658959ms
+2022-04-22T13:22:07Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 899.341075ms
+2022-04-22T13:22:07Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:07Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:07Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:07Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:07Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:07Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-37.6314e8a5fad547eba14cde2190359089 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-33.fda791706c3e44f19682ff9a31755571 to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:22:07Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 899.44865ms
+2022-04-22T13:22:08Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-48.5d39a0bb3cd44736b5a7d5b817498698 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:08Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-36.1a2defbc838942b891861ea51dad9c94 to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:08Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.085058484s
+2022-04-22T13:22:08Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:08Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:08Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:08Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-49.33cd461cc3e041a6b23534dac95e17c6 to aks-agentpool-41233087-vmss00000z
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-50.f76e48e05b2c47e5a86a18f2aa88f7ed to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:09Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 894.524122ms
+2022-04-22T13:22:09Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:09Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:09Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 875.901751ms
+2022-04-22T13:22:09Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:09Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:09Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:09Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-44.581efb7920b943d79c123eedb302f1aa to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-45.914d7eda50324ad690f5812a98b2900e to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:09Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:10Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:10Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:10Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 964.122125ms
+2022-04-22T13:22:10Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:10Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:22:10Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 854.229629ms
+2022-04-22T13:22:10Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:10Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:10Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:10Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 872.481083ms
+2022-04-22T13:22:10Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:10Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:10Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:11Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 895.05549ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-46.44335427908d46838efe66106edae37c to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:11Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-47.ff591b5d1b0b4a12849f2be7b6edcdb3 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:22:11Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:11Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 914.029091ms
+2022-04-22T13:22:11Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.184050535s
+2022-04-22T13:22:11Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:11Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:11Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:11Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-10.e431de77c4a14361b568057efc567457 to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:22:11Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:11Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-53.c7033fb3d07a4d088a9eb56ce6f17c78 to aks-agentpool-41233087-vmss000010
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-52.8c73487509f74ae98011b361e0755b7b to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:22:12Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:12Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-51.f444b755c2b64476827f9b0fa50022bd to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-8.bf11620dc33341758478394599833527 to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:22:12Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 928.549228ms
+2022-04-22T13:22:12Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 875.380037ms
+2022-04-22T13:22:12Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:12Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:13Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:13Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:13Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 897.583803ms
+2022-04-22T13:22:13Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:13Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:13Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:13Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:13Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 880.864453ms
+2022-04-22T13:22:13Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:13Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:13Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-2.4ed3d4add5f6497bb5c0fb9674e573aa to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-13.651c722ea4e0459b96238a9137e1483c to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:14Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 869.271547ms
+2022-04-22T13:22:14Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 857.843655ms
+2022-04-22T13:22:14Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:14Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:14Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:14Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:14Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:14Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 900.939989ms
+2022-04-22T13:22:14Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-5.20cc01a891c347eca9ec331ef9e9f056 to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:14Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:14Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-4.b255386b442a42fb99c0fccbb37a79fb to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:15Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 867.338567ms
+2022-04-22T13:22:15Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:15Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-0.8cea3a97a7ee466d8de68b3f410593be to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-3.6232787276fb44ce94904d55977c37df to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:15Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-1.fb25afe316c44e349e5f9b2bf6ccb414 to aks-agentpool-41233087-vmss000010
+2022-04-22T13:22:15Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 879.159103ms
+2022-04-22T13:22:15Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:16Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-9.041cd68bb9424be8a87a4dd8cb490982 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-6.a1c16d39e72246d29066f4a8fef1f90e to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 911.56016ms
+2022-04-22T13:22:16Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:16Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 885.140372ms
+2022-04-22T13:22:16Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:17Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 881.478661ms
+2022-04-22T13:22:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 897.980449ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-11.9b15e5584eed4f82ada53a3d92a59006 to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:22:17Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-7.0291b977a7074141bc65e3fd84114505 to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:17Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 887.498661ms
+2022-04-22T13:22:17Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:17Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-12.eabe5d504aae4179aefd6d9f1d94bf59 to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:22:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 876.090013ms
+2022-04-22T13:22:17Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:17Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.084728858s
+2022-04-22T13:22:17Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-32.cae314bc730c4c1ba45a0e1919dd7aa5 to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:22:17Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:17Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:18Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:18Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:18Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 917.055228ms
+2022-04-22T13:22:18Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 891.598143ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-28.5197ff8a90004507be3cb5c942eae2da to aks-agentpool-41233087-vmss00000u
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-22.2c757ace166b481486aba4f68f732772 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:22:18Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:18Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:18Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:18Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:19Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 874.229053ms
+2022-04-22T13:22:19Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:19Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:19Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:19Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:19Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 858.408295ms
+2022-04-22T13:22:19Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:19Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-21.23073f7e19524b1387a157d6b3f4c3f1 to aks-agentpool-41233087-vmss00000w
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-20.70924abfb14d40fc99d5f614acbd235c to aks-agentpool-41233087-vmss000010
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-17.775d989401b84cc991b567508edf452c to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:20Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 901.539843ms
+2022-04-22T13:22:20Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 866.611852ms
+2022-04-22T13:22:20Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:20Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:20Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:20Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:20Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:20Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:20Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:21Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 890.198749ms
+2022-04-22T13:22:21Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:21Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-18.2fc7d46df6844fedaae717647ff892e8 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:21Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 891.926441ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-15.5880fff6a27f4beea434e04508f81907 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:21Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:21Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 868.160462ms
+2022-04-22T13:22:21Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:21Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:21Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-19.d5a93a81a2794f598deef105f802b01d to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:22:21Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:22Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-14.8f475bf44bf44437b76a09f2c479eb23 to aks-agentpool-41233087-vmss00000z
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-25.b81d5ba2a3a142bca6e79411bb91fba0 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-16.7c1e930493564fa3b6a7606392fe3db2 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:22Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-23.4f0332e1e9124ea8bac508278fdd26ae to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:22:22Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:22Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 848.438544ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-24.ecafcfeb64e84b368b3b05bfc409cd93 to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:22:22Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:22Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:22Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:22Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 923.644541ms
+2022-04-22T13:22:22Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:23Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:23Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:23Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:23Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:23Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 912.764883ms
+2022-04-22T13:22:23Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:23Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:23Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 854.001226ms
+2022-04-22T13:22:23Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:23Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-27.1276b3fc6bc449b6aac44dd6a36351fc to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-26.3a83d116472a4c02b97735e3313cd241 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:23Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.032588071s
+2022-04-22T13:22:23Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.009312756s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-30.895d281901294241b079b8ae46f382a1 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:23Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 906.955288ms
+2022-04-22T13:22:24Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 913.784447ms
+2022-04-22T13:22:24Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:24Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:24Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-29.e5c045d5b48f473eb9ab388c6356ca28 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-31.75da0d63bb164a31b72c38fcc0199195 to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:22:24Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:25Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 893.026536ms
+2022-04-22T13:22:25Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:25Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 872.886458ms
+2022-04-22T13:22:25Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:25Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:25Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:25Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-33.f5b0ae5abbb144b99b5626d2638b331e to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:25Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:25Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 914.13496ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-42.25309ea8cfaf429e833cd87ee9d03f68 to aks-agentpool-41233087-vmss00000s
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-41.1829212f87bc4c26bd7661648f9f2a3c to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:22:26Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:26Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 858.429026ms
+2022-04-22T13:22:26Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:26Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:26Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:26Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:26Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:26Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:26Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:22:26Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 857.727225ms
+2022-04-22T13:22:26Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:26Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 864.045092ms
+2022-04-22T13:22:27Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 892.945131ms
+2022-04-22T13:22:27Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 886.15646ms
+2022-04-22T13:22:27Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:27Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-37.be3ab03665134629b2a993b6cb164fd7 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:27Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:27Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-43.63e5639782794ea7b9186c005bf25164 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:27Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-44.a8d63078f04543ff85c7e59097ee832b to aks-agentpool-41233087-vmss00000x
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-36.6e94858872344eedb5e338ff358a04d0 to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:28Z   1        kubelet   Normal   Killing     Stopping container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-35.8931cb94fc64496e991345a3585aa8bc to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-40.f70c5d0f410d43b3b586ffd7096ecdc9 to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-45.a0b4629d3f2349b5914788105c14a11c to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:22:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:28Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-34.09218bfdeea643e88e47828f27a61d04 to aks-agentpool-41233087-vmss000010
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-39.6a1a6af50ab942cbad9f62ca294272f2 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:22:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 880.753898ms
+2022-04-22T13:22:29Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:29Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:29Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:29Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:29Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 916.246503ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-49.4bd941eb9ab044fc91bca0f1ea03b691 to aks-agentpool-41233087-vmss00000t
+2022-04-22T13:22:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:29Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 856.531027ms
+2022-04-22T13:22:29Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:29Z   1        kubelet   Normal   Killing     Stopping container base
+2022-04-22T13:22:29Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.245354446s
+2022-04-22T13:22:30Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 870.594715ms
+2022-04-22T13:22:30Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 908.477716ms
+2022-04-22T13:22:30Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:30Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 849.580832ms
+2022-04-22T13:22:30Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 886.89007ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-46.27816aa743a6403eace7491709bfced4 to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:22:30Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:30Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-38.6c81b6e4b2d94b76950329c83b4ab35a to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:30Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-48.09f6a4a1125342d5a4c7f8f54d6a26c2 to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:22:31Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 897.20151ms
+2022-04-22T13:22:31Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:31Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:31Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:31Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:31Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 875.949614ms
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-50.b5e4bc8aa102450b84be0d640c4c2b61 to aks-agentpool-41233087-vmss00000v
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-47.3528d67b6bb249e6915ca1d1f85a840a to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:22:31Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-51.55bb768b1c4c4c5ba2c655eecc282555 to aks-agentpool-41233087-vmss00000v
+2022-04-22T13:22:31Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:31Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:32Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 938.276801ms
+2022-04-22T13:22:32Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:32Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:32Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 896.012005ms
+2022-04-22T13:22:32Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:32Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:32Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:32Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:33Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.139325481s
+2022-04-22T13:22:33Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:33Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:33Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:33Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 897.730282ms
+2022-04-22T13:22:33Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:33Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 866.008026ms
+2022-04-22T13:22:33Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:33Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-52.a659a98e3b004cb9b33d0374aa10ef01 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:33Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-21.e3078ac9cd8e4c929e6636e3fe1121a2 to aks-agentpool-41233087-vmss00000x
+2022-04-22T13:22:34Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-32.bb00571e9f0f4abcbc4533c3bd55789b to aks-agentpool-41233087-vmss00000t
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-ab-53.53c4ef88b3be48e0841c511762f3ea7c to aks-agentpool-41233087-vmss00000w
+2022-04-22T13:22:34Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 1.362021153s
+2022-04-22T13:22:34Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:34Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/sort-aa-2.d47e92c3a66b44349fbc7e09ef342951 to aks-agentpool-41233087-vmss00000y
+2022-04-22T13:22:34Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:35Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:35Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 893.857628ms
+2022-04-22T13:22:35Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:35Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:35Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:35Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 892.683484ms
+2022-04-22T13:22:35Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:35Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:35Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:35Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 894.762694ms
+2022-04-22T13:22:36Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:36Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:36Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 911.406105ms
+2022-04-22T13:22:36Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 870.710881ms
+2022-04-22T13:22:36Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:36Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:36Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:36Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:39Z   1        kubelet   Normal   Killing     Stopping container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/merge-ab.3809c53d63bd4aeca69c2dab3cdbabd2 to aks-agentpool-41233087-vmss00000z
+2022-04-22T13:22:40Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:41Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 855.475454ms
+2022-04-22T13:22:41Z   1        kubelet   Normal   Created     Created container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/merge-aa.486fb376324345049c59e8ce88f4adee to aks-agentpool-41233087-vmss00000u
+2022-04-22T13:22:42Z   1        kubelet   Normal   Started     Started container base
+2022-04-22T13:22:42Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:22:43Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 885.205648ms
+2022-04-22T13:22:43Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:22:43Z   1        kubelet   Normal   Started     Started container base
+<nil>                  <none>   <none>    Normal   Scheduled   Successfully assigned airflow/calc.6b73d72c415443c4a4ca3da3cb68b3cd to aks-agentpool-41233087-vmss00000s
+2022-04-22T13:23:32Z   1        kubelet   Normal   Pulling     Pulling image "weislenn/utils"
+2022-04-22T13:23:33Z   1        kubelet   Normal   Pulled      Successfully pulled image "weislenn/utils" in 921.956613ms
+2022-04-22T13:23:33Z   1        kubelet   Normal   Created     Created container base
+2022-04-22T13:23:33Z   1        kubelet   Normal   Started     Started container base

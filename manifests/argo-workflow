@@ -1,0 +1,629 @@
+Name:         scale-test-w6cdf
+Namespace:    argo
+Labels:       workflows.argoproj.io/phase=Running
+Annotations:  workflows.argoproj.io/pod-name-format: v1
+API Version:  argoproj.io/v1alpha1
+Kind:         Workflow
+Metadata:
+  Creation Timestamp:  2022-05-05T08:40:29Z
+  Generate Name:       scale-test-
+  Generation:          5
+  Managed Fields:
+    API Version:  argoproj.io/v1alpha1
+    Fields Type:  FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:generateName:
+      f:spec:
+        .:
+        f:arguments:
+        f:entrypoint:
+        f:templates:
+        f:volumes:
+      f:status:
+        .:
+        f:finishedAt:
+    Manager:      argo
+    Operation:    Update
+    Time:         2022-05-05T08:40:29Z
+    API Version:  argoproj.io/v1alpha1
+    Fields Type:  FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .:
+          f:workflows.argoproj.io/pod-name-format:
+        f:labels:
+          .:
+          f:workflows.argoproj.io/phase:
+      f:status:
+        f:artifactRepositoryRef:
+        f:conditions:
+        f:nodes:
+        f:phase:
+        f:progress:
+        f:resourcesDuration:
+        f:startedAt:
+    Manager:         workflow-controller
+    Operation:       Update
+    Time:            2022-05-05T08:40:39Z
+  Resource Version:  191700818
+  Self Link:         /apis/argoproj.io/v1alpha1/namespaces/argo/workflows/scale-test-w6cdf
+  UID:               36ff95de-88fc-430e-bbb4-d54ad87d637d
+Spec:
+  Arguments:
+  Entrypoint:  workflow
+  Templates:
+    Dag:
+      Tasks:
+        Arguments:
+        Name:      split
+        Template:  split
+        Arguments:
+          Parameters:
+            Name:   partID
+            Value:  aa
+        Dependencies:
+          split
+        Name:      chunk-1
+        Template:  chunk
+        Arguments:
+          Parameters:
+            Name:   partID
+            Value:  ab
+        Dependencies:
+          split
+        Name:      chunk-2
+        Template:  chunk
+        Arguments:
+          Artifacts:
+            Name:  chunk
+            s3:
+              Key:  {{workflow.name}}/chunks/aa/{{item}}
+          Parameters:
+            Name:   partID
+            Value:  aa
+            Name:   chunkID
+            Value:  {{item}}
+        Dependencies:
+          chunk-1
+        Name:        word-count-1
+        Template:    word-count
+        With Param:  {{tasks.chunk-1.outputs.result}}
+        Arguments:
+          Artifacts:
+            Name:  chunk
+            s3:
+              Key:  {{workflow.name}}/chunks/ab/{{item}}
+          Parameters:
+            Name:   partID
+            Value:  ab
+            Name:   chunkID
+            Value:  {{item}}
+        Dependencies:
+          chunk-2
+        Name:        word-count-2
+        Template:    word-count
+        With Param:  {{tasks.chunk-2.outputs.result}}
+        Arguments:
+          Artifacts:
+            Name:  chunk
+            s3:
+              Key:  {{workflow.name}}/counted/aa/{{item}}
+          Parameters:
+            Name:   partID
+            Value:  aa
+            Name:   chunkID
+            Value:  {{item}}
+        Dependencies:
+          word-count-1
+        Name:        sort-1
+        Template:    sort
+        With Param:  {{tasks.chunk-1.outputs.result}}
+        Arguments:
+          Artifacts:
+            Name:  chunk
+            s3:
+              Key:  {{workflow.name}}/counted/ab/{{item}}
+          Parameters:
+            Name:   partID
+            Value:  ab
+            Name:   chunkID
+            Value:  {{item}}
+        Dependencies:
+          word-count-2
+        Name:        sort-2
+        Template:    sort
+        With Param:  {{tasks.chunk-2.outputs.result}}
+        Arguments:
+          Parameters:
+            Name:   partID
+            Value:  aa
+        Dependencies:
+          sort-1
+        Name:      merge-1
+        Template:  merge
+        Arguments:
+          Parameters:
+            Name:   partID
+            Value:  ab
+        Dependencies:
+          sort-2
+        Name:      merge-2
+        Template:  merge
+        Arguments:
+        Dependencies:
+          merge-1
+          merge-2
+        Name:      calc
+        Template:  calc
+    Inputs:
+    Metadata:
+    Name:  workflow
+    Outputs:
+    Container:
+      Args:
+        /mnt/input/input.txt
+      Command:
+        split.sh
+      Image:              weislenn/utils
+      Image Pull Policy:  IfNotPresent
+      Name:               
+      Resources:
+      Volume Mounts:
+        Mount Path:  /mnt/input
+        Name:        input
+        Sub Path:    data
+    Inputs:
+    Metadata:
+    Name:  split
+    Outputs:
+      Artifacts:
+        Name:  part1
+        Path:  /workspace/chunk_aa
+        s3:
+          Key:  {{workflow.name}}/part_aa
+        Name:   part2
+        Path:   /workspace/chunk_ab
+        s3:
+          Key:  {{workflow.name}}/part_ab
+    Inputs:
+      Artifacts:
+        Name:  part
+        Path:  /mnt/in/part
+        s3:
+          Key:  {{workflow.name}}/part_{{inputs.parameters.partID}}
+      Parameters:
+        Name:  partID
+    Metadata:
+    Name:  chunk
+    Outputs:
+      Artifacts:
+        Archive:
+          None:
+        Name:  chunks
+        Path:  /mnt/out
+        s3:
+          Key:  {{workflow.name}}/chunks/{{inputs.parameters.partID}}
+    Script:
+      Command:
+        bash
+      Image:              weislenn/utils
+      Image Pull Policy:  IfNotPresent
+      Name:               
+      Resources:
+      Source:  mkdir /mnt/out
+split /mnt/in/part -l 10000000 /mnt/out/
+python -c 'import os, json; print(json.dumps(os.listdir("/mnt/out")))'
+
+    Container:
+      Args:
+        mkdir /mnt/out && word_count.py /mnt/in/chunk > /mnt/out/result
+      Command:
+        sh
+        -c
+      Image:  weislenn/utils
+      Name:   
+      Resources:
+    Inputs:
+      Artifacts:
+        Name:  chunk
+        Path:  /mnt/in/chunk
+      Parameters:
+        Name:  partID
+        Name:  chunkID
+    Metadata:
+    Name:  word-count
+    Outputs:
+      Artifacts:
+        Archive:
+          None:
+        Name:  counted
+        Path:  /mnt/out/result
+        s3:
+          Key:  {{workflow.name}}/counted/{{inputs.parameters.partID}}/{{inputs.parameters.chunkID}}
+    Container:
+      Args:
+        mkdir /mnt/out && sort.py /mnt/in/chunk > /mnt/out/result
+      Command:
+        sh
+        -c
+      Image:  weislenn/utils
+      Name:   
+      Resources:
+    Inputs:
+      Artifacts:
+        Name:  chunk
+        Path:  /mnt/in/chunk
+      Parameters:
+        Name:  partID
+        Name:  chunkID
+    Metadata:
+    Name:  sort
+    Outputs:
+      Artifacts:
+        Archive:
+          None:
+        Name:  sorted
+        Path:  /mnt/out/result
+        s3:
+          Key:  {{workflow.name}}/sorted/{{inputs.parameters.partID}}/{{inputs.parameters.chunkID}}
+    Container:
+      Args:
+        mkdir /mnt/out && merge2.py /mnt/in/ > /mnt/out/result
+      Command:
+        bash
+        -c
+      Image:  weislenn/utils
+      Name:   
+      Resources:
+    Inputs:
+      Artifacts:
+        Name:  sorted
+        Path:  /mnt/in/
+        s3:
+          Key:  {{workflow.name}}/sorted/{{inputs.parameters.partID}}
+      Parameters:
+        Name:  partID
+    Metadata:
+    Name:  merge
+    Outputs:
+      Artifacts:
+        Archive:
+          None:
+        Name:  results
+        Path:  /mnt/out/result
+        s3:
+          Key:  {{workflow.name}}/result-{{inputs.parameters.partID}}
+    Container:
+      Args:
+        -c
+        calc_deviance.py /mnt/in/result-aa /mnt/in/result-ab
+      Command:
+        bash
+      Image:              weislenn/utils
+      Image Pull Policy:  IfNotPresent
+      Name:               
+      Resources:
+    Inputs:
+      Artifacts:
+        Name:  result1
+        Path:  /mnt/in/result-aa
+        s3:
+          Key:  {{workflow.name}}/result-aa
+        Name:   result2
+        Path:   /mnt/in/result-ab
+        s3:
+          Key:  {{workflow.name}}/result-ab
+    Metadata:
+    Name:  calc
+    Outputs:
+  Volumes:
+    Name:  input
+    Persistent Volume Claim:
+      Claim Name:  input
+Status:
+  Artifact Repository Ref:
+    Artifact Repository:
+      Archive Logs:  true
+      s3:
+        Access Key Secret:
+          Key:     accesskey
+          Name:    my-minio-cred
+        Bucket:    my-bucket
+        Endpoint:  minio:9000
+        Insecure:  true
+        Secret Key Secret:
+          Key:   secretkey
+          Name:  my-minio-cred
+    Config Map:  artifact-repositories
+    Key:         default-v1
+    Namespace:   argo
+  Conditions:
+    Status:     False
+    Type:       PodRunning
+  Finished At:  <nil>
+  Nodes:
+    scale-test-w6cdf:
+      Children:
+        scale-test-w6cdf-3714505651
+      Display Name:    scale-test-w6cdf
+      Finished At:     <nil>
+      Id:              scale-test-w6cdf
+      Name:            scale-test-w6cdf
+      Phase:           Running
+      Progress:        4/6
+      Started At:      2022-05-05T08:40:29Z
+      Template Name:   workflow
+      Template Scope:  local/scale-test-w6cdf
+      Type:            DAG
+    scale-test-w6cdf-1124431954:
+      Boundary ID:  scale-test-w6cdf
+      Children:
+        scale-test-w6cdf-2160429551
+      Display Name:    word-count-1(0:aa)
+      Finished At:     2022-05-05T08:40:58Z
+      Host Node Name:  aks-agentpool-69202306-vmss000000
+      Id:              scale-test-w6cdf-1124431954
+      Inputs:
+        Artifacts:
+          Name:  chunk
+          Path:  /mnt/in/chunk
+          s3:
+            Key:  scale-test-w6cdf/chunks/aa/aa
+        Parameters:
+          Name:   partID
+          Value:  aa
+          Name:   chunkID
+          Value:  aa
+      Name:       scale-test-w6cdf.word-count-1(0:aa)
+      Outputs:
+        Artifacts:
+          Archive:
+            None:
+          Name:  counted
+          Path:  /mnt/out/result
+          s3:
+            Key:  scale-test-w6cdf/counted/aa/aa
+          Name:   main-logs
+          s3:
+            Key:    scale-test-w6cdf/scale-test-w6cdf-1124431954/main.log
+        Exit Code:  0
+      Phase:        Succeeded
+      Progress:     1/1
+      Resources Duration:
+        Cpu:           3
+        Memory:        1
+      Started At:      2022-05-05T08:40:49Z
+      Template Name:   word-count
+      Template Scope:  local/scale-test-w6cdf
+      Type:            Pod
+    scale-test-w6cdf-1331192299:
+      Boundary ID:     scale-test-w6cdf
+      Display Name:    word-count-2(0:aa)
+      Finished At:     <nil>
+      Host Node Name:  aks-agentpool-69202306-vmss000000
+      Id:              scale-test-w6cdf-1331192299
+      Inputs:
+        Artifacts:
+          Name:  chunk
+          Path:  /mnt/in/chunk
+          s3:
+            Key:  scale-test-w6cdf/chunks/ab/aa
+        Parameters:
+          Name:        partID
+          Value:       ab
+          Name:        chunkID
+          Value:       aa
+      Message:         PodInitializing
+      Name:            scale-test-w6cdf.word-count-2(0:aa)
+      Phase:           Pending
+      Progress:        0/1
+      Started At:      2022-05-05T08:40:49Z
+      Template Name:   word-count
+      Template Scope:  local/scale-test-w6cdf
+      Type:            Pod
+    scale-test-w6cdf-2160429551:
+      Boundary ID:  scale-test-w6cdf
+      Children:
+        scale-test-w6cdf-4210204200
+      Display Name:    sort-1
+      Finished At:     <nil>
+      Id:              scale-test-w6cdf-2160429551
+      Name:            scale-test-w6cdf.sort-1
+      Phase:           Running
+      Progress:        0/1
+      Started At:      2022-05-05T08:40:59Z
+      Template Name:   sort
+      Template Scope:  local/scale-test-w6cdf
+      Type:            TaskGroup
+    scale-test-w6cdf-3166692540:
+      Boundary ID:  scale-test-w6cdf
+      Children:
+        scale-test-w6cdf-1331192299
+      Display Name:    word-count-2
+      Finished At:     <nil>
+      Id:              scale-test-w6cdf-3166692540
+      Name:            scale-test-w6cdf.word-count-2
+      Phase:           Running
+      Progress:        0/1
+      Started At:      2022-05-05T08:40:49Z
+      Template Name:   word-count
+      Template Scope:  local/scale-test-w6cdf
+      Type:            TaskGroup
+    scale-test-w6cdf-3217025397:
+      Boundary ID:  scale-test-w6cdf
+      Children:
+        scale-test-w6cdf-1124431954
+      Display Name:  word-count-1
+      Finished At:   2022-05-05T08:40:59Z
+      Id:            scale-test-w6cdf-3217025397
+      Name:          scale-test-w6cdf.word-count-1
+      Phase:         Succeeded
+      Progress:      1/2
+      Resources Duration:
+        Cpu:           3
+        Memory:        1
+      Started At:      2022-05-05T08:40:49Z
+      Template Name:   word-count
+      Template Scope:  local/scale-test-w6cdf
+      Type:            TaskGroup
+    scale-test-w6cdf-3714505651:
+      Boundary ID:  scale-test-w6cdf
+      Children:
+        scale-test-w6cdf-4141258516
+        scale-test-w6cdf-4191591373
+      Display Name:    split
+      Finished At:     2022-05-05T08:40:35Z
+      Host Node Name:  aks-agentpool-69202306-vmss000000
+      Id:              scale-test-w6cdf-3714505651
+      Name:            scale-test-w6cdf.split
+      Outputs:
+        Artifacts:
+          Name:  part1
+          Path:  /workspace/chunk_aa
+          s3:
+            Key:  scale-test-w6cdf/part_aa
+          Name:   part2
+          Path:   /workspace/chunk_ab
+          s3:
+            Key:  scale-test-w6cdf/part_ab
+          Name:   main-logs
+          s3:
+            Key:    scale-test-w6cdf/scale-test-w6cdf-3714505651/main.log
+        Exit Code:  0
+      Phase:        Succeeded
+      Progress:     1/1
+      Resources Duration:
+        Cpu:           1
+        Memory:        0
+      Started At:      2022-05-05T08:40:29Z
+      Template Name:   split
+      Template Scope:  local/scale-test-w6cdf
+      Type:            Pod
+    scale-test-w6cdf-4141258516:
+      Boundary ID:  scale-test-w6cdf
+      Children:
+        scale-test-w6cdf-3217025397
+      Display Name:    chunk-1
+      Finished At:     2022-05-05T08:40:46Z
+      Host Node Name:  aks-agentpool-69202306-vmss000000
+      Id:              scale-test-w6cdf-4141258516
+      Inputs:
+        Artifacts:
+          Name:  part
+          Path:  /mnt/in/part
+          s3:
+            Key:  scale-test-w6cdf/part_aa
+        Parameters:
+          Name:   partID
+          Value:  aa
+      Name:       scale-test-w6cdf.chunk-1
+      Outputs:
+        Artifacts:
+          Archive:
+            None:
+          Name:  chunks
+          Path:  /mnt/out
+          s3:
+            Key:  scale-test-w6cdf/chunks/aa
+          Name:   main-logs
+          s3:
+            Key:    scale-test-w6cdf/scale-test-w6cdf-4141258516/main.log
+        Exit Code:  0
+        Result:     ["aa"]
+      Phase:        Succeeded
+      Progress:     1/1
+      Resources Duration:
+        Cpu:           1
+        Memory:        0
+      Started At:      2022-05-05T08:40:39Z
+      Template Name:   chunk
+      Template Scope:  local/scale-test-w6cdf
+      Type:            Pod
+    scale-test-w6cdf-4191591373:
+      Boundary ID:  scale-test-w6cdf
+      Children:
+        scale-test-w6cdf-3166692540
+      Display Name:    chunk-2
+      Finished At:     2022-05-05T08:40:47Z
+      Host Node Name:  aks-agentpool-69202306-vmss000000
+      Id:              scale-test-w6cdf-4191591373
+      Inputs:
+        Artifacts:
+          Name:  part
+          Path:  /mnt/in/part
+          s3:
+            Key:  scale-test-w6cdf/part_ab
+        Parameters:
+          Name:   partID
+          Value:  ab
+      Name:       scale-test-w6cdf.chunk-2
+      Outputs:
+        Artifacts:
+          Archive:
+            None:
+          Name:  chunks
+          Path:  /mnt/out
+          s3:
+            Key:  scale-test-w6cdf/chunks/ab
+          Name:   main-logs
+          s3:
+            Key:    scale-test-w6cdf/scale-test-w6cdf-4191591373/main.log
+        Exit Code:  0
+        Result:     ["aa"]
+      Phase:        Succeeded
+      Progress:     1/1
+      Resources Duration:
+        Cpu:           1
+        Memory:        0
+      Started At:      2022-05-05T08:40:39Z
+      Template Name:   chunk
+      Template Scope:  local/scale-test-w6cdf
+      Type:            Pod
+    scale-test-w6cdf-4210204200:
+      Boundary ID:   scale-test-w6cdf
+      Display Name:  sort-1(0:aa)
+      Finished At:   <nil>
+      Id:            scale-test-w6cdf-4210204200
+      Inputs:
+        Artifacts:
+          Name:  chunk
+          Path:  /mnt/in/chunk
+          s3:
+            Key:  scale-test-w6cdf/counted/aa/aa
+        Parameters:
+          Name:        partID
+          Value:       aa
+          Name:        chunkID
+          Value:       aa
+      Name:            scale-test-w6cdf.sort-1(0:aa)
+      Phase:           Pending
+      Progress:        0/1
+      Started At:      2022-05-05T08:40:59Z
+      Template Name:   sort
+      Template Scope:  local/scale-test-w6cdf
+      Type:            Pod
+  Phase:               Running
+  Progress:            4/6
+  Resources Duration:
+    Cpu:       6
+    Memory:    1
+  Started At:  2022-05-05T08:40:29Z
+Events:
+  Type    Reason                 Age   From                 Message
+  ----    ------                 ----  ----                 -------
+  Normal  WorkflowRunning        39s   workflow-controller  Workflow Running
+  Normal  WorkflowNodeRunning    39s   workflow-controller  Running node scale-test-w6cdf
+  Normal  WorkflowNodeRunning    29s   workflow-controller  Running node scale-test-w6cdf.split
+  Normal  WorkflowNodeSucceeded  29s   workflow-controller  Succeeded node scale-test-w6cdf.split
+  Normal  WorkflowNodeRunning    19s   workflow-controller  Running node scale-test-w6cdf.chunk-2
+  Normal  WorkflowNodeRunning    19s   workflow-controller  Running node scale-test-w6cdf.chunk-1
+  Normal  WorkflowNodeSucceeded  19s   workflow-controller  Succeeded node scale-test-w6cdf.chunk-1
+  Normal  WorkflowNodeRunning    19s   workflow-controller  Running node scale-test-w6cdf.word-count-2
+  Normal  WorkflowNodeSucceeded  19s   workflow-controller  Succeeded node scale-test-w6cdf.chunk-2
+  Normal  WorkflowNodeRunning    19s   workflow-controller  Running node scale-test-w6cdf.word-count-1
+  Normal  WorkflowNodeRunning    9s    workflow-controller  Running node scale-test-w6cdf.sort-1
+  Normal  WorkflowNodeRunning    9s    workflow-controller  Running node scale-test-w6cdf.word-count-1(0:aa)
+  Normal  WorkflowNodeSucceeded  9s    workflow-controller  Succeeded node scale-test-w6cdf.word-count-1(0:aa)
+  Normal  WorkflowNodeSucceeded  9s    workflow-controller  Succeeded node scale-test-w6cdf.word-count-1

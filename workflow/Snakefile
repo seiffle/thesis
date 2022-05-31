@@ -1,0 +1,56 @@
+CHUNK_NUM = 2
+RESULT_DIR = "results/"
+
+scattergather:
+    split = CHUNK_NUM
+
+
+rule all:
+    input: "results/result.txt"
+
+
+rule split:
+    input: "data/input.txt"
+    output:["results/chunk_aa", "results/chunk_ab"]
+    params:
+        output_dir = RESULT_DIR
+    shell:
+        "bash workflow/scripts/split.sh {input} {params.output_dir}"
+
+
+rule chunk:
+    input: "results/chunk_{part_id}"
+    output: scatter.split("results/input_{{part_id}}_{scatteritem}")
+    params:
+        output_dir = RESULT_DIR,
+        num = CHUNK_NUM
+    shell:
+        "python3 workflow/scripts/scatter.py {input} {params.num} {params.output_dir}input_{wildcards.part_id}_"
+
+
+rule count:
+    input: "results/input_{part_id}_{scatteritem}"
+    output: "results/counted_{part_id}_{scatteritem}"
+    shell:
+        "python3 workflow/scripts/word_count.py {input} > {output}"
+
+
+rule sort:
+    input: "results/counted_{part_id}_{scatteritem}"
+    output: "results/sorted_{part_id}_{scatteritem}"
+    shell:
+        "python3 workflow/scripts/sort.py {input} > {output}"
+
+
+rule merge:
+    input: gather.split("results/sorted_{{part_id}}_{scatteritem}")
+    output: "results/result_{part_id}"
+    shell:
+        "python3 workflow/scripts/merge.py '{input}' > {output}"
+
+
+rule calc:
+    input: "results/result_aa", "results/result_ab"
+    output: "results/result.txt"
+    shell:
+         "python3 workflow/scripts/calc_deviance.py {input} > {output}"

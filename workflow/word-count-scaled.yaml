@@ -1,0 +1,243 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: scale-test-
+spec:
+
+  volumes:
+  - name: input
+    persistentVolumeClaim:
+      claimName: input
+
+  entrypoint: workflow
+
+  templates:
+  - name: workflow
+    dag:
+      tasks:
+      - name: split
+        template: split
+
+      - name: chunk-1
+        template: chunk
+        dependencies: [split]
+        arguments:
+          parameters:
+          - name: partID
+            value: "aa"
+
+      - name: chunk-2
+        template: chunk
+        dependencies: [split]
+        arguments:
+          parameters:
+          - name: partID
+            value: "ab"
+
+      - name: word-count-1
+        template: word-count
+        dependencies: [chunk-1]
+        arguments:
+          parameters:
+          - name: partID
+            value: "aa"
+          - name: chunkID
+            value: "{{item}}"
+          artifacts:
+          - name: chunk
+            s3:
+              key: "{{workflow.name}}/chunks/aa/{{item}}"
+        withParam: "{{tasks.chunk-1.outputs.result}}"
+
+      - name: word-count-2
+        template: word-count
+        dependencies: [chunk-2]
+        arguments:
+          parameters:
+          - name: partID
+            value: "ab"
+          - name: chunkID
+            value: "{{item}}"
+          artifacts:
+          - name: chunk
+            s3:
+              key: "{{workflow.name}}/chunks/ab/{{item}}"
+        withParam: "{{tasks.chunk-2.outputs.result}}"
+
+      - name: sort-1
+        template: sort
+        dependencies: [word-count-1]
+        arguments:
+          parameters:
+          - name: partID
+            value: "aa"
+          - name: chunkID
+            value: "{{item}}"
+          artifacts:
+          - name: chunk
+            s3:
+              key: "{{workflow.name}}/counted/aa/{{item}}"
+        withParam: "{{tasks.chunk-1.outputs.result}}"
+
+      - name: sort-2
+        template: sort
+        dependencies: [word-count-2]
+        arguments:
+          parameters:
+          - name: partID
+            value: "ab"
+          - name: chunkID
+            value: "{{item}}"
+          artifacts:
+          - name: chunk
+            s3:
+              key: "{{workflow.name}}/counted/ab/{{item}}"
+        withParam: "{{tasks.chunk-2.outputs.result}}"
+
+      - name: merge-1
+        template: merge
+        dependencies: [sort-1]
+        arguments:
+          parameters:
+          - name: partID
+            value: "aa"
+        
+      - name: merge-2
+        template: merge
+        dependencies: [sort-2]
+        arguments:
+          parameters:
+          - name: partID
+            value: "ab"
+        
+      - name: calc
+        template: calc
+        dependencies: [merge-1, merge-2]
+
+  - name: split
+    outputs:
+      artifacts:
+      - name: part1
+        path: /workspace/chunk_aa
+        s3:
+          key: "{{workflow.name}}/part_aa"
+      - name: part2
+        path: /workspace/chunk_ab
+        s3:
+          key: "{{workflow.name}}/part_ab"
+    container:
+      image: weislenn/utils
+      command: [split.sh]
+      args: [/mnt/input/input.txt]
+      imagePullPolicy: IfNotPresent # Always
+      volumeMounts:
+      - name: input
+        mountPath: /mnt/input
+        subPath: data
+
+  - name: chunk
+    inputs:
+      parameters:
+      - name: partID
+      artifacts:
+      - name: part
+        path: /mnt/in/part
+        s3:
+          key: "{{workflow.name}}/part_{{inputs.parameters.partID}}"
+    outputs:
+      artifacts:
+      - name: chunks
+        path: /mnt/out
+        archive:
+          none: {}
+        s3:
+          key: "{{workflow.name}}/chunks/{{inputs.parameters.partID}}"
+    script:
+      image: weislenn/utils
+      command: [bash]
+      imagePullPolicy: IfNotPresent # Always
+      source: |
+        mkdir /mnt/out
+        split /mnt/in/part -l 10000000 /mnt/out/
+        python -c 'import os, json; print(json.dumps(os.listdir("/mnt/out")))'
+
+  - name: word-count
+    inputs:
+      parameters:
+      - name: partID
+      - name: chunkID
+      artifacts:
+      - name: chunk
+        path: /mnt/in/chunk
+    container:
+      image: weislenn/utils
+      command: [sh, -c]
+      args: ["mkdir /mnt/out && word_count.py /mnt/in/chunk > /mnt/out/result"]
+    outputs:
+      artifacts:
+      - name: counted
+        path: "/mnt/out/result"
+        archive:
+          none: {}
+        s3:
+          key: "{{workflow.name}}/counted/{{inputs.parameters.partID}}/{{inputs.parameters.chunkID}}"
+
+  - name: sort
+    inputs:
+      parameters:
+      - name: partID
+      - name: chunkID
+      artifacts:
+      - name: chunk
+        path: /mnt/in/chunk
+    container:
+      image: weislenn/utils
+      command: [sh, -c]
+      args: ["mkdir /mnt/out && sort.py /mnt/in/chunk > /mnt/out/result"]
+    outputs:
+      artifacts:
+      - name: sorted
+        path: "/mnt/out/result"
+        archive:
+          none: {}
+        s3:
+          key: "{{workflow.name}}/sorted/{{inputs.parameters.partID}}/{{inputs.parameters.chunkID}}"
+
+  - name: merge
+    inputs:
+      parameters:
+      - name: partID
+      artifacts:
+      - name: sorted
+        path: /mnt/in/
+        s3:
+          key: "{{workflow.name}}/sorted/{{inputs.parameters.partID}}"
+    outputs:
+      artifacts:
+      - name: results
+        path: "/mnt/out/result"
+        archive:
+          none: {}
+        s3:
+          key: "{{workflow.name}}/result-{{inputs.parameters.partID}}"
+    container:
+      image: weislenn/utils
+      command: [bash, -c]
+      args: ["mkdir /mnt/out && merge2.py /mnt/in/ > /mnt/out/result"]
+
+  - name: calc
+    inputs:
+      artifacts:
+      - name: result1
+        path: /mnt/in/result-aa
+        s3:
+          key: "{{workflow.name}}/result-aa"
+      - name: result2
+        path: /mnt/in/result-ab
+        s3:
+          key: "{{workflow.name}}/result-ab"
+    container:
+      image: weislenn/utils
+      command: [bash]
+      args: [-c, "calc_deviance.py /mnt/in/result-aa /mnt/in/result-ab"]
+      imagePullPolicy: IfNotPresent # Always

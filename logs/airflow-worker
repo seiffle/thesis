@@ -1,0 +1,210 @@
+/home/airflow/.local/lib/python3.7/site-packages/airflow/www/utils.py:560 DeprecationWarning: 'jinja2.Markup' is deprecated and will be removed in Jinja 3.1. Import 'markupsafe.Markup' instead.
+[2022-05-04 14:17:06 +0000] [21] [INFO] Starting gunicorn 20.1.0
+[2022-05-04 14:17:06 +0000] [21] [INFO] Listening at: http://0.0.0.0:8793 (21)
+[2022-05-04 14:17:06 +0000] [21] [INFO] Using worker: sync
+[2022-05-04 14:17:06 +0000] [22] [INFO] Booting worker with pid: 22
+[2022-05-04 14:17:06 +0000] [23] [INFO] Booting worker with pid: 23
+ 
+ -------------- celery@airflow-worker-0 v5.2.1 (dawn-chorus)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-1047-azure-x86_64-with-debian-10.11 2022-05-04 14:17:07
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         airflow.executors.celery_executor:0x7ff480816c50
+- ** ---------- .> transport:   redis://:**@airflow-redis:6379/0
+- ** ---------- .> results:     postgresql://postgres:**@airflow-postgresql:5432/postgres
+- *** --- * --- .> concurrency: 16 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> default          exchange=default(direct) key=default
+                
+
+[tasks]
+  . airflow.executors.celery_executor.execute_command
+
+[2022-05-04 14:17:09,933: INFO/MainProcess] Connected to redis://:**@airflow-redis:6379/0
+[2022-05-04 14:17:09,946: INFO/MainProcess] mingle: searching for neighbors
+[2022-05-04 14:17:10,978: INFO/MainProcess] mingle: all alone
+[2022-05-04 14:17:11,010: INFO/MainProcess] celery@airflow-worker-0 ready.
+[2022-05-04 14:17:12,196: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-05-04 14:18:33,209: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[d6838073-0bda-4d3a-9269-963aac960ba2] received
+[2022-05-04 14:18:33,268: INFO/ForkPoolWorker-15] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'split', 'scheduled__2021-01-01T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:18:33,268: INFO/ForkPoolWorker-15] Celery task ID: d6838073-0bda-4d3a-9269-963aac960ba2
+[2022-05-04 14:18:33,321: INFO/ForkPoolWorker-15] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:18:33,485: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:18:33,485: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:18:33,623: WARNING/ForkPoolWorker-15] Running <TaskInstance: word-count.split scheduled__2021-01-01T00:00:00+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:18:34,234: INFO/ForkPoolWorker-15] Task airflow.executors.celery_executor.execute_command[d6838073-0bda-4d3a-9269-963aac960ba2] succeeded in 1.0220892168581486s: None
+[2022-05-04 14:21:55,863: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[da025bfb-4241-42ca-8cf6-7143a9a96c3a] received
+[2022-05-04 14:21:55,875: INFO/ForkPoolWorker-15] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'split', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:21:55,876: INFO/ForkPoolWorker-15] Celery task ID: da025bfb-4241-42ca-8cf6-7143a9a96c3a
+[2022-05-04 14:21:55,919: INFO/ForkPoolWorker-15] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:21:56,104: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:21:56,104: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:21:56,158: WARNING/ForkPoolWorker-15] Running <TaskInstance: word-count.split manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:04,009: INFO/ForkPoolWorker-15] Task airflow.executors.celery_executor.execute_command[da025bfb-4241-42ca-8cf6-7143a9a96c3a] succeeded in 8.14381105080247s: None
+[2022-05-04 14:22:04,295: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[3acea885-5194-4dbf-8027-835bcac6a3a9] received
+[2022-05-04 14:22:04,299: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[80f798a9-f72d-451c-b32a-bdf8dd71ea33] received
+[2022-05-04 14:22:04,310: INFO/ForkPoolWorker-15] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'chunk-aa', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:04,310: INFO/ForkPoolWorker-15] Celery task ID: 3acea885-5194-4dbf-8027-835bcac6a3a9
+[2022-05-04 14:22:04,349: INFO/ForkPoolWorker-15] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:04,358: INFO/ForkPoolWorker-16] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'chunk-ab', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:04,358: INFO/ForkPoolWorker-16] Celery task ID: 80f798a9-f72d-451c-b32a-bdf8dd71ea33
+[2022-05-04 14:22:04,398: INFO/ForkPoolWorker-16] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:04,453: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:04,453: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:04,503: WARNING/ForkPoolWorker-15] Running <TaskInstance: word-count.chunk-aa manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:04,506: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:04,506: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:04,558: WARNING/ForkPoolWorker-16] Running <TaskInstance: word-count.chunk-ab manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:13,270: INFO/ForkPoolWorker-15] Task airflow.executors.celery_executor.execute_command[3acea885-5194-4dbf-8027-835bcac6a3a9] succeeded in 8.970676489174366s: None
+[2022-05-04 14:22:13,394: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[c94ce97c-46a5-4191-843a-233c3a58a3de] received
+[2022-05-04 14:22:13,399: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[37a37c5e-d2e0-46bf-87d8-b82ed3f202dc] received
+[2022-05-04 14:22:13,410: INFO/ForkPoolWorker-15] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'word-count-aa-1', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:13,410: INFO/ForkPoolWorker-15] Celery task ID: c94ce97c-46a5-4191-843a-233c3a58a3de
+[2022-05-04 14:22:13,450: INFO/ForkPoolWorker-15] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:13,456: INFO/ForkPoolWorker-1] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'word-count-aa-0', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:13,456: INFO/ForkPoolWorker-1] Celery task ID: 37a37c5e-d2e0-46bf-87d8-b82ed3f202dc
+[2022-05-04 14:22:13,492: INFO/ForkPoolWorker-1] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:13,531: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:13,532: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:13,585: WARNING/ForkPoolWorker-15] Running <TaskInstance: word-count.word-count-aa-1 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:13,587: WARNING/ForkPoolWorker-1] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:13,587: WARNING/ForkPoolWorker-1] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:13,641: WARNING/ForkPoolWorker-1] Running <TaskInstance: word-count.word-count-aa-0 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:14,402: INFO/ForkPoolWorker-16] Task airflow.executors.celery_executor.execute_command[80f798a9-f72d-451c-b32a-bdf8dd71ea33] succeeded in 10.102689567953348s: None
+[2022-05-04 14:22:14,697: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[f488f25e-84a1-4afa-bc41-80034a511c73] received
+[2022-05-04 14:22:14,701: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[c506d758-7c18-4d7b-aa64-081e41bb3d92] received
+[2022-05-04 14:22:14,715: INFO/ForkPoolWorker-16] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'word-count-ab-1', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:14,715: INFO/ForkPoolWorker-16] Celery task ID: f488f25e-84a1-4afa-bc41-80034a511c73
+[2022-05-04 14:22:14,754: INFO/ForkPoolWorker-2] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'word-count-ab-0', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:14,752: INFO/ForkPoolWorker-16] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:14,755: INFO/ForkPoolWorker-2] Celery task ID: c506d758-7c18-4d7b-aa64-081e41bb3d92
+[2022-05-04 14:22:14,805: INFO/ForkPoolWorker-2] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:14,832: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:14,833: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:14,882: WARNING/ForkPoolWorker-16] Running <TaskInstance: word-count.word-count-ab-1 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:14,886: WARNING/ForkPoolWorker-2] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:14,887: WARNING/ForkPoolWorker-2] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:14,946: WARNING/ForkPoolWorker-2] Running <TaskInstance: word-count.word-count-ab-0 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:19,401: INFO/ForkPoolWorker-1] Task airflow.executors.celery_executor.execute_command[37a37c5e-d2e0-46bf-87d8-b82ed3f202dc] succeeded in 6.000268377363682s: None
+[2022-05-04 14:22:19,543: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[cf56d51c-838c-48e0-83d0-05431f3a54c8] received
+[2022-05-04 14:22:19,554: INFO/ForkPoolWorker-1] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'sort-aa-0', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:19,555: INFO/ForkPoolWorker-1] Celery task ID: cf56d51c-838c-48e0-83d0-05431f3a54c8
+[2022-05-04 14:22:19,595: INFO/ForkPoolWorker-1] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:19,720: WARNING/ForkPoolWorker-1] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:19,720: WARNING/ForkPoolWorker-1] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:19,770: WARNING/ForkPoolWorker-1] Running <TaskInstance: word-count.sort-aa-0 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:20,472: INFO/ForkPoolWorker-15] Task airflow.executors.celery_executor.execute_command[c94ce97c-46a5-4191-843a-233c3a58a3de] succeeded in 7.071459949016571s: None
+[2022-05-04 14:22:20,768: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[47268340-c176-43be-a756-058ff1525aa7] received
+[2022-05-04 14:22:20,781: INFO/ForkPoolWorker-15] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'sort-aa-1', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:20,782: INFO/ForkPoolWorker-15] Celery task ID: 47268340-c176-43be-a756-058ff1525aa7
+[2022-05-04 14:22:20,821: INFO/ForkPoolWorker-15] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:20,890: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:20,890: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:20,942: WARNING/ForkPoolWorker-15] Running <TaskInstance: word-count.sort-aa-1 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:21,700: INFO/ForkPoolWorker-16] Task airflow.executors.celery_executor.execute_command[f488f25e-84a1-4afa-bc41-80034a511c73] succeeded in 6.998486693948507s: None
+[2022-05-04 14:22:22,483: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[71ef307e-e7b8-4317-9054-7e7ffd2a2763] received
+[2022-05-04 14:22:22,495: INFO/ForkPoolWorker-16] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'sort-ab-1', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:22,495: INFO/ForkPoolWorker-16] Celery task ID: 71ef307e-e7b8-4317-9054-7e7ffd2a2763
+[2022-05-04 14:22:22,537: INFO/ForkPoolWorker-16] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:22,657: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:22,658: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:22,707: WARNING/ForkPoolWorker-16] Running <TaskInstance: word-count.sort-ab-1 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:22,764: INFO/ForkPoolWorker-2] Task airflow.executors.celery_executor.execute_command[c506d758-7c18-4d7b-aa64-081e41bb3d92] succeeded in 8.062116332352161s: None
+[2022-05-04 14:22:22,851: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[331c6924-9ade-4142-9bf4-2356171b0129] received
+[2022-05-04 14:22:22,865: INFO/ForkPoolWorker-2] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'sort-ab-0', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:22,866: INFO/ForkPoolWorker-2] Celery task ID: 331c6924-9ade-4142-9bf4-2356171b0129
+[2022-05-04 14:22:22,918: INFO/ForkPoolWorker-2] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:22,987: WARNING/ForkPoolWorker-2] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:22,987: WARNING/ForkPoolWorker-2] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:23,046: WARNING/ForkPoolWorker-2] Running <TaskInstance: word-count.sort-ab-0 manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:24,591: INFO/ForkPoolWorker-1] Task airflow.executors.celery_executor.execute_command[cf56d51c-838c-48e0-83d0-05431f3a54c8] succeeded in 5.044655524194241s: None
+[2022-05-04 14:22:26,724: INFO/ForkPoolWorker-15] Task airflow.executors.celery_executor.execute_command[47268340-c176-43be-a756-058ff1525aa7] succeeded in 5.954380664974451s: None
+[2022-05-04 14:22:27,489: INFO/ForkPoolWorker-16] Task airflow.executors.celery_executor.execute_command[71ef307e-e7b8-4317-9054-7e7ffd2a2763] succeeded in 5.0039699375629425s: None
+[2022-05-04 14:22:27,571: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[eed0bea4-6b16-4260-81ee-21f606e87b61] received
+[2022-05-04 14:22:27,588: INFO/ForkPoolWorker-15] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'merge-aa', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:27,588: INFO/ForkPoolWorker-15] Celery task ID: eed0bea4-6b16-4260-81ee-21f606e87b61
+[2022-05-04 14:22:27,624: INFO/ForkPoolWorker-15] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:27,739: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:27,740: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:27,790: WARNING/ForkPoolWorker-15] Running <TaskInstance: word-count.merge-aa manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:28,802: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[66b94348-df48-4cb4-bcf9-7415e155038e] received
+[2022-05-04 14:22:28,814: INFO/ForkPoolWorker-16] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'merge-ab', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:28,814: INFO/ForkPoolWorker-16] Celery task ID: 66b94348-df48-4cb4-bcf9-7415e155038e
+[2022-05-04 14:22:28,856: INFO/ForkPoolWorker-16] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:28,864: INFO/ForkPoolWorker-2] Task airflow.executors.celery_executor.execute_command[331c6924-9ade-4142-9bf4-2356171b0129] succeeded in 6.007772218436003s: None
+[2022-05-04 14:22:28,924: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:28,925: WARNING/ForkPoolWorker-16] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:28,973: WARNING/ForkPoolWorker-16] Running <TaskInstance: word-count.merge-ab manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:32,717: INFO/ForkPoolWorker-15] Task airflow.executors.celery_executor.execute_command[eed0bea4-6b16-4260-81ee-21f606e87b61] succeeded in 5.1435669250786304s: None
+[2022-05-04 14:22:33,743: INFO/MainProcess] Task airflow.executors.celery_executor.execute_command[de383f86-9f56-4346-8b93-2ed0ef158737] received
+[2022-05-04 14:22:33,751: INFO/ForkPoolWorker-16] Task airflow.executors.celery_executor.execute_command[66b94348-df48-4cb4-bcf9-7415e155038e] succeeded in 4.946386441588402s: None
+[2022-05-04 14:22:33,754: INFO/ForkPoolWorker-15] Executing command in Celery: ['airflow', 'tasks', 'run', 'word-count', 'calc', 'manual__2022-05-04T14:21:55.601050+00:00', '--local', '--subdir', 'DAGS_FOLDER/main.py']
+[2022-05-04 14:22:33,754: INFO/ForkPoolWorker-15] Celery task ID: de383f86-9f56-4346-8b93-2ed0ef158737
+[2022-05-04 14:22:33,798: INFO/ForkPoolWorker-15] Filling up the DagBag from /opt/airflow/dags/main.py
+[2022-05-04 14:22:33,913: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:67: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1VolumeMount`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume_mount import VolumeMount
+
+[2022-05-04 14:22:33,913: WARNING/ForkPoolWorker-15] /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/cncf/kubernetes/backcompat/backwards_compat_converters.py:55: DeprecationWarning: This module is deprecated. Please use `kubernetes.client.models.V1Volume`.
+  from airflow.providers.cncf.kubernetes.backcompat.volume import Volume
+
+[2022-05-04 14:22:33,964: WARNING/ForkPoolWorker-15] Running <TaskInstance: word-count.calc manual__2022-05-04T14:21:55.601050+00:00 [queued]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-05-04 14:22:38,736: INFO/ForkPoolWorker-15] Task airflow.executors.celery_executor.execute_command[de383f86-9f56-4346-8b93-2ed0ef158737] succeeded in 4.990574669092894s: None

@@ -1,0 +1,4 @@
+FROM snakemake/snakemake:v6.13.1
+
+RUN pip install kubernetes
+RUN pip install azure-storage-blob

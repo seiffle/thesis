@@ -1,0 +1,35 @@
+time="2022-05-18T07:48:12.739Z" level=info msg="Starting Workflow Executor" version=untagged
+time="2022-05-18T07:48:12.744Z" level=info msg="Using executor retry strategy" Duration=1s Factor=1.6 Jitter=0.5 Steps=5
+time="2022-05-18T07:48:12.744Z" level=info msg="Executor initialized" deadline="0001-01-01 00:00:00 +0000 UTC" includeScriptOutput=false namespace=argo podName=scale-test-ml528-821133757 template="{\"name\":\"split\",\"inputs\":{},\"outputs\":{\"artifacts\":[{\"name\":\"part1\",\"path\":\"/workspace/chunk_aa\",\"s3\":{\"key\":\"scale-test-ml528/part_aa\"}},{\"name\":\"part2\",\"path\":\"/workspace/chunk_ab\",\"s3\":{\"key\":\"scale-test-ml528/part_ab\"}}]},\"metadata\":{},\"container\":{\"name\":\"\",\"image\":\"weislenn/utils\",\"command\":[\"split.sh\"],\"args\":[\"/mnt/input/input.txt\"],\"resources\":{},\"volumeMounts\":[{\"name\":\"input\",\"mountPath\":\"/mnt/input\",\"subPath\":\"data\"}],\"imagePullPolicy\":\"IfNotPresent\"},\"archiveLocation\":{\"archiveLogs\":true,\"s3\":{\"endpoint\":\"minio:9000\",\"bucket\":\"my-bucket\",\"insecure\":true,\"accessKeySecret\":{\"name\":\"my-minio-cred\",\"key\":\"accesskey\"},\"secretKeySecret\":{\"name\":\"my-minio-cred\",\"key\":\"secretkey\"},\"key\":\"scale-test-ml528/scale-test-ml528-821133757\"}}}" version="&Version{Version:untagged,BuildDate:2022-05-18T00:05:23Z,GitCommit:088d13995ec4a794b9c5d804621a339dacdd38b2,GitTag:untagged,GitTreeState:clean,GoVersion:go1.18.2,Compiler:gc,Platform:linux/amd64,}"
+time="2022-05-18T07:48:12.745Z" level=info msg="Starting deadline monitor"
+time="2022-05-18T07:48:13.745Z" level=info msg="Main container completed" error="<nil>"
+time="2022-05-18T07:48:13.745Z" level=info msg="Deadline monitor stopped"
+time="2022-05-18T07:48:13.745Z" level=info msg="No Script output reference in workflow. Capturing script output ignored"
+time="2022-05-18T07:48:13.745Z" level=info msg="No output parameters"
+time="2022-05-18T07:48:13.745Z" level=info msg="Saving output artifacts"
+time="2022-05-18T07:48:13.745Z" level=info msg="Staging artifact: part1"
+time="2022-05-18T07:48:13.745Z" level=info msg="Copying /workspace/chunk_aa from container base image layer to /tmp/argo/outputs/artifacts/part1.tgz"
+time="2022-05-18T07:48:13.745Z" level=info msg="/var/run/argo/outputs/artifacts/workspace/chunk_aa.tgz -> /tmp/argo/outputs/artifacts/part1.tgz"
+time="2022-05-18T07:48:13.745Z" level=info msg="S3 Save path: /tmp/argo/outputs/artifacts/part1.tgz, key: scale-test-ml528/part_aa"
+time="2022-05-18T07:48:13.746Z" level=info msg="Creating minio client using static credentials" endpoint="minio:9000"
+time="2022-05-18T07:48:13.746Z" level=info msg="Saving file to s3" bucket=my-bucket endpoint="minio:9000" key=scale-test-ml528/part_aa path=/tmp/argo/outputs/artifacts/part1.tgz
+time="2022-05-18T07:48:13.765Z" level=info msg="Save artifact" artifactName=part1 duration=19.940067ms error="<nil>" key=scale-test-ml528/part_aa
+time="2022-05-18T07:48:13.765Z" level=info msg="not deleting local artifact" localArtPath=/tmp/argo/outputs/artifacts/part1.tgz
+time="2022-05-18T07:48:13.765Z" level=info msg="Successfully saved file: /tmp/argo/outputs/artifacts/part1.tgz"
+time="2022-05-18T07:48:13.765Z" level=info msg="Staging artifact: part2"
+time="2022-05-18T07:48:13.766Z" level=info msg="Copying /workspace/chunk_ab from container base image layer to /tmp/argo/outputs/artifacts/part2.tgz"
+time="2022-05-18T07:48:13.766Z" level=info msg="/var/run/argo/outputs/artifacts/workspace/chunk_ab.tgz -> /tmp/argo/outputs/artifacts/part2.tgz"
+time="2022-05-18T07:48:13.766Z" level=info msg="S3 Save path: /tmp/argo/outputs/artifacts/part2.tgz, key: scale-test-ml528/part_ab"
+time="2022-05-18T07:48:13.766Z" level=info msg="Creating minio client using static credentials" endpoint="minio:9000"
+time="2022-05-18T07:48:13.766Z" level=info msg="Saving file to s3" bucket=my-bucket endpoint="minio:9000" key=scale-test-ml528/part_ab path=/tmp/argo/outputs/artifacts/part2.tgz
+time="2022-05-18T07:48:13.774Z" level=info msg="Save artifact" artifactName=part2 duration=8.758142ms error="<nil>" key=scale-test-ml528/part_ab
+time="2022-05-18T07:48:13.775Z" level=info msg="not deleting local artifact" localArtPath=/tmp/argo/outputs/artifacts/part2.tgz
+time="2022-05-18T07:48:13.775Z" level=info msg="Successfully saved file: /tmp/argo/outputs/artifacts/part2.tgz"
+time="2022-05-18T07:48:13.775Z" level=info msg="S3 Save path: /tmp/argo/outputs/logs/main.log, key: scale-test-ml528/scale-test-ml528-821133757/main.log"
+time="2022-05-18T07:48:13.775Z" level=info msg="Creating minio client using static credentials" endpoint="minio:9000"
+time="2022-05-18T07:48:13.775Z" level=info msg="Saving file to s3" bucket=my-bucket endpoint="minio:9000" key=scale-test-ml528/scale-test-ml528-821133757/main.log path=/tmp/argo/outputs/logs/main.log
+time="2022-05-18T07:48:13.784Z" level=info msg="Save artifact" artifactName=main-logs duration=8.807242ms error="<nil>" key=scale-test-ml528/scale-test-ml528-821133757/main.log
+time="2022-05-18T07:48:13.784Z" level=info msg="not deleting local artifact" localArtPath=/tmp/argo/outputs/logs/main.log
+time="2022-05-18T07:48:13.784Z" level=info msg="Successfully saved file: /tmp/argo/outputs/logs/main.log"
+time="2022-05-18T07:48:13.826Z" level=info msg="Create workflowtaskresults 201"
+time="2022-05-18T07:48:13.827Z" level=info msg="Alloc=7117 TotalAlloc=12045 Sys=18642 NumGC=3 Goroutines=13"

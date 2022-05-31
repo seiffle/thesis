@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nextflow
+spec:
+  containers:
+  - name: nextflow
+    image: ubuntu
+    args: ["sleep", "infinity"]
+    volumeMounts:
+    - mountPath: /mount
+      name: nextflow
+  restartPolicy: Never
+  volumes:
+  - name: nextflow
+    persistentVolumeClaim:
+      claimName: nextflow

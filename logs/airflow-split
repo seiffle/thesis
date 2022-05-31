@@ -1,0 +1,37 @@
+*** Log file does not exist: /opt/airflow/logs/word-count/split/2022-04-22T11:54:59.448481+00:00/1.log
+*** Fetching from: http://airflow-worker-0.airflow-worker.airflow.svc.cluster.local:8793/log/word-count/split/2022-04-22T11:54:59.448481+00:00/1.log
+
+[2022-04-22, 11:55:00 UTC] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: word-count.split manual__2022-04-22T11:54:59.448481+00:00 [queued]>
+[2022-04-22, 11:55:00 UTC] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: word-count.split manual__2022-04-22T11:54:59.448481+00:00 [queued]>
+[2022-04-22, 11:55:00 UTC] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-22, 11:55:00 UTC] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-04-22, 11:55:00 UTC] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-22, 11:55:00 UTC] {taskinstance.py:1259} INFO - Executing <Task(KubernetesPodOperator): split> on 2022-04-22 11:54:59.448481+00:00
+[2022-04-22, 11:55:00 UTC] {standard_task_runner.py:52} INFO - Started process 96 to run task
+[2022-04-22, 11:55:00 UTC] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'word-count', 'split', 'manual__2022-04-22T11:54:59.448481+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpvbfg7ujp', '--error-file', '/tmp/tmp00btlh04']
+[2022-04-22, 11:55:00 UTC] {standard_task_runner.py:77} INFO - Job 7: Subtask split
+[2022-04-22, 11:55:00 UTC] {logging_mixin.py:109} INFO - Running <TaskInstance: word-count.split manual__2022-04-22T11:54:59.448481+00:00 [running]> on host airflow-worker-0.airflow-worker.airflow.svc.cluster.local
+[2022-04-22, 11:55:00 UTC] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=word-count
+AIRFLOW_CTX_TASK_ID=split
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-22T11:54:59.448481+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-22T11:54:59.448481+00:00
+[2022-04-22, 11:55:00 UTC] {kubernetes_pod.py:372} INFO - creating pod with labels {'dag_id': 'word-count', 'task_id': 'split', 'execution_date': '2022-04-22T115459.4484810000-e1a733235', 'try_number': '1'} and launcher <airflow.providers.cncf.kubernetes.utils.pod_launcher.PodLauncher object at 0x7f12cbebb210>
+[2022-04-22, 11:55:00 UTC] {pod_launcher.py:216} INFO - Event: split.b494183cda6b47289a6aa43cf06e4114 had an event of type Pending
+[2022-04-22, 11:55:00 UTC] {pod_launcher.py:133} WARNING - Pod not yet started: split.b494183cda6b47289a6aa43cf06e4114
+[2022-04-22, 11:55:01 UTC] {pod_launcher.py:216} INFO - Event: split.b494183cda6b47289a6aa43cf06e4114 had an event of type Pending
+[2022-04-22, 11:55:01 UTC] {pod_launcher.py:133} WARNING - Pod not yet started: split.b494183cda6b47289a6aa43cf06e4114
+[2022-04-22, 11:55:02 UTC] {pod_launcher.py:216} INFO - Event: split.b494183cda6b47289a6aa43cf06e4114 had an event of type Pending
+[2022-04-22, 11:55:02 UTC] {pod_launcher.py:133} WARNING - Pod not yet started: split.b494183cda6b47289a6aa43cf06e4114
+[2022-04-22, 11:55:03 UTC] {pod_launcher.py:216} INFO - Event: split.b494183cda6b47289a6aa43cf06e4114 had an event of type Running
+[2022-04-22, 12:00:58 UTC] {pod_launcher.py:216} INFO - Event: split.b494183cda6b47289a6aa43cf06e4114 had an event of type Succeeded
+[2022-04-22, 12:00:58 UTC] {pod_launcher.py:333} INFO - Event with job id split.b494183cda6b47289a6aa43cf06e4114 Succeeded
+[2022-04-22, 12:00:58 UTC] {pod_launcher.py:216} INFO - Event: split.b494183cda6b47289a6aa43cf06e4114 had an event of type Succeeded
+[2022-04-22, 12:00:58 UTC] {pod_launcher.py:333} INFO - Event with job id split.b494183cda6b47289a6aa43cf06e4114 Succeeded
+[2022-04-22, 12:00:58 UTC] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=word-count, task_id=split, execution_date=20220422T115459, start_date=20220422T115500, end_date=20220422T120058
+[2022-04-22, 12:00:58 UTC] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-22, 12:00:58 UTC] {local_task_job.py:264} INFO - 2 downstream tasks scheduled from follow-on schedule check
+
