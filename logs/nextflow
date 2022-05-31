@@ -1,0 +1,127 @@
+May-05 03:39:45.316 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+May-05 03:39:45.529 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+May-05 03:39:45.564 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [insane_bell] - revision: 575d11af75
+May-05 03:39:45.742 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/weislenn/.nextflow/plugins
+May-05 03:39:45.746 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-05 03:39:45.771 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-05 03:39:45.772 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-05 03:39:45.779 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+May-05 03:39:45.794 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-05 03:39:45.899 [main] DEBUG nextflow.Session - Session uuid: f1ce35fd-aec2-4c70-839e-bede334ca0c6
+May-05 03:39:45.899 [main] DEBUG nextflow.Session - Run name: insane_bell
+May-05 03:39:45.903 [main] DEBUG nextflow.Session - Executor pool size: 2
+May-05 03:39:45.969 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5660
+  Created: 21-12-2021 16:55 UTC (08:55 PDT)
+  System: Linux 5.13.0-40-generic
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.20.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 8779@ubuntu [127.0.1.1]
+  CPUs: 2 - Mem: 14.6 GB (10 GB) - Swap: 2 GB (2 GB)
+May-05 03:39:46.007 [main] DEBUG nextflow.Session - Work-dir: /home/weislenn/bachelorarbeit/nextflow/work [ext2/ext3]
+May-05 03:39:46.065 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-05 03:39:46.084 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-05 03:39:46.143 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+May-05 03:39:46.291 [main] DEBUG nextflow.Session - Session start invoked
+May-05 03:39:47.833 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-05 03:39:48.065 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-05 03:39:48.065 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-05 03:39:48.072 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+May-05 03:39:48.078 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=14.6 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+May-05 03:39:48.107 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+May-05 03:39:48.372 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-05 03:39:48.373 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-05 03:39:48.434 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-05 03:39:48.434 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-05 03:39:48.463 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-05 03:39:48.463 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-05 03:39:48.503 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-05 03:39:48.503 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-05 03:39:48.572 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-05 03:39:48.573 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+May-05 03:39:48.625 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: word_count, split, merge, chunk, sort, calc
+May-05 03:39:48.629 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+May-05 03:39:48.629 [main] DEBUG nextflow.Session - Session await
+May-05 03:39:48.805 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:48.813 [Task submitter] INFO  nextflow.Session - [c0/0843a7] Submitted process > split (1)
+May-05 03:39:48.915 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: split (1); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/c0/0843a7a864ef1401ef03474897f636]
+May-05 03:39:49.053 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.081 [Task submitter] INFO  nextflow.Session - [81/f223d4] Submitted process > chunk (1)
+May-05 03:39:49.110 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.120 [Task submitter] INFO  nextflow.Session - [1e/a050dd] Submitted process > chunk (2)
+May-05 03:39:49.198 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: chunk (1); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/81/f223d445a0bf0635a71e69cbf67e26]
+May-05 03:39:49.241 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.242 [Task submitter] INFO  nextflow.Session - [94/a84a61] Submitted process > word_count (2)
+May-05 03:39:49.283 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: chunk (2); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/1e/a050dd1fd431453f99525ff3bacfca]
+May-05 03:39:49.294 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.294 [Task submitter] INFO  nextflow.Session - [b3/df6197] Submitted process > word_count (1)
+May-05 03:39:49.465 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: word_count (2); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/94/a84a619859378eb17e55b622554a9e]
+May-05 03:39:49.486 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.486 [Task submitter] INFO  nextflow.Session - [53/3a7c30] Submitted process > word_count (4)
+May-05 03:39:49.541 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: word_count (1); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/b3/df6197af3045f6a10a3092a2b989c9]
+May-05 03:39:49.547 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.551 [Task submitter] INFO  nextflow.Session - [cf/af5c6b] Submitted process > word_count (3)
+May-05 03:39:49.669 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: word_count (3); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/cf/af5c6b5703b2d87c2f5aad24788e25]
+May-05 03:39:49.716 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.716 [Task submitter] INFO  nextflow.Session - [e6/f2c4fb] Submitted process > word_count (5)
+May-05 03:39:49.790 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: word_count (4); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/53/3a7c301c0de80358f39e44fda5076e]
+May-05 03:39:49.798 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.800 [Task submitter] INFO  nextflow.Session - [02/1d77f2] Submitted process > word_count (6)
+May-05 03:39:49.899 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: word_count (5); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/e6/f2c4fb73049463dfe5a552abf8f424]
+May-05 03:39:49.903 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.903 [Task submitter] INFO  nextflow.Session - [40/657819] Submitted process > word_count (7)
+May-05 03:39:49.965 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: word_count (6); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/02/1d77f2941671bdb6bc229f13ce856b]
+May-05 03:39:49.970 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:49.971 [Task submitter] INFO  nextflow.Session - [0e/dd8e35] Submitted process > word_count (8)
+May-05 03:39:50.011 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: word_count (7); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/40/657819ab33738f1ef5ecc3776143ee]
+May-05 03:39:50.019 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.019 [Task submitter] INFO  nextflow.Session - [13/9edbe3] Submitted process > word_count (10)
+May-05 03:39:50.034 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: word_count (8); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/0e/dd8e35287ae852d361659ac1bcf956]
+May-05 03:39:50.038 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.040 [Task submitter] INFO  nextflow.Session - [d1/8c06ad] Submitted process > word_count (9)
+May-05 03:39:50.097 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: word_count (9); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/d1/8c06ad913a22792af03acbd1ac0a7d]
+May-05 03:39:50.100 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.101 [Task submitter] INFO  nextflow.Session - [a6/c435f5] Submitted process > sort (1)
+May-05 03:39:50.126 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: word_count (10); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/13/9edbe36cdfcc063182b3ff66f75a22]
+May-05 03:39:50.136 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.137 [Task submitter] INFO  nextflow.Session - [96/179fc3] Submitted process > sort (2)
+May-05 03:39:50.212 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: sort (1); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/a6/c435f5c34508486f7cf42094340c4d]
+May-05 03:39:50.217 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.223 [Task submitter] INFO  nextflow.Session - [bb/4c7d68] Submitted process > sort (3)
+May-05 03:39:50.287 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: sort (2); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/96/179fc36a698250bded507035757143]
+May-05 03:39:50.306 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.307 [Task submitter] INFO  nextflow.Session - [7d/ff0961] Submitted process > sort (4)
+May-05 03:39:50.328 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: sort (3); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/bb/4c7d68d7f88c6bb2eefac8dcc45842]
+May-05 03:39:50.334 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.334 [Task submitter] INFO  nextflow.Session - [39/8a3f32] Submitted process > sort (5)
+May-05 03:39:50.402 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: sort (5); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/39/8a3f325f8e72ac037d50847536e31d]
+May-05 03:39:50.405 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.405 [Task submitter] INFO  nextflow.Session - [79/7a7732] Submitted process > sort (6)
+May-05 03:39:50.429 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: sort (4); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/7d/ff0961bbf5f99c0cbb65adff07e9be]
+May-05 03:39:50.433 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.435 [Task submitter] INFO  nextflow.Session - [2d/86bb6e] Submitted process > sort (7)
+May-05 03:39:50.494 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: sort (7); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/2d/86bb6e9f5dbae63601876966afbda6]
+May-05 03:39:50.498 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.508 [Task submitter] INFO  nextflow.Session - [34/8dca95] Submitted process > sort (8)
+May-05 03:39:50.544 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: sort (6); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/79/7a7732409569994da3a70854f658c1]
+May-05 03:39:50.552 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.553 [Task submitter] INFO  nextflow.Session - [8d/a2fe2c] Submitted process > sort (9)
+May-05 03:39:50.565 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: sort (8); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/34/8dca955685e9b3c62db0af92102ca0]
+May-05 03:39:50.570 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.571 [Task submitter] INFO  nextflow.Session - [70/35ac85] Submitted process > sort (10)
+May-05 03:39:50.617 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: sort (10); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/70/35ac85898815736625bee7811ae5d5]
+May-05 03:39:50.623 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: sort (9); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/8d/a2fe2c67751ba1f9d990d036fb9ea8]
+May-05 03:39:50.647 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.649 [Task submitter] INFO  nextflow.Session - [e6/423a9a] Submitted process > merge (2)
+May-05 03:39:50.658 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.658 [Task submitter] INFO  nextflow.Session - [bb/192dba] Submitted process > merge (1)
+May-05 03:39:50.780 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: merge (2); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/e6/423a9ab16ba8e40582ba20b480f8b0]
+May-05 03:39:50.818 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: merge (1); status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/bb/192dba11ef132cbbd099f6755d9782]
+May-05 03:39:50.831 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+May-05 03:39:50.831 [Task submitter] INFO  nextflow.Session - [ec/13435b] Submitted process > calc
+May-05 03:39:50.881 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: calc; status: COMPLETED; exit: 0; error: -; workDir: /home/weislenn/bachelorarbeit/nextflow/work/ec/13435b5ecea930d08412d6d86bcf68]
+May-05 03:39:50.885 [main] DEBUG nextflow.Session - Session await > all process finished
+May-05 03:39:50.980 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-05 03:39:50.992 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=26; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+May-05 03:39:51.104 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+May-05 03:39:51.147 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
